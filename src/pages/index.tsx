@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
 
-import { Logo } from "../components/atoms/Logo/Logo";
 import { Container } from "../components/atoms/Container/Container.styles";
+import { Header } from "../components/molecules/Header/Header";
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Logo />
+      <Header />
     </Container>
   );
 };
