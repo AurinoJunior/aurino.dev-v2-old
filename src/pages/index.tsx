@@ -1,16 +1,9 @@
 import type { NextPage } from "next";
 
-import { Container } from "../components/atoms/Container/Container.styles";
-import { Header } from "../components/molecules/Header/Header";
-import { Hero } from "../components/molecules/Hero/Hero";
+import { HomeTemplate } from "../components/templates/Home/HomeTemplate";
 
 const Home: NextPage = () => {
-  return (
-    <Container>
-      <Header />
-      <Hero />
-    </Container>
-  );
+  return <HomeTemplate />;
 };
 
 export default Home;

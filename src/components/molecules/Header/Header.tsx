@@ -3,7 +3,7 @@ import { Logo } from "../../atoms/Logo/Logo";
 
 import { Box } from "./Header.styles";
 
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <Box>
       <Logo />
