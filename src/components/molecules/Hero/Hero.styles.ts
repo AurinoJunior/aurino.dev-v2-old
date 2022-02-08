@@ -7,7 +7,7 @@ export const Box = styled.section`
   flex-direction: column;
   align-items: center;
 
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 `;
 
 export const Content = styled.div`
