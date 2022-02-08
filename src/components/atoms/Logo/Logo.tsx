@@ -1,11 +1,11 @@
 import React from "react";
 
-import { LogoStyles } from "./Logo.styles";
+import { LogoStyled } from "./Logo.styles";
 
 export const Logo: React.FC = () => {
   return (
-    <LogoStyles>
+    <LogoStyled>
       auri<span>.dev</span>
-    </LogoStyles>
+    </LogoStyled>
   );
 };

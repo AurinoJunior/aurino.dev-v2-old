@@ -42,6 +42,7 @@ export const GlobalStyle = createGlobalStyle<Props>`
   }
 
   button {
+    all: unset;
     cursor: pointer;
   }
 

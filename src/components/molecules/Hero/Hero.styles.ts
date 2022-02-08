@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { primary } from "../../../styles/Colors";
 
-export const Box = styled.div`
+export const Box = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,10 +13,10 @@ export const Box = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 
   margin-top: -5rem;
-  height: 260px;
+  height: 270px;
 
   z-index: 1;
 
@@ -33,6 +33,14 @@ export const Content = styled.div`
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+  }
+
+  .hero__subtitle {
+    font-size: 1.75rem;
+
+    span {
+      color: ${primary};
+    }
   }
 
   .hero__description {
