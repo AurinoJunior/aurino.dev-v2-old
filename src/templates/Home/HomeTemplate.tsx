@@ -1,4 +1,5 @@
 import { Container } from "../../components/atoms/Container/Container.styles";
+import { Footer } from "../../components/atoms/Footer/Footer";
 
 import { Header } from "../../components/molecules/Header/Header";
 
@@ -21,6 +22,7 @@ export const HomeTemplate = () => {
         <About />
         <Skillset />
       </Container>
+      <Footer />
     </>
   );
 };
