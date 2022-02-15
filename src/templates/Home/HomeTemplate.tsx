@@ -1,6 +1,6 @@
-import { Container } from "../../atoms/Container/Container.styles";
+import { Container } from "../../components/atoms/Container/Container.styles";
 
-import { Header } from "../../molecules/Header/Header";
+import { Header } from "../../components/molecules/Header/Header";
 
 import { About } from "./About/About";
 import { Hero } from "./Hero/Hero";

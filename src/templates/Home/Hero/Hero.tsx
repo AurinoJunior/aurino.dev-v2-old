@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import myImage from "../../../../assets/eu.png";
+import myImage from "../../../assets/eu.png";
 
 import { Box, Content } from "./Hero.styles";
-import { Button } from "../../../atoms/Button/Button";
+import { Button } from "../../../components/atoms/Button/Button";
 
 export const Hero = () => {
   return (

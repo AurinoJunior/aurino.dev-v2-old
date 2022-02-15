@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Accordion } from "../../../atoms/Accordion/Accordion";
+import { Accordion } from "../../../components/atoms/Accordion/Accordion";
 
 import { Title, Content } from "./Skillset.styles";
 

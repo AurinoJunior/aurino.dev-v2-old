@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_500 } from "../../../../styles/Colors";
+import { gray_500 } from "../../../styles/Colors";
 
 export const Title = styled.h2`
   margin-top: 3rem;
