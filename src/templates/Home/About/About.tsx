@@ -5,7 +5,7 @@ import { Title, SubTitle, Paragraph } from "./About.styles";
 export const About = () => {
   return (
     <>
-      <Title>
+      <Title id="about">
         Salve galera! <br />
         Aurino Junior aqui.
       </Title>

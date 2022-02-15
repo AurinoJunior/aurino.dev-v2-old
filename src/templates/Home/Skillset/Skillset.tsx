@@ -7,7 +7,7 @@ import { Title, Content } from "./Skillset.styles";
 export const Skillset = () => {
   return (
     <>
-      <Title>Skillset</Title>
+      <Title>Habilidades</Title>
       <Content>
         <Accordion
           title="Front-end"

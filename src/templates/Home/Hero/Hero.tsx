@@ -4,7 +4,7 @@ import Image from "next/image";
 import myImage from "../../../assets/eu.png";
 
 import { Box, Content } from "./Hero.styles";
-import { Button } from "../../../components/atoms/Button/Button";
+import { Link } from "../../../components/atoms/Actions/Actions";
 
 export const Hero = () => {
   return (
@@ -24,7 +24,7 @@ export const Hero = () => {
         <p className="hero__description">
           Atualmente sou desenvolvedor de software frontend e ...
         </p>
-        <Button>Leia mais</Button>
+        <Link href="#about">Leia mais</Link>
       </Content>
     </Box>
   );
