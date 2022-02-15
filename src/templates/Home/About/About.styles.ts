@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { gray_500 } from "../../../styles/Colors";
 
 export const Title = styled.h2`
-  margin-top: 3rem;
+  padding-top: 3rem;
 `;
 
 export const SubTitle = styled.h3`
