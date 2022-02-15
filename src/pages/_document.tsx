@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600&display=swap"
             rel="stylesheet"
           />
 
