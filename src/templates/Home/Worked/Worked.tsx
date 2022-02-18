@@ -11,7 +11,7 @@ export const Worked = () => {
         <div>
           <Title className="number-title">01</Title>
           <SubTitle>
-            <span className="number-title--catho">Catho Online</span>
+            <span className="number-subtitle--catho">Catho Online</span>
             desenvolvedor web
           </SubTitle>
           <p>
@@ -22,7 +22,7 @@ export const Worked = () => {
         <div>
           <Title className="number-title">02</Title>
           <SubTitle>
-            <span className="number-title--getninjas">GetNinjas</span>
+            <span className="number-subtitle--getninjas">GetNinjas</span>
             desenvolvedor front-end
           </SubTitle>
           <p>

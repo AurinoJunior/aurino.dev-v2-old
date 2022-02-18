@@ -25,25 +25,56 @@ export const Content = styled.div`
     font-size: 16px;
   }
 
-  .hero__title {
-    font-size: 3rem;
-    font-weight: 700;
-
-    background: linear-gradient(90deg, white, ${primary});
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  .hero__description {
+    width: 70%;
   }
+`;
 
-  .hero__subtitle {
-    font-size: 1.75rem;
+export const Title = styled.h1`
+  font-size: 3rem;
+  font-weight: 700;
 
-    span {
-      color: ${primary};
+  background: linear-gradient(90deg, white, ${primary});
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+`;
+
+export const Subtitle = styled.h2`
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+export const HeroAnimation = styled.span`
+  display: inline-block;
+  color: ${primary};
+
+  border-right: solid 2px ${primary};
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: blinkCursor 500ms infinite normal,
+    typing 3s steps(30) infinite alternate both;
+
+  @keyframes blinkCursor {
+    from {
+      border-right-color: transparent;
+    }
+
+    to {
+      border-right-color: ${primary};
     }
   }
 
-  .hero__description {
-    width: 70%;
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 55%;
+    }
   }
 `;

@@ -24,11 +24,11 @@ export const SubTitle = styled.h3`
   margin-bottom: 1rem;
   font-size: 1.5rem;
 
-  .number-title--catho {
+  .number-subtitle--catho {
     color: ${primary};
   }
 
-  .number-title--getninjas {
+  .number-subtitle--getninjas {
     color: ${yellow};
   }
 
