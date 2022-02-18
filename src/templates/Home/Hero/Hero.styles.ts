@@ -51,30 +51,24 @@ export const HeroAnimation = styled.span`
   display: inline-block;
   color: ${primary};
 
-  border-right: solid 2px ${primary};
   white-space: nowrap;
   overflow: hidden;
 
-  animation: blinkCursor 500ms infinite normal,
-    typing 3s steps(30) infinite alternate both;
-
-  @keyframes blinkCursor {
-    from {
-      border-right-color: transparent;
-    }
-
-    to {
-      border-right-color: ${primary};
-    }
+  &:after {
+    content: "|";
+    margin-left: 0.75rem;
+    color: ${primary};
+    animation: blinkCursor 500ms infinite normal;
   }
 
-  @keyframes typing {
-    from {
-      width: 0;
+  @keyframes blinkCursor {
+    0%,
+    100% {
+      opacity: 1;
     }
 
-    to {
-      width: 55%;
+    50% {
+      opacity: 0;
     }
   }
 `;

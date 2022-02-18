@@ -7,23 +7,16 @@ import { Box, Content, Title, Subtitle, HeroAnimation } from "./Hero.styles";
 import { Link } from "../../../components/atoms/Actions/Actions";
 
 export const Hero = () => {
-  const phrasesAnimation = [
-    "web developer",
-    "front-end dev",
-    "pasteleiro nato",
-  ];
-
-  const [textAnimation, setTextAnimation] = useState("web developer");
-  const [stepAnimation, setStepAnimation] = useState(0);
+  const [textAnimation, setTextAnimation] = useState("");
 
   useEffect(() => {
-    setInterval(() => {
-      setTextAnimation(phrasesAnimation[stepAnimation]);
-      setStepAnimation((oldStep) => {
-        if (oldStep > 2) return 0;
-        return oldStep++;
-      });
-    }, 6000);
+    const phrase = "web developer".split("");
+    phrase.forEach((leter, i) => {
+      console.log(textAnimation);
+      setTimeout(() => {
+        setTextAnimation(textAnimation + leter);
+      }, 100 * i);
+    });
   }, []);
 
   return (
