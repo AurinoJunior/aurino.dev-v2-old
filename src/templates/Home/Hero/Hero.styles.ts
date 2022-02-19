@@ -56,7 +56,7 @@ export const HeroAnimation = styled.span`
 
   &:after {
     content: "|";
-    margin-left: 0.75rem;
+    margin-left: 0.25rem;
     color: ${primary};
     animation: blinkCursor 500ms infinite normal;
   }

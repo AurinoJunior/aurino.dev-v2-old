@@ -10,14 +10,18 @@ export const Hero = () => {
   const [textAnimation, setTextAnimation] = useState("");
 
   useEffect(() => {
-    const phrase = "web developer".split("");
-    phrase.forEach((leter, i) => {
-      console.log(textAnimation);
+    setTimeout(() => typingAnimation(), 1000);
+  }, []);
+
+  const typingAnimation = () => {
+    const phrase = "web developer";
+
+    phrase.split("").forEach((leter, i) => {
       setTimeout(() => {
-        setTextAnimation(textAnimation + leter);
+        setTextAnimation((oldText) => oldText + leter);
       }, 100 * i);
     });
-  }, []);
+  };
 
   return (
     <Box>
