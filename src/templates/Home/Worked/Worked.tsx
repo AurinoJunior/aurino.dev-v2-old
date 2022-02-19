@@ -15,8 +15,8 @@ export const Worked = () => {
             desenvolvedor web
           </SubTitle>
           <p>
-            Desenvolvedor web júnior, responsável pela área logada do candidato
-            no perido de 2 anos e 10 meses.
+            Responsável pela área logada do candidato no perido de 2 anos e 10
+            meses.
           </p>
         </div>
         <div>
@@ -26,8 +26,8 @@ export const Worked = () => {
             desenvolvedor front-end
           </SubTitle>
           <p>
-            Desenvolvedor front-end júnior, atuando no time de growth criando e
-            mantendo paginas web para aquisição de novos clientes.
+            Atuando no time de growth criando e mantendo paginas web para
+            aquisição de novos clientes.
           </p>
         </div>
       </Container>

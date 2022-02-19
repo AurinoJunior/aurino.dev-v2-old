@@ -18,6 +18,10 @@ export const About = () => {
         da programação web, metodologias ágeis e cultura devops.
       </Paragraph>
       <Paragraph>
+        Possuo experiência em teste AB, criação de design system, melhoria de
+        métricas em web core vitals e criação de testes automatizados.
+      </Paragraph>
+      <Paragraph>
         Bom, espero conseguir compartilhar um pouco dos meus estudos com vocês e
         aprender bastante durantes esse processo, bora aprender juntos 🚀
       </Paragraph>

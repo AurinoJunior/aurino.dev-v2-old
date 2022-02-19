@@ -7,6 +7,7 @@ import Document, {
 } from "next/document";
 
 import { ServerStyleSheet } from "styled-components";
+import { Title } from "../components/molecules/Contact/Contact.styles";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -37,7 +38,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="pt-BR">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -61,6 +62,8 @@ export default class MyDocument extends Document {
           />
 
           <link rel="shortcut icon" href="favicon.ico" />
+
+          <Title>Aurino Geraldo | Portifolio e blog pessoal</Title>
         </Head>
         <body>
           <Main />

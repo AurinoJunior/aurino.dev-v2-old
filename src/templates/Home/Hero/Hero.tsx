@@ -8,17 +8,34 @@ import { Link } from "../../../components/atoms/Actions/Actions";
 
 export const Hero = () => {
   const [textAnimation, setTextAnimation] = useState("");
+  const phrase = "web developer";
 
   useEffect(() => {
-    setTimeout(() => typingAnimation(), 1000);
-  }, []);
+    if (textAnimation === phrase) {
+      setTimeout(() => reverseTypingAnimation(), 1000);
+    }
+
+    if (textAnimation.length === 0) {
+      setTimeout(() => typingAnimation(), 1000);
+    }
+  }, [textAnimation]);
 
   const typingAnimation = () => {
-    const phrase = "web developer";
-
     phrase.split("").forEach((leter, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => oldText + leter);
+      }, 100 * i);
+    });
+  };
+
+  const reverseTypingAnimation = () => {
+    phrase.split("").forEach((leter, i) => {
+      setTimeout(() => {
+        setTextAnimation((oldText) => {
+          const arrTextAnimation = oldText.split("");
+          arrTextAnimation.pop();
+          return arrTextAnimation.join("");
+        });
       }, 100 * i);
     });
   };
