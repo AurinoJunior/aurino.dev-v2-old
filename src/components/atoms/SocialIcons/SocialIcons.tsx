@@ -10,9 +10,28 @@ interface ISocialIconsProps {
 export const SocialIcons = ({ size = 35 }: ISocialIconsProps) => {
   return (
     <Content>
-      <FaGithub size={size} />
-      <FaInstagram size={size} />
-      <FaLinkedin size={size} />
+      <a
+        target="_blank"
+        href="https://github.com/AurinoJunior"
+        rel="noreferrer"
+      >
+        <FaGithub size={size} />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.instagram.com/aurigod97/"
+        rel="noreferrer"
+      >
+        <FaInstagram size={size} />
+      </a>
+
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/aurino-junior-7718a4158/"
+        rel="noreferrer"
+      >
+        <FaLinkedin size={size} />
+      </a>
     </Content>
   );
 };
