@@ -15,11 +15,12 @@ export const Paragraph = styled.p`
 `;
 
 export const Box = styled.div`
-  padding-top: 6rem;
+  padding-top: 3rem;
 
   @media (min-width: ${tablet_size}) {
     display: flex;
     gap: 20%;
+    margin-top: 5rem;
 
     & > div {
       flex: 1;
