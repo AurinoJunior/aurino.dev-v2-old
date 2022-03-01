@@ -11,7 +11,7 @@ export const Box = styled.section`
 
   @media (min-width: ${tablet_size}) {
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
 
     margin-top: 6rem;
   }
