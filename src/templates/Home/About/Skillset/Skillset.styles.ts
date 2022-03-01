@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { tablet_size } from "../../../../styles/Tokens";
 
 export const Title = styled.h2`
   text-align: center;

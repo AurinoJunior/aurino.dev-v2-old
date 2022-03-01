@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import { gray_500 } from "../../../styles/Tokens";
-
-export const Title = styled.h2`
-  padding-top: 3rem;
-`;
+import { gray_500, tablet_size } from "../../../styles/Tokens";
 
 export const SubTitle = styled.h3`
   margin: 2rem 0;
@@ -15,5 +11,18 @@ export const SubTitle = styled.h3`
 export const Paragraph = styled.p`
   & + p {
     margin-top: 1rem;
+  }
+`;
+
+export const Box = styled.div`
+  padding-top: 6rem;
+
+  @media (min-width: ${tablet_size}) {
+    display: flex;
+    gap: 20%;
+
+    & > div {
+      flex: 1;
+    }
   }
 `;

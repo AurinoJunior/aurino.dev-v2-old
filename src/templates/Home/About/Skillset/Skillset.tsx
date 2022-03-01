@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Accordion } from "../../../components";
+import { Accordion } from "../../../../components";
 
 import { Title, Content } from "./Skillset.styles";
 
 export const Skillset = () => {
   return (
-    <>
+    <div>
       <Title>Habilidades</Title>
       <Content>
         <Accordion
@@ -18,6 +18,6 @@ export const Skillset = () => {
         <Accordion title="Interface" text="Photoshop, Figma." />
         <Accordion title="Projeto" text="Scrum, Kanban." />
       </Content>
-    </>
+    </div>
   );
 };

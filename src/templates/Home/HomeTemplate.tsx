@@ -2,7 +2,6 @@ import { Container, Footer, Header, Contact } from "../../components";
 
 import { About } from "./About/About";
 import { Hero } from "./Hero/Hero";
-import { Skillset } from "./Skillset/Skillset";
 import { Worked } from "./Worked/Worked";
 
 export const HomeTemplate = () => {
@@ -17,7 +16,6 @@ export const HomeTemplate = () => {
 
       <Container>
         <About />
-        <Skillset />
         <Contact />
       </Container>
       <Footer />
