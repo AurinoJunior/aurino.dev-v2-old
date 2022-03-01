@@ -1,4 +1,4 @@
-import { gray_900, primary, secondary, white } from "./Colors";
+import { gray_900, primary, secondary, white } from "./Tokens";
 
 export interface ITheme {
   background: string;

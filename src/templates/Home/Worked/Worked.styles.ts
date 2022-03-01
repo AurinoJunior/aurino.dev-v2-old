@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { gray_800, primary, yellow } from "../../../styles/Colors";
+import { gray_800, primary, yellow } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   margin-top: 3rem;

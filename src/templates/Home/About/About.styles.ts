@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_500 } from "../../../styles/Colors";
+import { gray_500 } from "../../../styles/Tokens";
 
 export const Title = styled.h2`
   padding-top: 3rem;

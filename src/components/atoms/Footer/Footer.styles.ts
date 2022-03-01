@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_800 } from "../../../styles/Colors";
+import { gray_800 } from "../../../styles/Tokens";
 
 export const Box = styled.footer`
   padding: 1rem 0;

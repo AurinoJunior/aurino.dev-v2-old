@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { primary } from "../../../styles/Colors";
+import { primary } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   display: flex;

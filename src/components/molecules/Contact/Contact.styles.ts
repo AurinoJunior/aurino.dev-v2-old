@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_800, primary } from "../../../styles/Colors";
+import { gray_800, primary } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   display: flex;

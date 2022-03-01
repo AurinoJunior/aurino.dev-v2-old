@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { secondary } from "../../../styles/Colors";
+import { secondary } from "../../../styles/Tokens";
 
 export const Box = styled.div`
   display: flex;
