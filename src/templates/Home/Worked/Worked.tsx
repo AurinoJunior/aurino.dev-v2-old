@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Container } from "../../../components/atoms/Container/Container.styles";
+import { Container } from "../../../components";
+
 import { Box, Title, SubTitle } from "./Worked.styles";
 
 export const Worked = () => {

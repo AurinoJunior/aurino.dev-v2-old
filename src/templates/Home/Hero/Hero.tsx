@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
+import { Link } from "../../../components";
+
 import myImage from "../../../assets/eu.png";
 
 import { Box, Content, Title, Subtitle, HeroAnimation } from "./Hero.styles";
-import { Link } from "../../../components/atoms/Actions/Actions";
 
 export const Hero = () => {
   const [textAnimation, setTextAnimation] = useState("");
