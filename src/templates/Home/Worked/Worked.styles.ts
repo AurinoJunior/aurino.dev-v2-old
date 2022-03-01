@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-import { gray_800, primary, yellow } from "../../../styles/Tokens";
+import { gray_800, primary, tablet_size, yellow } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   margin-top: 3rem;
   padding: 3rem 0;
   width: 100%;
   background-color: ${gray_800};
+`;
+
+export const Content = styled.div`
+  @media (min-width: ${tablet_size}) {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+  }
 `;
 
 export const Title = styled.h2`
