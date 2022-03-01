@@ -43,12 +43,7 @@ export const Hero = () => {
 
   return (
     <Box>
-      <Image
-        src={myImage}
-        alt="Aurino Junior imagem"
-        width={270}
-        height={193}
-      />
+      <Image src={myImage} alt="Aurino Junior imagem" layout="intrinsic" />
       <Content>
         <p className="hero__context">🚀 Salve meu nome é:</p>
         <Title className="hero__title">Aurino Junior</Title>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { primary } from "../../../styles/Tokens";
+import { primary, tablet_size } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   display: flex;
@@ -8,6 +8,13 @@ export const Box = styled.section`
   align-items: center;
 
   margin-top: 3rem;
+
+  @media (min-width: ${tablet_size}) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    margin-top: 6rem;
+  }
 `;
 
 export const Content = styled.div`
@@ -27,6 +34,16 @@ export const Content = styled.div`
 
   .hero__description {
     width: 70%;
+  }
+
+  @media (min-width: ${tablet_size}) {
+    margin-top: 0;
+    height: auto;
+    gap: 1.5rem;
+
+    .hero__description {
+      width: 100%;
+    }
   }
 `;
 
