@@ -13,7 +13,8 @@ export const Box = styled.section`
     flex-direction: row-reverse;
     justify-content: space-around;
 
-    margin-top: 6rem;
+    height: 70vh;
+    margin-top: 0;
   }
 `;
 
@@ -23,7 +24,7 @@ export const Content = styled.div`
   justify-content: space-between;
 
   margin-top: -5rem;
-  height: 270px;
+  gap: 1.5rem;
 
   z-index: 1;
 
@@ -38,8 +39,6 @@ export const Content = styled.div`
 
   @media (min-width: ${tablet_size}) {
     margin-top: 0;
-    height: auto;
-    gap: 1.5rem;
 
     .hero__description {
       width: 100%;

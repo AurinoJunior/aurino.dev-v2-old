@@ -1,10 +1,14 @@
 import styled from "styled-components";
-import { tablet_size } from "../../../../styles/Tokens";
+import { desktop_size } from "../../../../styles/Tokens";
 
 export const Title = styled.h2`
   text-align: center;
   margin: 3rem 0;
   font-size: 2rem;
+
+  @media (min-width: ${desktop_size}) {
+    margin-top: 0;
+  }
 `;
 
 export const Content = styled.div`

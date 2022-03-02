@@ -7,10 +7,6 @@ export const Box = styled.section`
   padding: 3rem 0;
   width: 100%;
   background-color: ${gray_800};
-
-  @media (min-width: ${tablet_size}) {
-    margin-top: 6rem;
-  }
 `;
 
 export const Content = styled.div`
