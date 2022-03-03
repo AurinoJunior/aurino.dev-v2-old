@@ -7,8 +7,8 @@ import { Worked } from "./Worked/Worked";
 export const HomeTemplate = () => {
   return (
     <>
+      <Header />
       <Container>
-        <Header />
         <Hero />
       </Container>
 

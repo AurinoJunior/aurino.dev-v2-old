@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { gray_800 } from "../../../styles/Tokens";
 
 export const Box = styled.div`
-  display: flex;
-  align-items: center;
-
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
+
+  border-bottom: solid 1px ${gray_800};
 `;
