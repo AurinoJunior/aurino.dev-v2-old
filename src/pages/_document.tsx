@@ -57,11 +57,6 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
 
-          <link
-            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap"
-            rel="stylesheet"
-          />
-
           <link rel="shortcut icon" href="favicon.ico" />
         </Head>
         <body>

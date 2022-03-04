@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { gray_800, primary } from "../../../styles/Tokens";
 
 export const ButtonStyled = styled.button`
+  display: block;
   background-color: ${primary};
 
   border-radius: 0.5rem;
 
-  padding: 0.5rem 0.75rem;
-  width: 30%;
+  padding: 0.75rem 1rem;
+  width: fit-content;
 
   font-size: 1.25rem;
   font-weight: 600;
@@ -17,12 +18,14 @@ export const ButtonStyled = styled.button`
 `;
 
 export const LinkStyled = styled.a`
+  display: block;
+
   background-color: ${primary};
 
   border-radius: 0.5rem;
 
-  padding: 0.5rem 0.75rem;
-  width: 30%;
+  padding: 0.75rem 1rem;
+  width: fit-content;
 
   font-size: 1rem;
   font-weight: 600;

@@ -6,6 +6,13 @@ export const Box = styled.footer`
   margin-top: 3rem;
 
   border-top: solid 1px ${gray_800};
+
+  &.footer--fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+  }
 `;
 
 export const Paragraph = styled.p`
