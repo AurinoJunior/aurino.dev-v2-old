@@ -4,9 +4,9 @@ import { HiMenu } from "react-icons/hi";
 import { RiCloseLine } from "react-icons/ri";
 
 import { secondary } from "../../../../styles/Tokens";
-import { Nav, NavContent, NavButton } from "./NavHeader.styles";
+import { Menu, MenuContent, MenuButton } from "./MenuMobile.styles";
 
-export const NavHeader = () => {
+export const MenuMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleSwitchOpenMenu = () => {
@@ -15,17 +15,17 @@ export const NavHeader = () => {
 
   return (
     <>
-      <NavButton type="button" onClick={handleSwitchOpenMenu}>
+      <MenuButton type="button" onClick={handleSwitchOpenMenu}>
         {!showMenu ? (
           <HiMenu size={28} color={secondary} />
         ) : (
           <RiCloseLine size={28} color={secondary} />
         )}
-      </NavButton>
+      </MenuButton>
 
       {showMenu && (
-        <Nav>
-          <NavContent>
+        <Menu>
+          <MenuContent>
             <li className="active">
               <a href="#">Home</a>
             </li>
@@ -35,8 +35,8 @@ export const NavHeader = () => {
             <li>
               <a href="#">Viagens</a>
             </li>
-          </NavContent>
-        </Nav>
+          </MenuContent>
+        </Menu>
       )}
     </>
   );

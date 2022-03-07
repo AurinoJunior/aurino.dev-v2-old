@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { gray_800, secondary, tablet_size } from "../../../../styles/Tokens";
 
-export const Nav = styled.nav`
+export const Menu = styled.nav`
   background-color: ${gray_800};
 
   position: fixed;
@@ -33,7 +33,7 @@ export const Nav = styled.nav`
   }
 `;
 
-export const NavContent = styled.ul`
+export const MenuContent = styled.ul`
   width: 100%;
   height: 100%;
 
@@ -48,7 +48,7 @@ export const NavContent = styled.ul`
   font-size: 2rem;
   font-weight: 600;
 
-  animation: delayShowText 600ms ease-in;
+  animation: delayShowText 550ms ease-in;
 
   .active {
     color: ${secondary};
@@ -69,7 +69,7 @@ export const NavContent = styled.ul`
   }
 `;
 
-export const NavButton = styled.button`
+export const MenuButton = styled.button`
   z-index: 3;
 
   @media (min-width: ${tablet_size}) {
