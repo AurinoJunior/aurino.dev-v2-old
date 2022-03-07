@@ -17,8 +17,8 @@ export const Header = () => {
   };
 
   return (
-    <Container>
-      <Box>
+    <Box>
+      <Container>
         <Logo />
 
         <button type="button" onClick={handleSwitchOpenMenu}>
@@ -44,7 +44,7 @@ export const Header = () => {
             </NavContent>
           </Nav>
         )}
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };

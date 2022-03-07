@@ -1,16 +1,27 @@
 import styled from "styled-components";
-import { gray_800, secondary } from "../../../styles/Tokens";
+import { gray_800, gray_900, secondary } from "../../../styles/Tokens";
 
 export const Box = styled.div`
   width: 100%;
   padding: 1rem 0;
+  background-color: ${gray_900};
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  border-bottom: solid 1px ${gray_800};
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  z-index: 2;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   button {
-    z-index: 3;
+    z-index: 4;
   }
 `;
 
@@ -20,11 +31,12 @@ export const Nav = styled.nav`
   position: fixed;
   top: 0;
   right: 0;
+
   height: 100vh;
   width: 100vw;
   border-bottom-left-radius: 0;
 
-  z-index: 2;
+  z-index: 3;
 
   animation: openMenu 500ms ease-in;
 
