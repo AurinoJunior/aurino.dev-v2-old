@@ -7,7 +7,7 @@ export const Box = styled.section`
   flex-direction: column;
   align-items: center;
 
-  margin-top: 3rem;
+  margin-top: 8rem;
 
   @media (min-width: ${tablet_size}) {
     flex-direction: row-reverse;
