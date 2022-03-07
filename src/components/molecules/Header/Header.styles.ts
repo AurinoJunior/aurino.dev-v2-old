@@ -19,11 +19,28 @@ export const Nav = styled.nav`
 
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  border-bottom-left-radius: 0;
 
   z-index: 2;
+
+  animation: openMenu 500ms ease-in;
+
+  @keyframes openMenu {
+    from {
+      width: 20vw;
+      height: 10vh;
+      border-bottom-left-radius: 100%;
+    }
+
+    to {
+      width: 300vw;
+      height: 200vh;
+      border-bottom-left-radius: 100%;
+    }
+  }
 `;
 
 export const NavContent = styled.ul`
@@ -41,7 +58,23 @@ export const NavContent = styled.ul`
   font-size: 2rem;
   font-weight: 600;
 
+  animation: delayShowText 600ms ease-in;
+
   .active {
     color: ${secondary};
+  }
+
+  @keyframes delayShowText {
+    0% {
+      opacity: 0;
+    }
+
+    95% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
   }
 `;

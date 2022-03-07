@@ -23,9 +23,9 @@ export const Header = () => {
 
         <button type="button" onClick={handleSwitchOpenMenu}>
           {!showMenu ? (
-            <HiMenu size={24} color={secondary} />
+            <HiMenu size={28} color={secondary} />
           ) : (
-            <RiCloseLine className="nav__icon" size={24} color={secondary} />
+            <RiCloseLine size={28} color={secondary} />
           )}
         </button>
 
