@@ -6,10 +6,10 @@ import { Box } from "./Header.styles";
 
 export const Header = () => {
   return (
-    <Box>
-      <Container>
+    <Container>
+      <Box>
         <Logo />
-      </Container>
-    </Box>
+      </Box>
+    </Container>
   );
 };

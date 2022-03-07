@@ -23,7 +23,7 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  margin-top: -5rem;
+  margin-top: -3rem;
   gap: 1.5rem;
 
   z-index: 1;
