@@ -44,7 +44,6 @@ export const Menu = styled.nav`
   li {
     color: ${gray_500};
     padding: 1rem 0;
-    cursor: pointer;
 
     &:hover {
       filter: brightness(0.4);

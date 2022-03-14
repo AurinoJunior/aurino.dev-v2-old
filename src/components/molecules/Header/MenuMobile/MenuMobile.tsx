@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 import { HiMenu } from "react-icons/hi";
@@ -27,13 +28,19 @@ export const MenuMobile = () => {
         <Menu>
           <MenuContent>
             <li className="active">
-              <a href="#">Home</a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
             </li>
             <li>
-              <a href="#">Viagens</a>
+              <Link href="/trips">
+                <a href="/trips">Viagens</a>
+              </Link>
             </li>
           </MenuContent>
         </Menu>
