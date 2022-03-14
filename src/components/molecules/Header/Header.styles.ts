@@ -47,6 +47,7 @@ export const Menu = styled.nav`
 
     &:hover {
       filter: brightness(0.4);
+      transition: 0.2s;
     }
 
     &.active {
