@@ -5,9 +5,10 @@ export const Box = styled.main`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 
-  margin-top: 3rem;
+  height: 100vh;
 
   @media (min-width: ${tablet_size}) {
     flex-direction: row;
@@ -15,8 +16,6 @@ export const Box = styled.main`
     gap: 0;
 
     height: 100vh;
-
-    margin: 0;
   }
 `;
 
