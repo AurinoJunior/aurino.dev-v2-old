@@ -35,7 +35,7 @@ export const Content = styled.div`
   }
 
   @media (min-width: ${tablet_size}) {
-    width: 30%;
+    width: 40%;
     margin: 0;
   }
 `;
