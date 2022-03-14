@@ -14,7 +14,6 @@ export const Box = styled.section`
     justify-content: space-evenly;
 
     height: 70vh;
-    margin-top: 0;
   }
 `;
 
