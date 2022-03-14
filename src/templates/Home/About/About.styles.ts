@@ -20,7 +20,6 @@ export const Box = styled.div`
   @media (min-width: ${tablet_size}) {
     display: flex;
     gap: 20%;
-    padding-top: 8rem;
 
     & > div {
       flex: 1;
