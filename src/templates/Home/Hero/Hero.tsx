@@ -30,7 +30,7 @@ export const Hero = () => {
   };
 
   const reverseTypingAnimation = () => {
-    phrase.split("").forEach((leter, i) => {
+    phrase.split("").forEach((_, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => {
           const arrTextAnimation = oldText.split("");

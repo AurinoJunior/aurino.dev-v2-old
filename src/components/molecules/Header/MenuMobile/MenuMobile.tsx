@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 import { HiMenu } from "react-icons/hi";
 import { RiCloseLine } from "react-icons/ri";
@@ -9,6 +10,7 @@ import { Menu, MenuContent, MenuButton } from "./MenuMobile.styles";
 
 export const MenuMobile = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const router = useRouter();
 
   const handleSwitchOpenMenu = () => {
     setShowMenu(!showMenu);
@@ -27,17 +29,17 @@ export const MenuMobile = () => {
       {showMenu && (
         <Menu>
           <MenuContent>
-            <li className="active">
+            <li className={router.asPath === "/" ? "active" : ""}>
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li>
+            <li className={router.asPath === "/blog" ? "active" : ""}>
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
             </li>
-            <li>
+            <li className={router.asPath === "/trips" ? "active" : ""}>
               <Link href="/trips">
                 <a>Viagens</a>
               </Link>
