@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 import { ITheme } from "./Themes";
+import { gray_800, gray_500 } from "./Tokens";
 
 type Props = {
   theme: ITheme;
@@ -53,5 +54,18 @@ export const GlobalStyle = createGlobalStyle<Props>`
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  //Scroll bar
+  ::-webkit-scrollbar{
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: ${gray_800};
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: ${gray_500};
   }
 `;
