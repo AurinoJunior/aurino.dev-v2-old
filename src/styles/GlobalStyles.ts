@@ -1,13 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
-import { ITheme } from "./Themes";
-import { gray_800, gray_500 } from "./Tokens";
+import { gray_800, gray_500, gray_900, white } from "./Tokens";
 
-type Props = {
-  theme: ITheme;
-};
-
-export const GlobalStyle = createGlobalStyle<Props>`
+export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -32,8 +27,8 @@ export const GlobalStyle = createGlobalStyle<Props>`
   }
 
   body {
-    background: ${({ theme }) => theme.background};
-    color: ${({ theme }) => theme.text};
+    background: ${gray_900};
+    color: ${white};
   }
 
 
