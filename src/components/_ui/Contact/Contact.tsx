@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialIcons } from "../../atoms/SocialIcons/SocialIcons";
+import { SocialIcons } from "../SocialIcons/SocialIcons";
 
 import { Box, Title, Paragraph } from "./Contact.styles";
 

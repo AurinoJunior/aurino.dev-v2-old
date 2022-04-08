@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { Link } from "../../../components";
+import { Link } from "../../../components/_ui";
 
 import myImage from "../../../assets/eu.png";
 

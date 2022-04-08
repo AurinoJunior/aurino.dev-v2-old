@@ -1,4 +1,4 @@
-import { Container, Footer, Header, Link } from "../../components";
+import { Container, Footer, Header, Link } from "../../components/_ui";
 import Image from "next/image";
 
 import CatMaintenance from "../../assets/cat-maintenance.png";
