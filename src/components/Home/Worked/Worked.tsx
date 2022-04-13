@@ -1,39 +1,43 @@
-import React from "react";
+import { Container, Paragraph } from "../../_ui";
+import { primary, yellow } from "../../../styles/Tokens";
 
-import { Container } from "../../_ui";
-
-import { Box, Title, SubTitle, Content } from "./Worked.styles";
+import {
+  WorkedBox,
+  WorkedTitle,
+  WorkedSubTitle,
+  WorkedContent,
+} from "./Worked.styles";
 
 export const Worked = () => {
   return (
-    <Box>
+    <WorkedBox>
       <Container>
-        <Title>Empresas que trabalhei!</Title>
-        <Content>
+        <WorkedTitle>Empresas que trabalhei!</WorkedTitle>
+        <WorkedContent>
           <div>
-            <Title className="number-title">01</Title>
-            <SubTitle>
-              <span className="number-subtitle--catho">Catho Online</span>
+            <WorkedTitle className="number-title">01</WorkedTitle>
+            <WorkedSubTitle highlight={primary}>
+              <span>Catho Online</span>
               desenvolvedor web
-            </SubTitle>
-            <p>
+            </WorkedSubTitle>
+            <Paragraph>
               Responsável pela área logada do candidato no perido de 2 anos e 10
               meses.
-            </p>
+            </Paragraph>
           </div>
           <div>
-            <Title className="number-title">02</Title>
-            <SubTitle>
-              <span className="number-subtitle--getninjas">GetNinjas</span>
+            <WorkedTitle className="number-title">02</WorkedTitle>
+            <WorkedSubTitle highlight={yellow}>
+              <span>GetNinjas</span>
               desenvolvedor front-end
-            </SubTitle>
-            <p>
+            </WorkedSubTitle>
+            <Paragraph>
               Atuando no time de growth criando e mantendo paginas web para
               aquisição de novos clientes.
-            </p>
+            </Paragraph>
           </div>
-        </Content>
+        </WorkedContent>
       </Container>
-    </Box>
+    </WorkedBox>
   );
 };
