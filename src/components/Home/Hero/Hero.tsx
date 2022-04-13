@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { Link } from "../../_ui";
+import { Link, Paragraph } from "../../_ui";
 
 import myImage from "../../../assets/eu.png";
 
-import { Box, Content, Title, Subtitle, HeroAnimation } from "./Hero.styles";
+import {
+  HeroBox,
+  HeroContent,
+  HeroTitle,
+  HeroDescription,
+  HeroAnimation,
+} from "./Hero.styles";
 
 export const Hero = () => {
   const [textAnimation, setTextAnimation] = useState("");
@@ -42,18 +48,18 @@ export const Hero = () => {
   };
 
   return (
-    <Box>
+    <HeroBox>
       <Image src={myImage} alt="Aurino Junior imagem" layout="intrinsic" />
-      <Content>
-        <Title className="hero__title">Aurino Junior</Title>
-        <Subtitle className="hero__subtitle">
+      <HeroContent>
+        <HeroTitle>Aurino Junior</HeroTitle>
+        <HeroDescription>
           Eu sou <HeroAnimation>{textAnimation}</HeroAnimation>
-        </Subtitle>
-        <p className="hero__description">
+        </HeroDescription>
+        <Paragraph>
           Atualmente sou desenvolvedor de software frontend e ...
-        </p>
+        </Paragraph>
         <Link href="#about">Leia mais</Link>
-      </Content>
-    </Box>
+      </HeroContent>
+    </HeroBox>
   );
 };

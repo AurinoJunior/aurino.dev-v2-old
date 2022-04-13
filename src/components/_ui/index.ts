@@ -6,6 +6,7 @@ import { Logo } from "./Logo/Logo";
 import { SocialIcons } from "./SocialIcons/SocialIcons";
 import { Contact } from "./Contact/Contact";
 import { Header } from "./Header/Header";
+import { Paragraph } from "./Paragraph/Paragraph";
 
 export {
   Accordion,
@@ -17,4 +18,5 @@ export {
   SocialIcons,
   Contact,
   Header,
+  Paragraph,
 };
