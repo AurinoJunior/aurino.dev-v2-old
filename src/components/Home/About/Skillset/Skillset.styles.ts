@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { desktop_size } from "../../../../styles/Tokens";
 
-export const Title = styled.h2`
+export const SkillsetTitle = styled.h2`
   text-align: center;
   margin: 3rem 0;
   font-size: 2rem;
@@ -11,7 +11,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Content = styled.div`
+export const SkillsetContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
