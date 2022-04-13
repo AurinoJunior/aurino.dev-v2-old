@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Accordion } from "../../../../components/_ui";
+import { Accordion } from "../../../../_ui";
 
 import { Title, Content } from "./Skillset.styles";
 

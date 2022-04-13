@@ -1,7 +1,7 @@
-import { Container, Footer, Header, Link } from "../../components/_ui";
+import { Container, Footer, Header, Link } from "../../_ui";
 import Image from "next/image";
 
-import CatNotFound from "../../assets/cat-not-found.png";
+import CatNotFound from "../../../assets/cat-not-found.png";
 
 import { Box, Content, ImageContainer } from "./NotFoundTemplate.styles";
 

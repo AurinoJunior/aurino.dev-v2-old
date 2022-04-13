@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
-import { Link } from "../../../components/_ui";
+import { Link } from "../../../_ui";
 
-import myImage from "../../../assets/eu.png";
+import myImage from "../../../../assets/eu.png";
 
 import { Box, Content, Title, Subtitle, HeroAnimation } from "./Hero.styles";
 

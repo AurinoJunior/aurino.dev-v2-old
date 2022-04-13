@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container } from "../../../components/_ui";
+import { Container } from "../../../_ui";
 
 import { Box, Title, SubTitle, Content } from "./Worked.styles";
 
