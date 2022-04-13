@@ -2,23 +2,39 @@ import Image from "next/image";
 
 import { Container, Footer, Header, Link } from "../_ui";
 
-import CatNotFound from "../../assets/cat-not-found.png";
-
 import { ErrorPageBox, ErrorPageContent } from "./ErrorPage.styles";
 
-export const ErrorPage = () => {
+interface IErrorPageProps {
+  title: string;
+  description: string;
+  action: {
+    text: string;
+    link: string;
+  };
+  imageData: {
+    src: StaticImageData;
+    alt: string;
+  };
+}
+
+export const ErrorPage = ({
+  title,
+  description,
+  action,
+  imageData,
+}: IErrorPageProps) => {
   return (
     <>
       <Header />
       <Container>
         <ErrorPageBox>
           <ErrorPageContent>
-            <h1>Ops, parece que você se perdeu.</h1>
-            <p>Mas sem problemas volte para home ou acesse meu blog.</p>
-            <Link href="/">Voltar para home</Link>
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <Link href={action.link}>{action.text}</Link>
           </ErrorPageContent>
           <picture>
-            <Image src={CatNotFound} alt="Um gato perdido" layout="intrinsic" />
+            <Image src={imageData.src} alt={imageData.alt} layout="intrinsic" />
           </picture>
         </ErrorPageBox>
       </Container>
