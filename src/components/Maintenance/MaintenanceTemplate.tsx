@@ -1,7 +1,7 @@
-import { Container, Footer, Header, Link } from "../../_ui";
+import { Container, Footer, Header, Link } from "../_ui";
 import Image from "next/image";
 
-import CatMaintenance from "../../../assets/cat-maintenance.png";
+import CatMaintenance from "../../assets/cat-maintenance.png";
 
 import { Box, Content, ImageContainer } from "./Maintenance.styles";
 

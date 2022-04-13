@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_500, tablet_size } from "../../../../styles/Tokens";
+import { gray_500, tablet_size } from "../../../styles/Tokens";
 
 export const SubTitle = styled.h3`
   margin: 2rem 0;

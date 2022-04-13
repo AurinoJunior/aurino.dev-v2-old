@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { gray_500, tablet_size } from "../../../styles/Tokens";
+import { gray_500, tablet_size } from "../../styles/Tokens";
 
 export const Box = styled.main`
   display: flex;
@@ -16,6 +16,8 @@ export const Box = styled.main`
     gap: 0;
 
     height: 100vh;
+
+    margin: 0;
   }
 `;
 

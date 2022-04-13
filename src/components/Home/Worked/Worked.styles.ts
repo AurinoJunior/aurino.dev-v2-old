@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-import {
-  gray_800,
-  primary,
-  tablet_size,
-  yellow,
-} from "../../../../styles/Tokens";
+import { gray_800, primary, tablet_size, yellow } from "../../../styles/Tokens";
 
 export const Box = styled.section`
   margin-top: 3rem;

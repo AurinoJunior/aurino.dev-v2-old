@@ -1,4 +1,4 @@
-import { Container, Footer, Header, Contact } from "../../_ui";
+import { Container, Footer, Header, Contact } from "../_ui";
 
 import { About } from "./About/About";
 import { Hero } from "./Hero/Hero";

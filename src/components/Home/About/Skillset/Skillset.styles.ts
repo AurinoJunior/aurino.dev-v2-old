@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { desktop_size } from "../../../../../styles/Tokens";
+import { desktop_size } from "../../../../styles/Tokens";
 
 export const Title = styled.h2`
   text-align: center;
