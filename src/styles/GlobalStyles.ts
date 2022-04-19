@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-import { gray_800, gray_500, gray_900, white } from "./Tokens";
+import { gray_800, gray_500, gray_900, white } from './Tokens'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -63,4 +63,4 @@ export const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
     background: ${gray_500};
   }
-`;
+`
