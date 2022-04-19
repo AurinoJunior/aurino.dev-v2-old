@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import {
   gray_500,
   gray_800,
   gray_900,
   secondary,
   tablet_size,
-  white,
-} from "../../../styles/Tokens";
+  white
+} from '../../../styles/Tokens'
 
 export const Box = styled.div`
   width: 100%;
@@ -30,7 +30,7 @@ export const Box = styled.div`
   @media (min-width: ${tablet_size}) {
     padding: 0;
   }
-`;
+`
 
 export const Menu = styled.nav`
   ul {
@@ -65,4 +65,4 @@ export const Menu = styled.nav`
   @media (max-width: ${tablet_size}) {
     display: none;
   }
-`;
+`

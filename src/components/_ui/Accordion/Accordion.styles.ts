@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { secondary } from "../../../styles/Tokens";
+import styled from 'styled-components'
+import { secondary } from '../../../styles/Tokens'
 
 export const Box = styled.div`
   display: flex;
@@ -16,4 +16,4 @@ export const Box = styled.div`
   button {
     color: ${secondary};
   }
-`;
+`

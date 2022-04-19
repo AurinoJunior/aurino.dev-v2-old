@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { gray_500, tablet_size } from "../../styles/Tokens";
+import styled from 'styled-components'
+import { gray_500, tablet_size } from '../../styles/Tokens'
 
 export const ErrorPageBox = styled.main`
   display: flex;
@@ -27,7 +27,7 @@ export const ErrorPageBox = styled.main`
       width: auto;
     }
   }
-`;
+`
 
 export const ErrorPageContent = styled.div`
   display: flex;
@@ -46,4 +46,4 @@ export const ErrorPageContent = styled.div`
     width: 40%;
     margin: 0;
   }
-`;
+`

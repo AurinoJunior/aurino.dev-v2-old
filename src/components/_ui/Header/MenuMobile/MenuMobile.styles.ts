@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { gray_800, secondary, tablet_size } from "../../../../styles/Tokens";
+import styled from 'styled-components'
+import { gray_800, secondary, tablet_size } from '../../../../styles/Tokens'
 
 export const Menu = styled.nav`
   background-color: ${gray_800};
@@ -31,7 +31,7 @@ export const Menu = styled.nav`
       border-bottom-left-radius: 100%;
     }
   }
-`;
+`
 
 export const MenuContent = styled.ul`
   width: 100%;
@@ -67,7 +67,7 @@ export const MenuContent = styled.ul`
       opacity: 1;
     }
   }
-`;
+`
 
 export const MenuButton = styled.button`
   z-index: 3;
@@ -75,4 +75,4 @@ export const MenuButton = styled.button`
   @media (min-width: ${tablet_size}) {
     display: none;
   }
-`;
+`

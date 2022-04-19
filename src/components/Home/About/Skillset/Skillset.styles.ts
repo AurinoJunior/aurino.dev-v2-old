@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { desktop_size } from "../../../../styles/Tokens";
+import styled from 'styled-components'
+import { desktop_size } from '../../../../styles/Tokens'
 
 export const SkillsetTitle = styled.h2`
   text-align: center;
@@ -9,7 +9,7 @@ export const SkillsetTitle = styled.h2`
   @media (min-width: ${desktop_size}) {
     margin-top: 0;
   }
-`;
+`
 
 export const SkillsetContent = styled.div`
   display: flex;
@@ -18,4 +18,4 @@ export const SkillsetContent = styled.div`
 
   width: 85%;
   margin: 0 auto;
-`;
+`

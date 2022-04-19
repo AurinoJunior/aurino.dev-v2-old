@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { primary, tablet_size } from "../../../styles/Tokens";
+import { primary, tablet_size } from '../../../styles/Tokens'
 
 export const HeroBox = styled.section`
   display: flex;
@@ -15,7 +15,7 @@ export const HeroBox = styled.section`
 
     height: 70vh;
   }
-`;
+`
 
 export const HeroContent = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ export const HeroContent = styled.div`
   gap: 1.5rem;
 
   z-index: 1;
-`;
+`
 
 export const HeroTitle = styled.h1`
   font-size: 3rem;
@@ -36,14 +36,14 @@ export const HeroTitle = styled.h1`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-`;
+`
 
 export const HeroDescription = styled.h2`
   font-size: 1.75rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-`;
+`
 
 export const HeroAnimation = styled.span`
   display: inline-block;
@@ -53,7 +53,7 @@ export const HeroAnimation = styled.span`
   overflow: hidden;
 
   &:after {
-    content: "|";
+    content: '|';
     margin-left: 0.25rem;
     color: ${primary};
     animation: blinkCursor 500ms infinite normal;
@@ -69,4 +69,4 @@ export const HeroAnimation = styled.span`
       opacity: 0;
     }
   }
-`;
+`

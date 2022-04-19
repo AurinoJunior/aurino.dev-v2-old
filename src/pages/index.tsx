@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import { Contact, Container, Footer, Header } from "../components/_ui";
+import type { NextPage } from 'next'
+import Head from 'next/head'
+import { Contact, Container, Footer, Header } from '../components/_ui'
 
-import { Hero, About, Worked } from "../components/Home";
+import { Hero, About, Worked } from '../components/Home'
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
       </Container>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

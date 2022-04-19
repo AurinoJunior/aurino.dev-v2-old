@@ -1,51 +1,51 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import React, { useEffect, useState } from 'react'
+import Image from 'next/image'
 
-import { Link, Paragraph } from "../../_ui";
+import { Link, Paragraph } from '../../_ui'
 
-import myImage from "../../../assets/eu.png";
+import myImage from '../../../assets/eu.png'
 
 import {
   HeroBox,
   HeroContent,
   HeroTitle,
   HeroDescription,
-  HeroAnimation,
-} from "./Hero.styles";
+  HeroAnimation
+} from './Hero.styles'
 
 export const Hero = () => {
-  const [textAnimation, setTextAnimation] = useState("");
-  const phrase = "web developer";
+  const [textAnimation, setTextAnimation] = useState('')
+  const phrase = 'web developer'
 
   useEffect(() => {
     if (textAnimation === phrase) {
-      setTimeout(() => reverseTypingAnimation(), 1000);
+      setTimeout(() => reverseTypingAnimation(), 1000)
     }
 
     if (textAnimation.length === 0) {
-      setTimeout(() => typingAnimation(), 1000);
+      setTimeout(() => typingAnimation(), 1000)
     }
-  }, [textAnimation]);
+  }, [textAnimation])
 
   const typingAnimation = () => {
-    phrase.split("").forEach((leter, i) => {
+    phrase.split('').forEach((leter, i) => {
       setTimeout(() => {
-        setTextAnimation((oldText) => oldText + leter);
-      }, 100 * i);
-    });
-  };
+        setTextAnimation((oldText) => oldText + leter)
+      }, 100 * i)
+    })
+  }
 
   const reverseTypingAnimation = () => {
-    phrase.split("").forEach((_, i) => {
+    phrase.split('').forEach((_, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => {
-          const arrTextAnimation = oldText.split("");
-          arrTextAnimation.pop();
-          return arrTextAnimation.join("");
-        });
-      }, 100 * i);
-    });
-  };
+          const arrTextAnimation = oldText.split('')
+          arrTextAnimation.pop()
+          return arrTextAnimation.join('')
+        })
+      }, 100 * i)
+    })
+  }
 
   return (
     <HeroBox>
@@ -61,5 +61,5 @@ export const Hero = () => {
         <Link href="#about">Leia mais</Link>
       </HeroContent>
     </HeroBox>
-  );
-};
+  )
+}

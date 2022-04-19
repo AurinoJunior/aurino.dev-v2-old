@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react'
 
-import { ButtonStyled, LinkStyled } from "./Actions.styles";
+import { ButtonStyled, LinkStyled } from './Actions.styles'
 
 interface IActionsProps {
-  children: React.ReactNode | string;
+  children: React.ReactNode | string
 }
 
 interface ILinkProps extends IActionsProps {
-  href: string;
+  href: string
 }
 
 export const Button = ({ children }: IActionsProps) => {
-  return <ButtonStyled>{children}</ButtonStyled>;
-};
+  return <ButtonStyled>{children}</ButtonStyled>
+}
 
 export const Link = ({ children, href }: ILinkProps) => {
-  return <LinkStyled href={href}>{children}</LinkStyled>;
-};
+  return <LinkStyled href={href}>{children}</LinkStyled>
+}
