@@ -1,7 +1,7 @@
-import React from "react";
-import { SocialIcons } from "../SocialIcons/SocialIcons";
+import React from 'react'
+import { SocialIcons } from '../SocialIcons/SocialIcons'
 
-import { Box, Title, Paragraph } from "./Contact.styles";
+import { Box, Title, Paragraph } from './Contact.styles'
 
 export const Contact = () => {
   return (
@@ -13,5 +13,5 @@ export const Contact = () => {
       </Paragraph>
       <SocialIcons />
     </Box>
-  );
-};
+  )
+}

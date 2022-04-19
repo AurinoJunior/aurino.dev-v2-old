@@ -1,27 +1,27 @@
-import Image from "next/image";
+import Image from 'next/image'
 
-import { Container, Footer, Header, Link } from "../_ui";
+import { Container, Footer, Header, Link } from '../_ui'
 
-import { ErrorPageBox, ErrorPageContent } from "./ErrorPage.styles";
+import { ErrorPageBox, ErrorPageContent } from './ErrorPage.styles'
 
 interface IErrorPageProps {
-  title: string;
-  description: string;
+  title: string
+  description: string
   action: {
-    text: string;
-    link: string;
-  };
+    text: string
+    link: string
+  }
   imageData: {
-    src: StaticImageData;
-    alt: string;
-  };
+    src: StaticImageData
+    alt: string
+  }
 }
 
 export const ErrorPage = ({
   title,
   description,
   action,
-  imageData,
+  imageData
 }: IErrorPageProps) => {
   return (
     <>
@@ -40,5 +40,5 @@ export const ErrorPage = ({
       </Container>
       <Footer fixed={true} />
     </>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { tablet_size } from "../../../styles/Tokens";
+import styled from 'styled-components'
+import { tablet_size } from '../../../styles/Tokens'
 
 export const Content = styled.div`
   display: flex;
@@ -15,4 +15,4 @@ export const Content = styled.div`
   @media (min-width: ${tablet_size}) {
     width: 25%;
   }
-`;
+`

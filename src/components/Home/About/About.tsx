@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { Skillset } from "./Skillset/Skillset";
+import { Skillset } from './Skillset/Skillset'
 
-import { AboutQuote, AboutBox, AboutParagraph } from "./About.styles";
+import { AboutQuote, AboutBox, AboutParagraph } from './About.styles'
 
 export const About = () => {
   return (
@@ -31,5 +31,5 @@ export const About = () => {
       </div>
       <Skillset />
     </AboutBox>
-  );
-};
+  )
+}

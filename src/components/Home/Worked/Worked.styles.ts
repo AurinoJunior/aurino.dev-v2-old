@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { gray_800, primary, tablet_size, yellow } from "../../../styles/Tokens";
+import { gray_800, primary, tablet_size, yellow } from '../../../styles/Tokens'
 
 export const WorkedBox = styled.section`
   margin-top: 3rem;
   padding: 3rem 0;
   width: 100%;
   background-color: ${gray_800};
-`;
+`
 
 export const WorkedTitle = styled.h2`
   font-family: Sen, sans-serif;
@@ -18,7 +18,7 @@ export const WorkedTitle = styled.h2`
     margin: 1.5rem 0;
     font-size: 4rem;
   }
-`;
+`
 
 export const WorkedContent = styled.div`
   @media (min-width: ${tablet_size}) {
@@ -26,11 +26,11 @@ export const WorkedContent = styled.div`
     justify-content: space-around;
     gap: 2rem;
   }
-`;
+`
 
 type WorkedSubTitleProps = {
-  highlight: string;
-};
+  highlight: string
+}
 
 export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
   margin-bottom: 1rem;
@@ -40,4 +40,4 @@ export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
     color: ${({ highlight }) => highlight};
     display: block;
   }
-`;
+`

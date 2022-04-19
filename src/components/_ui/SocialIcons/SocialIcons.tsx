@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { Content } from "./SocialIcons.styles";
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { Content } from './SocialIcons.styles'
 
 interface ISocialIconsProps {
-  size?: number;
+  size?: number
 }
 
 export const SocialIcons = ({ size = 35 }: ISocialIconsProps) => {
@@ -33,5 +33,5 @@ export const SocialIcons = ({ size = 35 }: ISocialIconsProps) => {
         <FaLinkedin size={size} />
       </a>
     </Content>
-  );
-};
+  )
+}

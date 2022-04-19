@@ -1,12 +1,12 @@
-import { Container, Paragraph } from "../../_ui";
-import { primary, yellow } from "../../../styles/Tokens";
+import { Container, Paragraph } from '../../_ui'
+import { primary, yellow } from '../../../styles/Tokens'
 
 import {
   WorkedBox,
   WorkedTitle,
   WorkedSubTitle,
-  WorkedContent,
-} from "./Worked.styles";
+  WorkedContent
+} from './Worked.styles'
 
 export const Worked = () => {
   return (
@@ -39,5 +39,5 @@ export const Worked = () => {
         </WorkedContent>
       </Container>
     </WorkedBox>
-  );
-};
+  )
+}

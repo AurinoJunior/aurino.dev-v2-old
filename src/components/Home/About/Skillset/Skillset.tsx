@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { Accordion } from "../../../_ui";
+import { Accordion } from '../../../_ui'
 
-import { SkillsetTitle, SkillsetContent } from "./Skillset.styles";
+import { SkillsetTitle, SkillsetContent } from './Skillset.styles'
 
 export const Skillset = () => {
   return (
@@ -19,5 +19,5 @@ export const Skillset = () => {
         <Accordion title="Projeto" text="Scrum, Kanban." />
       </SkillsetContent>
     </div>
-  );
-};
+  )
+}

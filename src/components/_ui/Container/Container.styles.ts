@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { desktop_size } from "../../../styles/Tokens";
+import styled from 'styled-components'
+import { desktop_size } from '../../../styles/Tokens'
 
 export const Container = styled.div`
   max-width: 85%;
@@ -8,4 +8,4 @@ export const Container = styled.div`
   @media (min-width: ${desktop_size}) {
     max-width: 1080px;
   }
-`;
+`

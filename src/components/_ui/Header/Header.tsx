@@ -1,15 +1,15 @@
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { useRouter } from 'next/router'
+import Link from 'next/link'
 
-import { Logo } from "../Logo/Logo";
-import { Container } from "../Container/Container.styles";
+import { Logo } from '../Logo/Logo'
+import { Container } from '../Container/Container.styles'
 
-import { MenuMobile } from "./MenuMobile/MenuMobile";
+import { MenuMobile } from './MenuMobile/MenuMobile'
 
-import { Box, Menu } from "./Header.styles";
+import { Box, Menu } from './Header.styles'
 
 export const Header = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <Box>
@@ -17,17 +17,17 @@ export const Header = () => {
         <Logo />
         <Menu>
           <ul>
-            <li className={router.asPath === "/" ? "active" : ""}>
+            <li className={router.asPath === '/' ? 'active' : ''}>
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
-            <li className={router.asPath === "/blog" ? "active" : ""}>
+            <li className={router.asPath === '/blog' ? 'active' : ''}>
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
             </li>
-            <li className={router.asPath === "/trips" ? "active" : ""}>
+            <li className={router.asPath === '/trips' ? 'active' : ''}>
               <Link href="/trips">
                 <a>Viagens</a>
               </Link>
@@ -37,5 +37,5 @@ export const Header = () => {
         <MenuMobile />
       </Container>
     </Box>
-  );
-};
+  )
+}

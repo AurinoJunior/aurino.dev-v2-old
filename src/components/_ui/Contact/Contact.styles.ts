@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { gray_800, primary, tablet_size } from "../../../styles/Tokens";
+import styled from 'styled-components'
+import { gray_800, primary, tablet_size } from '../../../styles/Tokens'
 
 export const Box = styled.section`
   display: flex;
@@ -17,12 +17,12 @@ export const Box = styled.section`
     margin-top: 8rem;
     gap: 3rem;
   }
-`;
+`
 
 export const Title = styled.h2`
   color: ${primary};
   font-size: 2rem;
-`;
+`
 
 export const Paragraph = styled.p`
   text-align: center;
@@ -30,4 +30,4 @@ export const Paragraph = styled.p`
   @media (min-width: ${tablet_size}) {
     width: 50%;
   }
-`;
+`
