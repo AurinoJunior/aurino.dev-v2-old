@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { gray_500, tablet_size } from "../../styles/Tokens";
 
-export const Box = styled.main`
+export const ErrorPageBox = styled.main`
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -19,9 +19,17 @@ export const Box = styled.main`
 
     margin: 0;
   }
+
+  picture {
+    width: 60%;
+
+    @media (min-width: ${tablet_size}) {
+      width: auto;
+    }
+  }
 `;
 
-export const Content = styled.div`
+export const ErrorPageContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -37,13 +45,5 @@ export const Content = styled.div`
   @media (min-width: ${tablet_size}) {
     width: 40%;
     margin: 0;
-  }
-`;
-
-export const ImageContainer = styled.div`
-  width: 60%;
-
-  @media (min-width: ${tablet_size}) {
-    width: auto;
   }
 `;

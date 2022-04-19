@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Accordion } from "../../../../components";
+import { Accordion } from "../../../_ui";
 
-import { Title, Content } from "./Skillset.styles";
+import { SkillsetTitle, SkillsetContent } from "./Skillset.styles";
 
 export const Skillset = () => {
   return (
     <div>
-      <Title>Habilidades</Title>
-      <Content>
+      <SkillsetTitle>Habilidades</SkillsetTitle>
+      <SkillsetContent>
         <Accordion
           title="Front-end"
           text="HTML5, CSS, Javascript (ReactJs, NextJS), Typescript."
@@ -17,7 +17,7 @@ export const Skillset = () => {
         <Accordion title="Infraestrutura" text="Docker, AWS, Linux." />
         <Accordion title="Interface" text="Photoshop, Figma." />
         <Accordion title="Projeto" text="Scrum, Kanban." />
-      </Content>
+      </SkillsetContent>
     </div>
   );
 };

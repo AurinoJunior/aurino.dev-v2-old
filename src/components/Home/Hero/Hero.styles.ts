@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { primary, tablet_size } from "../../../styles/Tokens";
 
-export const Box = styled.section`
+export const HeroBox = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,7 @@ export const Box = styled.section`
   }
 `;
 
-export const Content = styled.div`
+export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,26 +26,9 @@ export const Content = styled.div`
   gap: 1.5rem;
 
   z-index: 1;
-
-  .hero__context {
-    font-weight: 600;
-    font-size: 16px;
-  }
-
-  .hero__description {
-    width: 70%;
-  }
-
-  @media (min-width: ${tablet_size}) {
-    margin-top: 0;
-
-    .hero__description {
-      width: 100%;
-    }
-  }
 `;
 
-export const Title = styled.h1`
+export const HeroTitle = styled.h1`
   font-size: 3rem;
   font-weight: 700;
 
@@ -55,7 +38,7 @@ export const Title = styled.h1`
   background-clip: text;
 `;
 
-export const Subtitle = styled.h2`
+export const HeroDescription = styled.h2`
   font-size: 1.75rem;
   display: flex;
   align-items: center;

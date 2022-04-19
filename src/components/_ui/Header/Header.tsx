@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import { Logo } from "../../atoms/Logo/Logo";
-import { Container } from "../../atoms/Container/Container.styles";
+import { Logo } from "../Logo/Logo";
+import { Container } from "../Container/Container.styles";
 
 import { MenuMobile } from "./MenuMobile/MenuMobile";
 

@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import { Contact, Container, Footer, Header } from "../components/_ui";
 
-import { HomeTemplate } from "../templates/Home/HomeTemplate";
+import { Hero, About, Worked } from "../components/Home";
 
 const Home: NextPage = () => {
   return (
@@ -9,7 +10,18 @@ const Home: NextPage = () => {
       <Head>
         <title>Aurino Geraldo | Portifolio e blog pessoal</title>
       </Head>
-      <HomeTemplate />
+      <Header />
+      <Container>
+        <Hero />
+      </Container>
+
+      <Worked />
+
+      <Container>
+        <About />
+        <Contact />
+      </Container>
+      <Footer />
     </>
   );
 };
