@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { Box } from './Accordion.styles'
+import * as S from './Accordion.styles'
 
 interface IAccordionProps {
   title: string
@@ -14,7 +14,7 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
 
   return (
     <>
-      <Box>
+      <S.Box>
         <span>{title}</span>
         <button
           type="button"
@@ -22,7 +22,7 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
         >
           {buttonText}
         </button>
-      </Box>
+      </S.Box>
       {showText && <p>{text}</p>}
     </>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Paragraph, Box } from './Footer.styles'
+import * as S from './Footer.styles'
 
 interface IFooterProps {
   fixed?: boolean
@@ -7,8 +7,8 @@ interface IFooterProps {
 
 export const Footer = ({ fixed = false }: IFooterProps) => {
   return (
-    <Box className={fixed ? 'footer--fixed' : ''}>
-      <Paragraph>Feito por Aurino Junior 🚀</Paragraph>
-    </Box>
+    <S.Box className={fixed ? 'footer--fixed' : ''}>
+      <S.Paragraph>Feito por Aurino Junior 🚀</S.Paragraph>
+    </S.Box>
   )
 }

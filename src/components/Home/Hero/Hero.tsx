@@ -49,7 +49,11 @@ export const Hero = () => {
 
   return (
     <HeroBox>
-      <Image src={myImage} alt="Aurino Junior imagem" layout="intrinsic" />
+      <Image
+        src={myImage}
+        alt="Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
+        layout="intrinsic"
+      />
       <HeroContent>
         <HeroTitle>Aurino Junior</HeroTitle>
         <HeroDescription>

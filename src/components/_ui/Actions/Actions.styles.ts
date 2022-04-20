@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { gray_800, primary } from '../../../styles/Tokens'
 
-export const ButtonStyled = styled.button`
+export const Button = styled.button`
   display: block;
   background-color: ${primary};
 
@@ -17,7 +17,7 @@ export const ButtonStyled = styled.button`
   color: ${gray_800};
 `
 
-export const LinkStyled = styled.a`
+export const Link = styled.a`
   display: block;
 
   background-color: ${primary};
