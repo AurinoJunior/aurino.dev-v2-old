@@ -1,11 +1,9 @@
-import React from 'react'
-
-import { LogoStyled } from './Logo.styles'
+import * as S from './Logo.styles'
 
 export const Logo = () => {
   return (
-    <LogoStyled>
+    <S.LogoStyled>
       auri<span>.dev</span>
-    </LogoStyled>
+    </S.LogoStyled>
   )
 }

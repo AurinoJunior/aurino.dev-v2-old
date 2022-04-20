@@ -1,17 +1,17 @@
 import React from 'react'
 import { SocialIcons } from '../SocialIcons/SocialIcons'
 
-import { Box, Title, Paragraph } from './Contact.styles'
+import * as S from './Contact.styles'
 
 export const Contact = () => {
   return (
-    <Box>
-      <Title>Contatos</Title>
-      <Paragraph>
+    <S.Box>
+      <S.Title>Contatos</S.Title>
+      <S.Paragraph>
         Esses são meus contatos para vc que quer deixar um feedback construtivo
         ou apenas dar um oi, tamo junto galera !!
-      </Paragraph>
+      </S.Paragraph>
       <SocialIcons />
-    </Box>
+    </S.Box>
   )
 }

@@ -6,16 +6,16 @@ import { Container } from '../Container/Container.styles'
 
 import { MenuMobile } from './MenuMobile/MenuMobile'
 
-import { Box, Menu } from './Header.styles'
+import * as S from './Header.styles'
 
 export const Header = () => {
   const router = useRouter()
 
   return (
-    <Box>
+    <S.Box>
       <Container>
         <Logo />
-        <Menu>
+        <S.Menu>
           <ul>
             <li className={router.asPath === '/' ? 'active' : ''}>
               <Link href="/">
@@ -33,9 +33,9 @@ export const Header = () => {
               </Link>
             </li>
           </ul>
-        </Menu>
+        </S.Menu>
         <MenuMobile />
       </Container>
-    </Box>
+    </S.Box>
   )
 }

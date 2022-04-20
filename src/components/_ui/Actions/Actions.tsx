@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ButtonStyled, LinkStyled } from './Actions.styles'
+import * as S from './Actions.styles'
 
 interface IActionsProps {
   children: React.ReactNode | string
@@ -11,9 +11,9 @@ interface ILinkProps extends IActionsProps {
 }
 
 export const Button = ({ children }: IActionsProps) => {
-  return <ButtonStyled>{children}</ButtonStyled>
+  return <S.Button>{children}</S.Button>
 }
 
 export const Link = ({ children, href }: ILinkProps) => {
-  return <LinkStyled href={href}>{children}</LinkStyled>
+  return <S.Link href={href}>{children}</S.Link>
 }

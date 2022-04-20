@@ -6,7 +6,7 @@ import { HiMenu } from 'react-icons/hi'
 import { RiCloseLine } from 'react-icons/ri'
 
 import { secondary } from '../../../../styles/Tokens'
-import { Menu, MenuContent, MenuButton } from './MenuMobile.styles'
+import * as S from './MenuMobile.styles'
 
 export const MenuMobile = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -18,17 +18,17 @@ export const MenuMobile = () => {
 
   return (
     <>
-      <MenuButton type="button" onClick={handleSwitchOpenMenu}>
+      <S.MenuButton type="button" onClick={handleSwitchOpenMenu}>
         {!showMenu ? (
           <HiMenu size={28} color={secondary} />
         ) : (
           <RiCloseLine size={28} color={secondary} />
         )}
-      </MenuButton>
+      </S.MenuButton>
 
       {showMenu && (
-        <Menu>
-          <MenuContent>
+        <S.Menu>
+          <S.MenuContent>
             <li className={router.asPath === '/' ? 'active' : ''}>
               <Link href="/">
                 <a>Home</a>
@@ -44,8 +44,8 @@ export const MenuMobile = () => {
                 <a>Viagens</a>
               </Link>
             </li>
-          </MenuContent>
-        </Menu>
+          </S.MenuContent>
+        </S.Menu>
       )}
     </>
   )
