@@ -2,8 +2,8 @@ import * as S from './Logo.styles'
 
 export const Logo = () => {
   return (
-    <S.LogoStyled>
+    <S.Logo>
       auri<span>.dev</span>
-    </S.LogoStyled>
+    </S.Logo>
   )
 }
