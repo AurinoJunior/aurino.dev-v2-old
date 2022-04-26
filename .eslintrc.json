@@ -9,7 +9,7 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/rules-of-hooks": "error",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off"
