@@ -1,0 +1,23 @@
+{
+  "menu": [
+    {
+      "title": "Inicio",
+      "href": "/"
+    },
+    {
+      "title": "Blog",
+      "href": "/blog"
+    },
+    {
+      "title": "Viagens",
+      "href": "/trips"
+    }
+  ],
+  "footer": {
+    "text": "Feito por Aurino Junior 🚀"
+  },
+  "contact": {
+    "title": "Contatos",
+    "Description": "Esses são meus contatos para vc que quer deixar um feedback construtivo ou apenas dar um oi, tamo junto galera !!"
+  }
+}

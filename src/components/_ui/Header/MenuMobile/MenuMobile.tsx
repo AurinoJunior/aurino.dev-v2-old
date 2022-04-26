@@ -8,7 +8,14 @@ import { RiCloseLine } from 'react-icons/ri'
 import { secondary } from '../../../../styles/Tokens'
 import * as S from './MenuMobile.styles'
 
-export const MenuMobile = () => {
+interface IMenuMobileProps {
+  menuData: {
+    title: string
+    href: string
+  }[]
+}
+
+export const MenuMobile = ({ menuData }: IMenuMobileProps) => {
   const [showMenu, setShowMenu] = useState(false)
   const router = useRouter()
 
@@ -29,21 +36,16 @@ export const MenuMobile = () => {
       {showMenu && (
         <S.Menu>
           <S.MenuContent>
-            <li className={router.asPath === '/' ? 'active' : ''}>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li className={router.asPath === '/blog' ? 'active' : ''}>
-              <Link href="/blog">
-                <a>Blog</a>
-              </Link>
-            </li>
-            <li className={router.asPath === '/trips' ? 'active' : ''}>
-              <Link href="/trips">
-                <a>Viagens</a>
-              </Link>
-            </li>
+            {menuData.map((menu, index) => (
+              <li
+                key={index}
+                className={router.asPath === menu.href ? 'active' : ''}
+              >
+                <Link href={menu.href}>
+                  <a>{menu.title}</a>
+                </Link>
+              </li>
+            ))}
           </S.MenuContent>
         </S.Menu>
       )}

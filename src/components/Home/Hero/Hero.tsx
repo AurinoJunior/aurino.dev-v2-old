@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import { Link, Paragraph } from '../../_ui'
@@ -13,30 +13,36 @@ import {
   HeroAnimation
 } from './Hero.styles'
 
-export const Hero = () => {
+interface IHeroProps {
+  data: {
+    title: string
+    description: string
+    phraseAnimation: string
+    img: {
+      alt: string
+    }
+    content: string
+    cta: {
+      link: string
+      text: string
+    }
+  }
+}
+
+export const Hero = ({ data }: IHeroProps) => {
+  const { title, description, phraseAnimation, img, cta, content } = data
   const [textAnimation, setTextAnimation] = useState('')
-  const phrase = 'web developer'
 
-  useEffect(() => {
-    if (textAnimation === phrase) {
-      setTimeout(() => reverseTypingAnimation(), 1000)
-    }
-
-    if (textAnimation.length === 0) {
-      setTimeout(() => typingAnimation(), 1000)
-    }
-  }, [textAnimation])
-
-  const typingAnimation = () => {
-    phrase.split('').forEach((leter, i) => {
+  const typingAnimation = useCallback(() => {
+    phraseAnimation.split('').forEach((leter, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => oldText + leter)
       }, 100 * i)
     })
-  }
+  }, [phraseAnimation])
 
-  const reverseTypingAnimation = () => {
-    phrase.split('').forEach((_, i) => {
+  const reverseTypingAnimation = useCallback(() => {
+    phraseAnimation.split('').forEach((_, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => {
           const arrTextAnimation = oldText.split('')
@@ -45,24 +51,29 @@ export const Hero = () => {
         })
       }, 100 * i)
     })
-  }
+  }, [phraseAnimation])
+
+  useEffect(() => {
+    if (textAnimation === phraseAnimation) {
+      setTimeout(() => reverseTypingAnimation(), 1000)
+    }
+
+    if (textAnimation.length === 0) {
+      setTimeout(() => typingAnimation(), 1000)
+    }
+  }, [phraseAnimation, reverseTypingAnimation, textAnimation, typingAnimation])
 
   return (
     <HeroBox>
-      <Image
-        src={myImage}
-        alt="Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
-        layout="intrinsic"
-      />
+      <Image src={myImage} alt={img.alt} layout="intrinsic" />
       <HeroContent>
-        <HeroTitle>Aurino Junior</HeroTitle>
+        <HeroTitle>{title}</HeroTitle>
         <HeroDescription>
-          Eu sou <HeroAnimation>{textAnimation}</HeroAnimation>
+          {description}
+          <HeroAnimation>{textAnimation}</HeroAnimation>
         </HeroDescription>
-        <Paragraph>
-          Atualmente sou desenvolvedor de software frontend e ...
-        </Paragraph>
-        <Link href="#about">Leia mais</Link>
+        <Paragraph>{content}</Paragraph>
+        <Link href={cta.link}>{cta.text}</Link>
       </HeroContent>
     </HeroBox>
   )

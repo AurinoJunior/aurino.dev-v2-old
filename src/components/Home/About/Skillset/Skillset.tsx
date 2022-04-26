@@ -4,19 +4,25 @@ import { Accordion } from '../../../_ui'
 
 import { SkillsetTitle, SkillsetContent } from './Skillset.styles'
 
-export const Skillset = () => {
+interface ISkillsetProps {
+  data: {
+    title: string
+    contents: {
+      title: string
+      text: string
+    }[]
+  }
+}
+
+export const Skillset = ({ data }: ISkillsetProps) => {
+  const { title, contents } = data
   return (
     <div>
-      <SkillsetTitle>Habilidades</SkillsetTitle>
+      <SkillsetTitle>{title}</SkillsetTitle>
       <SkillsetContent>
-        <Accordion
-          title="Front-end"
-          text="HTML5, CSS, Javascript (ReactJs, NextJS), Typescript."
-        />
-        <Accordion title="Back-end" text="NodeJs." />
-        <Accordion title="Infraestrutura" text="Docker, AWS, Linux." />
-        <Accordion title="Interface" text="Photoshop, Figma." />
-        <Accordion title="Projeto" text="Scrum, Kanban." />
+        {contents.map((skill, index) => (
+          <Accordion key={index} title={skill.title} text={skill.text} />
+        ))}
       </SkillsetContent>
     </div>
   )
