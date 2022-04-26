@@ -37,7 +37,7 @@ export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
   font-size: 1.5rem;
 
   span {
-    color: ${({ highlight }) => highlight};
+    color: ${({ highlight }) => (highlight === 'primary' ? primary : yellow)};
     display: block;
   }
 `

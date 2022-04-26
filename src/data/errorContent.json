@@ -3,15 +3,15 @@
     "title": "Opa, essa pagina ainda está em construção.",
     "description": "Mas em quanto isso de uma olhada em minha homepage.",
     "cta": {
-      "href": "/",
+      "link": "/",
       "text": "Voltar para home"
     }
   },
-  "not-found": {
+  "notFound": {
     "title": "Ops, parece que você se perdeu.",
     "description": "Mas sem problemas volte para home ou acesse meu blog.",
     "cta": {
-      "href": "/",
+      "link": "/",
       "text": "Voltar para home"
     }
   }

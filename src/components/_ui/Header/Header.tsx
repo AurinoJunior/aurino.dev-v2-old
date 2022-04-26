@@ -8,7 +8,14 @@ import { MenuMobile } from './MenuMobile/MenuMobile'
 
 import * as S from './Header.styles'
 
-export const Header = () => {
+interface IHeaderProps {
+  menuData: {
+    title: string
+    href: string
+  }[]
+}
+
+export const Header = ({ menuData }: IHeaderProps) => {
   const router = useRouter()
 
   return (
@@ -17,24 +24,19 @@ export const Header = () => {
         <Logo />
         <S.Menu>
           <ul>
-            <li className={router.asPath === '/' ? 'active' : ''}>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li className={router.asPath === '/blog' ? 'active' : ''}>
-              <Link href="/blog">
-                <a>Blog</a>
-              </Link>
-            </li>
-            <li className={router.asPath === '/trips' ? 'active' : ''}>
-              <Link href="/trips">
-                <a>Viagens</a>
-              </Link>
-            </li>
+            {menuData.map((menu, index) => (
+              <li
+                key={index}
+                className={router.asPath === menu.href ? 'active' : ''}
+              >
+                <Link href={menu.href}>
+                  <a>{menu.title}</a>
+                </Link>
+              </li>
+            ))}
           </ul>
         </S.Menu>
-        <MenuMobile />
+        <MenuMobile menuData={menuData} />
       </Container>
     </S.Box>
   )

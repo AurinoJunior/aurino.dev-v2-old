@@ -1,32 +1,37 @@
 import React from 'react'
 
 import { Skillset } from './Skillset/Skillset'
-
+import { lineBreakText } from '../../../utils/lineBreakText'
 import { AboutQuote, AboutBox, AboutParagraph } from './About.styles'
 
-export const About = () => {
+interface IAboutProps {
+  data: {
+    title: string
+    quote: string
+    paragraphs: string[]
+    skillset: {
+      title: string
+      contents: {
+        title: string
+        text: string
+      }[]
+    }
+  }
+}
+
+export const About = ({ data }: IAboutProps) => {
+  const { title, paragraphs, quote, skillset } = data
+
   return (
     <AboutBox id="about">
       <div>
-        <h2>teste</h2>
-        <AboutQuote>
-          Não importa quanto tempo você tem, mas como você o usa. - Ekko
-        </AboutQuote>
-        <AboutParagraph>
-          Atualmente sou desenvolvedor web front-end no GetNinjas, me formei em
-          ciência da computação em 2019 e desde então tenho desbravado esse
-          mundo da programação web, metodologias ágeis e cultura devops.
-        </AboutParagraph>
-        <AboutParagraph>
-          Possuo experiência em teste AB, criação de design system, melhoria de
-          métricas em web core vitals e criação de testes automatizados.
-        </AboutParagraph>
-        <AboutParagraph>
-          Bom, espero conseguir compartilhar um pouco dos meus estudos com vocês
-          e aprender bastante durantes esse processo, bora aprender juntos 🚀
-        </AboutParagraph>
+        <h2>{lineBreakText(title)}</h2>
+        <AboutQuote>{quote}</AboutQuote>
+        {paragraphs.map((paragraph, index) => (
+          <AboutParagraph key={index}>{paragraph}</AboutParagraph>
+        ))}
       </div>
-      <Skillset />
+      <Skillset data={skillset} />
     </AboutBox>
   )
 }

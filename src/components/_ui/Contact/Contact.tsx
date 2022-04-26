@@ -3,14 +3,18 @@ import { SocialIcons } from '../SocialIcons/SocialIcons'
 
 import * as S from './Contact.styles'
 
-export const Contact = () => {
+interface IContactProps {
+  data: {
+    title: string
+    Description: string
+  }
+}
+
+export const Contact = ({ data }: IContactProps) => {
   return (
     <S.Box>
-      <S.Title>Contatos</S.Title>
-      <S.Paragraph>
-        Esses são meus contatos para vc que quer deixar um feedback construtivo
-        ou apenas dar um oi, tamo junto galera !!
-      </S.Paragraph>
+      <S.Title>{data.title}</S.Title>
+      <S.Paragraph>{data.Description}</S.Paragraph>
       <SocialIcons />
     </S.Box>
   )

@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import { ErrorPage } from '../components/ErrorPage/ErrorPage'
 
+import { maintenance } from '../data/errorContent.json'
+
 import CatNotFound from '../assets/cat-maintenance.png'
 
 const Blog: NextPage = () => {
@@ -12,9 +14,9 @@ const Blog: NextPage = () => {
         <title>Aurino Geraldo | Página em manutenção</title>
       </Head>
       <ErrorPage
-        title="Opa, essa pagina ainda está em construção."
-        description="Mas em quanto isso de uma olhada em minha homepage."
-        action={{ text: 'Voltar para home', link: '/' }}
+        title={maintenance.title}
+        description={maintenance.description}
+        action={maintenance.cta}
         imageData={{ src: CatNotFound, alt: 'Um gato descolado' }}
       />
     </>

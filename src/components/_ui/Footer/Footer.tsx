@@ -3,12 +3,15 @@ import * as S from './Footer.styles'
 
 interface IFooterProps {
   fixed?: boolean
+  data: {
+    text: string
+  }
 }
 
-export const Footer = ({ fixed = false }: IFooterProps) => {
+export const Footer = ({ fixed = false, data }: IFooterProps) => {
   return (
     <S.Box className={fixed ? 'footer--fixed' : ''}>
-      <S.Paragraph>Feito por Aurino Junior 🚀</S.Paragraph>
+      <S.Paragraph>{data.text}</S.Paragraph>
     </S.Box>
   )
 }

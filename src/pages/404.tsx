@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 import { ErrorPage } from '../components/ErrorPage/ErrorPage'
 
+import { notFound } from '../data/errorContent.json'
+
 import CatNotFound from '../assets/cat-not-found.png'
 
 const Custom404: NextPage = () => {
@@ -12,9 +14,9 @@ const Custom404: NextPage = () => {
         <title>Aurino Geraldo | Pagina não encontrada</title>
       </Head>
       <ErrorPage
-        title="Ops, parece que você se perdeu."
-        description="Mas sem problemas volte para home ou acesse meu blog."
-        action={{ text: 'Voltar para home', link: '/' }}
+        title={notFound.title}
+        description={notFound.description}
+        action={notFound.cta}
         imageData={{ src: CatNotFound, alt: 'Um gato perdido' }}
       />
     </>

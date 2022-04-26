@@ -2,27 +2,30 @@
   "hero": {
     "title": "Aurino Junior",
     "description": "Eu sou",
+    "phraseAnimation": "web developer",
     "img": {
       "alt": "Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
     },
     "content": "Atualmente sou desenvolvedor de software frontend e ...",
     "cta": {
-      "href": "#about",
+      "link": "#about",
       "text": "Leia mais"
     }
   },
   "worked": {
     "title": "Empresas que trabalhei!",
-    "content": [
+    "companies": [
       {
         "number": "01",
-        "featuredTitle": "Catho Online",
+        "title": "Catho Online",
+        "color": "primary",
         "position": "desenvolvedor web",
         "description": "Responsável pela área logada do candidato no perido de 2 anos e 10 meses"
       },
       {
         "number": "02",
-        "featuredTitle": "GetNinjas",
+        "title": "GetNinjas",
+        "color": "yellow",
         "position": "desenvolvedor front-end",
         "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes."
       }
