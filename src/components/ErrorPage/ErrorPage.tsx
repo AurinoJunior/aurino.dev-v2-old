@@ -4,41 +4,50 @@ import { Container, Footer, Header, Link } from '../_ui'
 
 import { ErrorPageBox, ErrorPageContent } from './ErrorPage.styles'
 
+import commonContent from '../../data/commonContent.json'
+import Head from 'next/head'
+
 interface IErrorPageProps {
-  title: string
-  description: string
-  action: {
-    text: string
-    link: string
-  }
-  imageData: {
-    src: StaticImageData
-    alt: string
+  data: {
+    title: string
+    description: string
+    head: {
+      title: string
+    }
+    cta: {
+      text: string
+      link: string
+    }
+    imageData: {
+      src: StaticImageData
+      alt: string
+    }
   }
 }
 
-export const ErrorPage = ({
-  title,
-  description,
-  action,
-  imageData
-}: IErrorPageProps) => {
+export const ErrorPage = ({ data }: IErrorPageProps) => {
+  const { title, description, cta, imageData, head } = data
+  const { footer, menu } = commonContent
+
   return (
     <>
-      <Header />
+      <Head>
+        <title>{head.title}</title>
+      </Head>
+      <Header menuData={menu} />
       <Container>
         <ErrorPageBox>
           <ErrorPageContent>
             <h1>{title}</h1>
             <p>{description}</p>
-            <Link href={action.link}>{action.text}</Link>
+            <Link href={cta.link}>{cta.text}</Link>
           </ErrorPageContent>
           <picture>
             <Image src={imageData.src} alt={imageData.alt} layout="intrinsic" />
           </picture>
         </ErrorPageBox>
       </Container>
-      <Footer fixed={true} />
+      <Footer fixed={true} data={footer} />
     </>
   )
 }

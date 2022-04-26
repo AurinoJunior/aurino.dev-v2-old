@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import { Link, Paragraph } from '../../_ui'
@@ -33,25 +33,15 @@ export const Hero = ({ data }: IHeroProps) => {
   const { title, description, phraseAnimation, img, cta, content } = data
   const [textAnimation, setTextAnimation] = useState('')
 
-  useEffect(() => {
-    if (textAnimation === phraseAnimation) {
-      setTimeout(() => reverseTypingAnimation(), 1000)
-    }
-
-    if (textAnimation.length === 0) {
-      setTimeout(() => typingAnimation(), 1000)
-    }
-  }, [textAnimation])
-
-  const typingAnimation = () => {
+  const typingAnimation = useCallback(() => {
     phraseAnimation.split('').forEach((leter, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => oldText + leter)
       }, 100 * i)
     })
-  }
+  }, [phraseAnimation])
 
-  const reverseTypingAnimation = () => {
+  const reverseTypingAnimation = useCallback(() => {
     phraseAnimation.split('').forEach((_, i) => {
       setTimeout(() => {
         setTextAnimation((oldText) => {
@@ -61,7 +51,17 @@ export const Hero = ({ data }: IHeroProps) => {
         })
       }, 100 * i)
     })
-  }
+  }, [phraseAnimation])
+
+  useEffect(() => {
+    if (textAnimation === phraseAnimation) {
+      setTimeout(() => reverseTypingAnimation(), 1000)
+    }
+
+    if (textAnimation.length === 0) {
+      setTimeout(() => typingAnimation(), 1000)
+    }
+  }, [phraseAnimation, reverseTypingAnimation, textAnimation, typingAnimation])
 
   return (
     <HeroBox>
