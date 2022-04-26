@@ -8,10 +8,7 @@ export const About = () => {
   return (
     <AboutBox id="about">
       <div>
-        <h2>
-          Salve galera! <br />
-          Aurino Junior aqui.
-        </h2>
+        <h2>teste</h2>
         <AboutQuote>
           Não importa quanto tempo você tem, mas como você o usa. - Ekko
         </AboutQuote>
