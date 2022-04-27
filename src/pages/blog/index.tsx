@@ -1,28 +1,18 @@
 import type { GetStaticPropsContext } from 'next'
-import { PostsOrPages } from '@tryghost/content-api'
 
 import { PostList } from '../../components/Blog/PostList'
 import { Container, Footer, Header } from '../../components/_ui'
 
-import commonData from '../../data/commonContent.json'
+import { IPostList } from '../../@types/PostList.types'
 
 import { getPosts } from '../../services/ghostCMS'
 
-interface IBlogProps {
-  posts: PostsOrPages
-}
+import commonData from '../../data/commonContent.json'
 
-const Blog = (props: IBlogProps) => {
+type IBlogProps = IPostList
+
+const Blog = ({ posts }: IBlogProps) => {
   const { menu, footer } = commonData
-
-  const posts = props.posts.map((post) => {
-    return {
-      id: post.id,
-      publishedAt: post.published_at as string,
-      title: post.title as string,
-      metaDescription: post.meta_description as string
-    }
-  })
 
   return (
     <>
@@ -38,13 +28,22 @@ const Blog = (props: IBlogProps) => {
 }
 
 export async function getStaticProps({}: GetStaticPropsContext) {
-  const posts = await getPosts()
+  const allPosts = await getPosts()
 
-  if (!posts) {
+  if (!allPosts) {
     return {
       notFound: true
     }
   }
+
+  const posts = allPosts.map((post) => {
+    return {
+      id: post.id,
+      publishedAt: post.published_at as string,
+      title: post.title as string,
+      metaDescription: post.meta_description as string
+    }
+  })
 
   return {
     props: { posts },

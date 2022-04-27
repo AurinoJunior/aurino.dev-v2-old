@@ -22,6 +22,10 @@ export const PostListItem = styled.li`
   margin-top: 2rem;
 `
 
+export const Title = styled.h2`
+  font-size: 2.25rem;
+`
+
 type TPostListParagraph = {
   italic?: boolean
 }
