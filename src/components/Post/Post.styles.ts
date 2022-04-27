@@ -7,7 +7,7 @@ export const PostBox = styled.main`
 `
 
 export const PostTitle = styled.h1`
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 4rem;
 `
@@ -25,9 +25,9 @@ export const PostSetInnerHtml = styled.div`
   p {
     margin: 1rem 0;
     text-align: justify;
-    line-height: 2rem;
-    font-size: 1.15rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.75rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
 
     a {
       color: ${pink};
@@ -42,6 +42,7 @@ export const PostSetInnerHtml = styled.div`
 
   img {
     width: 100%;
+    object-fit: contain;
   }
 
   pre {
