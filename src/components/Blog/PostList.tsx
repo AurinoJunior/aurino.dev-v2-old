@@ -1,43 +1,34 @@
-import React from 'react'
+import Link from 'next/link'
 
 import { PostListBox, PostListParagraph, PostListItem } from './PostList.styles'
+import { formatDistanceDate } from '../../utils/formatDistanceDate'
 
-const posts = [
-  {
-    date: '12 de janeiro de 2022',
-    title: 'Criando um web hook',
-    description:
-      'O naruto me ensinou a nunca desistir nem ganhar nem perder mas procurar evoluir...',
-    link: '/'
-  },
-  {
-    date: '12 de janeiro de 2022',
-    title: 'Criando um web hook',
-    description:
-      'O naruto me ensinou a nunca desistir nem ganhar nem perder mas procurar evoluir...',
-    link: '/'
-  },
-  {
-    date: '12 de janeiro de 2022',
-    title: 'Criando um web hook',
-    description:
-      'O naruto me ensinou a nunca desistir nem ganhar nem perder mas procurar evoluir...',
-    link: '/'
-  }
-]
+type TPost = {
+  id: string
+  publishedAt: string
+  title: string
+  metaDescription: string
+}
 
-export const PostList = () => {
+interface IPostListProps {
+  posts: TPost[]
+}
+
+export const PostList = ({ posts }: IPostListProps) => {
   return (
     <PostListBox>
-      {posts.map((post, index) => (
-        <PostListItem key={index}>
-          <PostListParagraph italic>12 de janeiro de 2022</PostListParagraph>
-          <h2>Criando um web hook</h2>
-          <PostListParagraph>
-            O naruto me ensinou a nunca desistir nem ganhar nem perder mas
-            procurar evoluir...
-          </PostListParagraph>
-        </PostListItem>
+      {posts.map((post) => (
+        <Link key={post.id} href={`/blog/${post.id}`}>
+          <a>
+            <PostListItem>
+              <PostListParagraph italic>
+                {formatDistanceDate(post.publishedAt)}
+              </PostListParagraph>
+              <h2>{post.title}</h2>
+              <PostListParagraph>{post.metaDescription}</PostListParagraph>
+            </PostListItem>
+          </a>
+        </Link>
       ))}
     </PostListBox>
   )

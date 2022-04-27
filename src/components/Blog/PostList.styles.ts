@@ -19,9 +19,7 @@ export const PostListItem = styled.li`
   border-bottom: solid 1px ${gray_800};
   list-style: none;
 
-  & + li {
-    margin-top: 2rem;
-  }
+  margin-top: 2rem;
 `
 
 type TPostListParagraph = {
