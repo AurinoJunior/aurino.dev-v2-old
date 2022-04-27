@@ -1,14 +1,16 @@
 import { GetStaticPropsContext } from 'next'
-import { PostOrPage, PostsOrPages } from '@tryghost/content-api'
+import { PostsOrPages } from '@tryghost/content-api'
 
 import { Container, Footer, Header } from '../../components/_ui'
 import { Post } from '../../components/Post/Post'
+
+import { TPostItem } from '../../@types/PostList.types'
 
 import { getPosts, getSinglePost } from '../../services/ghostCMS'
 import commonData from '../../data/commonContent.json'
 
 interface IPostPage {
-  post: PostOrPage
+  post: TPostItem
 }
 
 const PostPage = ({ post }: IPostPage) => {
@@ -47,8 +49,15 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
     }
   }
 
+  const postPropsData = {
+    ...post,
+    metaDescription: post.meta_description,
+    publishedAt: post.published_at,
+    readingTime: post.reading_time
+  } as TPostItem
+
   return {
-    props: { post }
+    props: { post: postPropsData }
   }
 }
 

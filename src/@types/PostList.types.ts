@@ -4,6 +4,8 @@ export type TPostItem = {
   slug: string
   title: string
   metaDescription: string
+  html?: string
+  readingTime: number
 }
 
 export interface IPostList {

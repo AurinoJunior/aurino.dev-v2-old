@@ -4,7 +4,7 @@ import {
   PostListBox,
   PostListParagraph,
   PostListItem,
-  Title
+  PostListTitle
 } from './PostList.styles'
 
 import { IPostList } from '../../@types/PostList.types'
@@ -23,7 +23,7 @@ export const PostList = ({ posts }: IPostListProps) => {
               <PostListParagraph italic>
                 {formatDistanceDate(post.publishedAt)}
               </PostListParagraph>
-              <Title>{post.title}</Title>
+              <PostListTitle>{post.title}</PostListTitle>
               <PostListParagraph>{post.metaDescription}</PostListParagraph>
             </PostListItem>
           </a>
