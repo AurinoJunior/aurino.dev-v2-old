@@ -8,6 +8,8 @@ import Document, {
 
 import { ServerStyleSheet } from 'styled-components'
 
+import projectInfo from '../../package.json'
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
@@ -57,6 +59,7 @@ export default class MyDocument extends Document {
           />
 
           <link rel="shortcut icon" href="favicon.ico" />
+          <meta name="version" content={projectInfo.version} />
         </Head>
         <body>
           <Main />
