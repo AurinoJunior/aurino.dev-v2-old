@@ -17,7 +17,7 @@ export const PostList = ({ posts }: IPostListProps) => {
   return (
     <PostListBox>
       {posts.map((post) => (
-        <Link key={post.id} href={`/blog/${post.id}`}>
+        <Link key={post.id} href={`/blog/${post.slug}`}>
           <a>
             <PostListItem>
               <PostListParagraph italic>

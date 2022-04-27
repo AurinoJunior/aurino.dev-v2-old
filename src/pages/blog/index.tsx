@@ -40,6 +40,7 @@ export async function getStaticProps({}: GetStaticPropsContext) {
     return {
       id: post.id,
       publishedAt: post.published_at as string,
+      slug: post.slug,
       title: post.title as string,
       metaDescription: post.meta_description as string
     }
