@@ -35,7 +35,6 @@ export const PostSetInnerHtml = styled.div`
 
   p {
     margin: 1rem 0;
-    text-align: justify;
     line-height: 1.75rem;
     font-family: 'Mulish', sans-serif;
     font-weight: 300;
