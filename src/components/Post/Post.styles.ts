@@ -1,21 +1,32 @@
 import styled from 'styled-components'
-import { gray_800, pink } from '../../styles/Tokens'
+import { gray_800, pink, tablet_size } from '../../styles/Tokens'
 
 export const PostBox = styled.main`
-  width: 70%;
   margin: 8rem auto 0;
+
+  @media (min-width: ${tablet_size}) {
+    width: 70%;
+  }
 `
 
 export const PostTitle = styled.h1`
-  font-size: 2.5rem;
-  text-align: center;
+  font-size: 2rem;
   margin-bottom: 4rem;
+
+  @media (min-width: ${tablet_size}) {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 `
 
 export const PostSetInnerHtml = styled.div`
   h2 {
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
+
+    @media (min-width: ${tablet_size}) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
@@ -42,7 +53,7 @@ export const PostSetInnerHtml = styled.div`
 
   img {
     width: 100%;
-    object-fit: contain;
+    height: auto;
   }
 
   pre {
