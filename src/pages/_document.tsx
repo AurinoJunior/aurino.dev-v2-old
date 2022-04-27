@@ -8,6 +8,8 @@ import Document, {
 
 import { ServerStyleSheet } from 'styled-components'
 
+import projectInfo from '../../package.json'
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet()
@@ -47,7 +49,7 @@ export default class MyDocument extends Document {
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap"
             rel="stylesheet"
           />
 
@@ -57,6 +59,7 @@ export default class MyDocument extends Document {
           />
 
           <link rel="shortcut icon" href="favicon.ico" />
+          <meta name="version" content={projectInfo.version} />
         </Head>
         <body>
           <Main />
