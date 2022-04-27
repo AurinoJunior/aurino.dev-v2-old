@@ -10,8 +10,6 @@ export const WorkedBox = styled.section`
 `
 
 export const WorkedTitle = styled.h2`
-  font-family: Sen, sans-serif;
-  font-weight: 400;
   font-size: 2rem;
 
   &.number-title {

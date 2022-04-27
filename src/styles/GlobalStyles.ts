@@ -58,9 +58,11 @@ export const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar-track {
     background: ${gray_800};
+    border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb {
     background: ${gray_500};
+    border-radius: 10px;
   }
 `

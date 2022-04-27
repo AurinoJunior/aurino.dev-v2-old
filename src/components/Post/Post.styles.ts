@@ -18,10 +18,16 @@ export const PostSetInnerHtml = styled.div`
     font-size: 2rem;
   }
 
+  h3 {
+    margin-top: 1rem;
+  }
+
   p {
     margin: 1rem 0;
     text-align: justify;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.15rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
     a {
       color: ${pink};
@@ -34,13 +40,20 @@ export const PostSetInnerHtml = styled.div`
     }
   }
 
+  img {
+    width: 100%;
+  }
+
   pre {
     overflow-x: auto;
-    tab-size: 2;
+    tab-size: 4;
     line-height: 1.75rem;
     background-color: ${gray_800};
-    border-radius: 1rem;
     padding: 1rem;
+
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
 
     & + pre {
       margin-top: 1rem;
