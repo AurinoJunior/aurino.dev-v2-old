@@ -1,4 +1,10 @@
-import { PostBox, PostSetInnerHtml, PostTitle } from './Post.styles'
+import {
+  PostBox,
+  PostHeadContent,
+  PostQuoteDate,
+  PostSetInnerHtml,
+  PostTitle
+} from './Post.styles'
 
 import { formatDistanceDate } from '../../utils/formatDistanceDate'
 import { TPostItem } from '../../@types/PostList.types'
@@ -11,10 +17,10 @@ export const Post = ({ post }: IPostProps) => {
   return (
     <PostBox>
       <PostTitle>{post.title}</PostTitle>
-      <div>
-        <p>{formatDistanceDate(post.publishedAt)}</p>
-        <p>{`${post.readingTime} min de leitura`}</p>
-      </div>
+      <PostHeadContent>
+        <PostQuoteDate>{formatDistanceDate(post.publishedAt)}</PostQuoteDate>
+        <p>{`${post.readingTime} min de leitura.`}</p>
+      </PostHeadContent>
       <PostSetInnerHtml
         dangerouslySetInnerHTML={{
           __html: post.html || ''

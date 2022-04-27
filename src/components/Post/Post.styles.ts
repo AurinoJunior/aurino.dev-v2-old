@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gray_800, pink, tablet_size } from '../../styles/Tokens'
+import { gray_500, gray_800, pink, tablet_size } from '../../styles/Tokens'
 
 export const PostBox = styled.main`
   margin: 8rem auto 0;
@@ -75,4 +75,15 @@ export const PostSetInnerHtml = styled.div`
       overflow-x: scroll;
     }
   }
+`
+
+export const PostHeadContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const PostQuoteDate = styled.p`
+  color: ${gray_500};
+  font-style: italic;
 `
