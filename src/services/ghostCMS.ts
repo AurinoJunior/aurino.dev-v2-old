@@ -1,9 +1,11 @@
 import GhostContentAPI from '@tryghost/content-api'
 
+type TGhostApiVersion = 'v4' | 'v2' | 'v3' | 'canary'
+
 const ghostApi = new GhostContentAPI({
-  url: 'https://auridev-cms.herokuapp.com',
-  key: 'e10edebabd0341b9dd7b265ded',
-  version: 'v4'
+  url: process.env.GHOST_API_URL || '',
+  key: process.env.GHOST_API_KEY_CONTENT || '',
+  version: process.env.GHOST_API_VERSION as TGhostApiVersion
 })
 
 const getPosts = async () => {
