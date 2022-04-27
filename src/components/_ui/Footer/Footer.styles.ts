@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { gray_800 } from '../../../styles/Tokens'
+import { gray_800, gray_900 } from '../../../styles/Tokens'
 
 export const Box = styled.footer`
+  background-color: ${gray_900};
   padding: 1rem 0;
   margin-top: 3rem;
 
