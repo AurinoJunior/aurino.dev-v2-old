@@ -2,6 +2,7 @@ export const white = '#fff'
 export const primary = '#19bbee'
 export const secondary = '#fd7e14'
 export const yellow = '#f5ec11'
+export const pink = 'hotpink'
 
 export const gray_500 = '#8d8d8d'
 export const gray_800 = '#262626'
