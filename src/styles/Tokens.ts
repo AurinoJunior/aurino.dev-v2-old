@@ -4,6 +4,7 @@ export const secondary = '#fd7e14'
 export const yellow = '#f5ec11'
 export const pink = 'hotpink'
 
+export const gray_300 = '#ededed'
 export const gray_500 = '#8d8d8d'
 export const gray_800 = '#262626'
 export const gray_900 = '#121414'

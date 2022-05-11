@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import type { GetStaticPropsContext } from 'next'
 
 import { PostList } from '../../components/Blog/PostList'
@@ -8,14 +9,19 @@ import { IPostList } from '../../@types/PostList.types'
 import { getPosts } from '../../services/ghostCMS'
 
 import commonData from '../../data/commonContent.json'
+import blogContent from '../../data/blogContent.json'
 
 type IBlogProps = IPostList
 
 const Blog = ({ posts }: IBlogProps) => {
   const { menu, footer } = commonData
+  const { meta } = blogContent
 
   return (
     <>
+      <Head>
+        <title>{meta.title}</title>
+      </Head>
       <Header menuData={menu} />
 
       <Container>

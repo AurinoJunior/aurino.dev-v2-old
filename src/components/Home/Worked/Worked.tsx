@@ -4,7 +4,8 @@ import {
   WorkedBox,
   WorkedTitle,
   WorkedSubTitle,
-  WorkedContent
+  WorkedContent,
+  WorkedTime
 } from './Worked.styles'
 
 interface IWorkedProps {
@@ -16,6 +17,7 @@ interface IWorkedProps {
       position: string
       description: string
       color: string
+      workedTime: string
     }[]
   }
 }
@@ -38,6 +40,7 @@ export const Worked = ({ data }: IWorkedProps) => {
                 {companie.position}
               </WorkedSubTitle>
               <Paragraph>{companie.description}</Paragraph>
+              <WorkedTime>{companie.workedTime}</WorkedTime>
             </div>
           ))}
         </WorkedContent>
