@@ -2,8 +2,8 @@
   "maintenance": {
     "title": "Opa, essa pagina ainda está em construção.",
     "description": "Mas em quanto isso de uma olhada em minha homepage.",
-    "head": {
-      "title": "Aurino Geraldo | Página em manutenção"
+    "meta": {
+      "title": "Página em manutenção | Aurino Geraldo"
     },
     "cta": {
       "link": "/",
@@ -13,7 +13,7 @@
   "notFound": {
     "title": "Ops, parece que você se perdeu.",
     "description": "Mas sem problemas volte para home ou acesse meu blog.",
-    "head": {
+    "meta": {
       "title": "Aurino Geraldo | Página não encontrada"
     },
     "cta": {

@@ -1,5 +1,12 @@
 import styled from 'styled-components'
-import { gray_500, gray_800, pink, tablet_size } from '../../styles/Tokens'
+import {
+  gray_300,
+  gray_500,
+  gray_800,
+  pink,
+  primary,
+  tablet_size
+} from '../../styles/Tokens'
 
 export const PostBox = styled.main`
   margin: 8rem auto 0;
@@ -22,15 +29,14 @@ export const PostTitle = styled.h1`
 export const PostSetInnerHtml = styled.div`
   h2 {
     margin: 2rem 0;
-    font-size: 1.5rem;
-
-    @media (min-width: ${tablet_size}) {
-      font-size: 2rem;
-    }
+    font-size: 2rem;
+    color: ${primary};
   }
 
   h3 {
     margin-top: 1rem;
+    color: ${primary};
+    font-size: 1.5rem;
   }
 
   p {
@@ -38,6 +44,8 @@ export const PostSetInnerHtml = styled.div`
     line-height: 1.75rem;
     font-family: 'Mulish', sans-serif;
     font-weight: 300;
+    font-size: 1.25rem;
+    color: ${gray_300};
 
     a {
       color: ${pink};

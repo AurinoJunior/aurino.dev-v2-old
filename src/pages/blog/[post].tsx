@@ -1,4 +1,6 @@
+import Head from 'next/head'
 import { GetStaticPropsContext } from 'next'
+
 import { PostsOrPages } from '@tryghost/content-api'
 
 import { Container, Footer, Header } from '../../components/_ui'
@@ -18,6 +20,9 @@ const PostPage = ({ post }: IPostPage) => {
 
   return (
     <>
+      <Head>
+        <title>{`${post.title} | Aurino Geraldo`}</title>
+      </Head>
       <Header menuData={menu} />
 
       <Container>

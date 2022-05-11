@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "title": "Portifolio e blog pessoal | Aurino Geraldo"
+  },
   "hero": {
     "title": "Aurino Junior",
     "description": "Eu sou",
@@ -17,17 +20,19 @@
     "companies": [
       {
         "number": "01",
-        "title": "Catho Online",
-        "color": "primary",
-        "position": "desenvolvedor web",
-        "description": "Responsável pela área logada do candidato no perido de 2 anos e 10 meses"
+        "title": "GetNinjas",
+        "color": "yellow",
+        "position": "Desenvolvedor Front-end",
+        "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes.",
+        "workedTime": "nov de 2020 - até o momento"
       },
       {
         "number": "02",
-        "title": "GetNinjas",
-        "color": "yellow",
-        "position": "desenvolvedor front-end",
-        "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes."
+        "title": "Catho Online",
+        "color": "primary",
+        "position": "Desenvolvedor Web",
+        "description": "Responsável pela área logada do candidato no perido de 2 anos e 10 meses.",
+        "workedTime": "fev de 2018 - dez de 2019"
       }
     ]
   },

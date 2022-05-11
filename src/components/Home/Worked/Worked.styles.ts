@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 
-import { gray_800, primary, tablet_size, yellow } from '../../../styles/Tokens'
+import {
+  gray_500,
+  gray_800,
+  primary,
+  tablet_size,
+  yellow
+} from '../../../styles/Tokens'
 
 export const WorkedBox = styled.section`
   margin-top: 3rem;
@@ -38,4 +44,10 @@ export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
     color: ${({ highlight }) => (highlight === 'primary' ? primary : yellow)};
     display: block;
   }
+`
+
+export const WorkedTime = styled.blockquote`
+  margin-top: 1rem;
+  color: ${gray_500};
+  font-style: italic;
 `

@@ -11,7 +11,7 @@ interface IErrorPageProps {
   data: {
     title: string
     description: string
-    head: {
+    meta: {
       title: string
     }
     cta: {
@@ -26,13 +26,13 @@ interface IErrorPageProps {
 }
 
 export const ErrorPage = ({ data }: IErrorPageProps) => {
-  const { title, description, cta, imageData, head } = data
+  const { title, description, cta, imageData, meta } = data
   const { footer, menu } = commonContent
 
   return (
     <>
       <Head>
-        <title>{head.title}</title>
+        <title>{meta.title}</title>
       </Head>
       <Header menuData={menu} />
       <Container>

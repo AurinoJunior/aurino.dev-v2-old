@@ -8,13 +8,13 @@ import homeData from '../data/homeContent.json'
 import commonData from '../data/commonContent.json'
 
 const Home: NextPage = () => {
-  const { about, worked, hero } = homeData
+  const { about, worked, hero, meta } = homeData
   const { footer, contact, menu } = commonData
 
   return (
     <>
       <Head>
-        <title>Aurino Geraldo | Portifolio e blog pessoal</title>
+        <title>{meta.title}</title>
       </Head>
       <Header menuData={menu} />
 
