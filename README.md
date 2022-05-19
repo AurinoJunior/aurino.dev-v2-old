@@ -1,11 +1,14 @@
 <p align="center">
-  <img width="600" src="https://user-images.githubusercontent.com/32946164/169386343-e18f4d79-852d-48a4-a3cd-c741e62ae287.png">
-</p>
-
-<p align="center">
-   <a href="https://www.linkedin.com/in/aurino-junior-7718a4158/">
-      <img alt="Aurino Junior" src="https://img.shields.io/badge/-Aurino Junior-0390fc?style=flat&logo=Linkedin&logoColor=white" />
+   <a href="https://www.instagram.com/aurigod97/">
+      <img alt="Aurino Junior" src="https://img.shields.io/badge/-aurigod97-0390fc?style=plastic&logo=Instagram&logoColor=white&color=blue" />
    </a>
+    <a href="https://www.linkedin.com/in/aurino-junior-7718a4158/">
+      <img alt="Aurino Junior" src="https://img.shields.io/badge/-Aurino%20Junior-0390fc?style=plastic&logo=Linkedin&logoColor=white&color=blue" />
+   </a>
+</p>
+<br>
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/32946164/169386343-e18f4d79-852d-48a4-a3cd-c741e62ae287.png">
 </p>
 
 ## 📘 Contexto
