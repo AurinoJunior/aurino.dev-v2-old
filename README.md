@@ -6,9 +6,9 @@
       <img alt="Aurino Junior" src="https://img.shields.io/badge/-Aurino%20Junior-0390fc?style=plastic&logo=Linkedin&logoColor=white&color=blue" />
    </a>
 </p>
-<br>
+
 <p align="center">
-  <img width="600" src="https://user-images.githubusercontent.com/32946164/169386343-e18f4d79-852d-48a4-a3cd-c741e62ae287.png">
+  <img width="700" src="https://user-images.githubusercontent.com/32946164/169387809-3dbaa394-2eea-48c1-bd95-5b680824e4a6.png">
 </p>
 
 ## 📘 Contexto
