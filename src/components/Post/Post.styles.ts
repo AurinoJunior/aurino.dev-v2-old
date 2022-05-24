@@ -5,7 +5,8 @@ import {
   gray_800,
   pink,
   primary,
-  tablet_size
+  tablet_size,
+  yellow
 } from '../../styles/Tokens'
 
 export const PostBox = styled.main`
@@ -22,7 +23,6 @@ export const PostTitle = styled.h1`
 
   @media (min-width: ${tablet_size}) {
     font-size: 2.5rem;
-    text-align: center;
   }
 `
 
@@ -55,6 +55,23 @@ export const PostSetInnerHtml = styled.div`
         filter: brightness(0.5);
         transition: 0.2s;
       }
+    }
+  }
+
+  ul {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    color: ${gray_300};
+    padding-left: 2rem;
+    margin-top: 1rem;
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+
+    strong {
+      color: ${yellow};
     }
   }
 
