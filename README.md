@@ -26,6 +26,12 @@ Este projeto consiste em meu portfolio e blog pessoal onde irei publicar posts s
 
 ## 🚀 Hospedagem
 
-Atualmente utilizo o ghost cms integrado hospedado no heroku, e aparte da aplicação está na vercel.
+Atualmente utilizo o ghost cms integrado hospedado no heroku, a parte da aplicação está na vercel.
 
 Para ver o site em produção acesse [aurino.dev](https://www.aurino.dev)
+
+## 🎮 Iniciando o projeto
+- Clone o repositorio.
+- Instale as dependencias com `yarn`
+- Utilize o comando `yarn dev` para o rodar o projeto localmente
+- A URL do projeto é http://localhost:3000
