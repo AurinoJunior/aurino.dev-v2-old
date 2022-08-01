@@ -6,7 +6,7 @@ import errorContent from '../data/errorContent.json'
 
 import CatMaintenance from '../assets/cat-maintenance.png'
 
-const Trips: NextPage = () => {
+const Projects: NextPage = () => {
   const { maintenance } = errorContent
 
   return (
@@ -21,4 +21,4 @@ const Trips: NextPage = () => {
   )
 }
 
-export default Trips
+export default Projects
