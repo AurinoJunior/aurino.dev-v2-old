@@ -21,7 +21,7 @@ const PostPage = ({ post }: IPostPage) => {
   return (
     <>
       <Head>
-        <title>{`${post.title} | Aurino Geraldo`}</title>
+        <title>{`${post.title} | Aurino Junior`}</title>
       </Head>
       <Header menuData={menu} />
 
