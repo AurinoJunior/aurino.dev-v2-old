@@ -34,7 +34,7 @@ export const PostSetInnerHtml = styled.div`
   }
 
   h3 {
-    margin-top: 1rem;
+    margin: 2rem 0;
     color: ${primary};
     font-size: 1.5rem;
   }
@@ -58,7 +58,8 @@ export const PostSetInnerHtml = styled.div`
     }
   }
 
-  ul {
+  ul,
+  ol {
     font-family: 'Mulish', sans-serif;
     font-weight: 300;
     font-size: 1.25rem;
@@ -67,7 +68,7 @@ export const PostSetInnerHtml = styled.div`
     margin-top: 1rem;
 
     li + li {
-      margin-top: 0.5rem;
+      margin-top: 1rem;
     }
 
     strong {
@@ -75,9 +76,21 @@ export const PostSetInnerHtml = styled.div`
     }
   }
 
-  img {
+  img[src$='full-image'] {
+    margin: 2rem 0;
     width: 100%;
     height: auto;
+  }
+
+  img[src$='small-image'] {
+    display: block;
+    margin: 2rem auto;
+    width: 70%;
+    height: auto;
+
+    @media (min-width: ${tablet_size}) {
+      width: 35%;
+    }
   }
 
   pre {
