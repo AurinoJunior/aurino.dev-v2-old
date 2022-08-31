@@ -83,6 +83,7 @@ export const PostSetInnerHtml = styled.div`
   }
 
   img[src$='medium-image'] {
+    display: block;
     margin: 2rem auto;
     width: 80%;
     height: auto;
