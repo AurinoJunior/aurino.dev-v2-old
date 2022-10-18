@@ -3,14 +3,14 @@ import {
   PostHeadContent,
   PostQuoteDate,
   PostSetInnerHtml,
-  PostTitle
-} from './Post.styles'
+  PostTitle,
+} from './Post.styles';
 
-import { formatDistanceDate } from '../../utils/formatDistanceDate'
-import { TPostItem } from '../../@types/PostList.types'
+import { formatDistanceDate } from '../../utils/formatDistanceDate';
+import { TPostItem } from '../../@types/PostList.types';
 
 interface IPostProps {
-  post: TPostItem
+  post: TPostItem;
 }
 
 export const Post = ({ post }: IPostProps) => {
@@ -23,9 +23,9 @@ export const Post = ({ post }: IPostProps) => {
       </PostHeadContent>
       <PostSetInnerHtml
         dangerouslySetInnerHTML={{
-          __html: post.html || ''
+          __html: post.html || '',
         }}
       />
     </PostBox>
-  )
-}
+  );
+};
