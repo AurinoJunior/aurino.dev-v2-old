@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
 import { Link, Paragraph } from '../../_ui'
@@ -10,7 +10,7 @@ import {
   HeroContent,
   HeroTitle,
   HeroDescription,
-  HeroAnimation
+  HeroAnimation,
 } from './Hero.styles'
 
 interface IHeroProps {
@@ -33,27 +33,27 @@ export const Hero = ({ data }: IHeroProps) => {
   const { title, description, phraseAnimation, img, cta, content } = data
   const [textAnimation, setTextAnimation] = useState('')
 
-  const typingAnimation = useCallback(() => {
-    phraseAnimation.split('').forEach((leter, i) => {
-      setTimeout(() => {
-        setTextAnimation((oldText) => oldText + leter)
-      }, 100 * i)
-    })
-  }, [phraseAnimation])
-
-  const reverseTypingAnimation = useCallback(() => {
-    phraseAnimation.split('').forEach((_, i) => {
-      setTimeout(() => {
-        setTextAnimation((oldText) => {
-          const arrTextAnimation = oldText.split('')
-          arrTextAnimation.pop()
-          return arrTextAnimation.join('')
-        })
-      }, 100 * i)
-    })
-  }, [phraseAnimation])
-
   useEffect(() => {
+    function typingAnimation() {
+      phraseAnimation.split('').forEach((leter, i) => {
+        setTimeout(() => {
+          setTextAnimation((oldText) => oldText + leter)
+        }, 100 * i)
+      })
+    }
+
+    function reverseTypingAnimation() {
+      phraseAnimation.split('').forEach((_, i) => {
+        setTimeout(() => {
+          setTextAnimation((oldText) => {
+            const arrTextAnimation = oldText.split('')
+            arrTextAnimation.pop()
+            return arrTextAnimation.join('')
+          })
+        }, 100 * i)
+      })
+    }
+
     if (textAnimation === phraseAnimation) {
       setTimeout(() => reverseTypingAnimation(), 1000)
     }
@@ -61,7 +61,7 @@ export const Hero = ({ data }: IHeroProps) => {
     if (textAnimation.length === 0) {
       setTimeout(() => typingAnimation(), 1000)
     }
-  }, [phraseAnimation, reverseTypingAnimation, textAnimation, typingAnimation])
+  }, [phraseAnimation, textAnimation])
 
   return (
     <HeroBox>
