@@ -7,10 +7,10 @@ import { SkillsetTitle, SkillsetContent } from './Skillset.styles'
 interface ISkillsetProps {
   data: {
     title: string
-    contents: {
+    contents: Array<{
       title: string
       text: string
-    }[]
+    }>
   }
 }
 

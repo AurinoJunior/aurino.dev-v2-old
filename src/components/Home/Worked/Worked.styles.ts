@@ -32,7 +32,7 @@ export const WorkedContent = styled.div`
   }
 `
 
-type WorkedSubTitleProps = {
+interface WorkedSubTitleProps {
   highlight: string
 }
 

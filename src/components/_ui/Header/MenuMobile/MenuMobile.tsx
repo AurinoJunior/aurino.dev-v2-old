@@ -9,10 +9,10 @@ import { secondary } from '../../../../styles/Tokens'
 import * as S from './MenuMobile.styles'
 
 interface IMenuMobileProps {
-  menuData: {
+  menuData: Array<{
     title: string
     href: string
-  }[]
+  }>
 }
 
 export const MenuMobile = ({ menuData }: IMenuMobileProps) => {

@@ -11,14 +11,14 @@ import {
 interface IWorkedProps {
   data: {
     title: string
-    companies: {
+    companies: Array<{
       number: string
       title: string
       position: string
       description: string
       color: string
       workedTime: string
-    }[]
+    }>
   }
 }
 

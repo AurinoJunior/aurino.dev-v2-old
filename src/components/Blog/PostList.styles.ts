@@ -26,7 +26,7 @@ export const PostListTitle = styled.h2`
   font-size: 2rem;
 `
 
-type TPostListParagraph = {
+interface TPostListParagraph {
   italic?: boolean
 }
 

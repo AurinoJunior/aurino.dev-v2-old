@@ -1,4 +1,4 @@
-export type TPostItem = {
+export interface TPostItem {
   id: string
   publishedAt: string
   slug: string

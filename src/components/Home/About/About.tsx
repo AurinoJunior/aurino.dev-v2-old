@@ -11,10 +11,10 @@ interface IAboutProps {
     paragraphs: string[]
     skillset: {
       title: string
-      contents: {
+      contents: Array<{
         title: string
         text: string
-      }[]
+      }>
     }
   }
 }

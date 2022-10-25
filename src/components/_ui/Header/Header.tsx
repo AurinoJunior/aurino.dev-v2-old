@@ -9,10 +9,10 @@ import { MenuMobile } from './MenuMobile/MenuMobile'
 import * as S from './Header.styles'
 
 interface IHeaderProps {
-  menuData: {
+  menuData: Array<{
     title: string
     href: string
-  }[]
+  }>
 }
 
 export const Header = ({ menuData }: IHeaderProps) => {

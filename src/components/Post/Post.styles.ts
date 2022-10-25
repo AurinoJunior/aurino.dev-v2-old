@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 import {
   gray_300,
   gray_500,
@@ -6,8 +6,8 @@ import {
   pink,
   primary,
   tablet_size,
-  yellow,
-} from "../../styles/Tokens";
+  yellow
+} from '../../styles/Tokens'
 
 export const PostBox = styled.main`
   margin: 8rem auto 0;
@@ -15,7 +15,7 @@ export const PostBox = styled.main`
   @media (min-width: ${tablet_size}) {
     width: 70%;
   }
-`;
+`
 
 export const PostTitle = styled.h1`
   font-size: 2rem;
@@ -24,7 +24,7 @@ export const PostTitle = styled.h1`
   @media (min-width: ${tablet_size}) {
     font-size: 2.5rem;
   }
-`;
+`
 
 export const PostSetInnerHtml = styled.div`
   h2 {
@@ -123,15 +123,15 @@ export const PostSetInnerHtml = styled.div`
       overflow-x: scroll;
     }
   }
-`;
+`
 
 export const PostHeadContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 export const PostQuoteDate = styled.p`
   color: ${gray_500};
   font-style: italic;
-`;
+`

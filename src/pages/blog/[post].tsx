@@ -59,10 +59,10 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
     metaDescription: post.meta_description,
     publishedAt: post.published_at,
     readingTime: post.reading_time
-  } as TPostItem
+  }
 
   return {
-    props: { post: postPropsData }
+    props: { post: postPropsData as TPostItem }
   }
 }
 
