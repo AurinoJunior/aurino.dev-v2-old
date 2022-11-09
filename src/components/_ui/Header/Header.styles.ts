@@ -60,6 +60,10 @@ export const Menu = styled.nav`
         filter: none;
       }
     }
+
+    a {
+      padding: 1rem;
+    }
   }
 
   @media (max-width: ${tablet_size}) {
