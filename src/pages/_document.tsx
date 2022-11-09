@@ -60,6 +60,14 @@ export default class MyDocument extends Document {
 
           <link rel="shortcut icon" href="favicon.ico" />
           <meta name="version" content={projectInfo.version} />
+          <meta
+            property="og:description"
+            content="Portifolio e blog pessoal | Aurino Junior"
+          />
+          <meta
+            property="og:image"
+            content="https://www.aurino.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Feu.29f3468d.png&w=640&q=75"
+          />
         </Head>
         <body>
           <Main />
