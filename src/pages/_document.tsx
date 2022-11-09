@@ -66,7 +66,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://www.aurino.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Feu.29f3468d.png&w=640&q=75"
+            content="https://user-images.githubusercontent.com/32946164/200706278-ce2c301f-6e69-4c64-b79a-669288caf4f8.png"
           />
         </Head>
         <body>
