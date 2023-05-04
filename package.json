@@ -10,7 +10,6 @@
     "bump": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "date-fns": "2.29.3",
     "next": "12.3.1",
     "react-dom": "17.0.2",
     "react-icons": "4.6.0",
