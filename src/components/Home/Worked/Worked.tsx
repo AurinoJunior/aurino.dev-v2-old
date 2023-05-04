@@ -1,4 +1,4 @@
-import { Container, Paragraph } from '../../_ui'
+import { Container } from '../../_ui'
 
 import {
   WorkedBox,
@@ -39,7 +39,7 @@ export const Worked = ({ data }: IWorkedProps) => {
                 <span>{companie.title}</span>
                 {companie.position}
               </WorkedSubTitle>
-              <Paragraph>{companie.description}</Paragraph>
+              <p>{companie.description}</p>
               <WorkedTime>{companie.workedTime}</WorkedTime>
             </div>
           ))}

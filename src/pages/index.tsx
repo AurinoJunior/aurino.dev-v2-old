@@ -8,8 +8,8 @@ import homeData from '../data/homeContent.json'
 import commonData from '../data/commonContent.json'
 
 const Home: NextPage = () => {
-  const { about, worked, hero, meta } = homeData
-  const { footer, contact, menu } = commonData
+  const { about, worked, hero, meta, contact } = homeData
+  const { footer, menu } = commonData
 
   return (
     <>

@@ -1,7 +1,7 @@
 {
   "name": "auri.dev",
   "private": true,
-  "version": "3.0.0",
+  "version": "3.1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,25 +10,25 @@
     "bump": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "date-fns": "2.29.3",
     "next": "12.3.1",
-    "react-dom": "17.0.2",
-    "react-icons": "4.6.0",
-    "styled-components": "5.3.6"
+    "react-dom": "18.2.0",
+    "react": "18.2.0",
+    "react-icons": "4.8.0",
+    "styled-components": "5.3.10"
   },
   "devDependencies": {
-    "@types/node": "18.11.5",
-    "@types/react": "18.0.23",
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.5",
     "@types/styled-components": "5.1.26",
-    "@typescript-eslint/eslint-plugin": "5.0.0",
-    "babel-plugin-styled-components": "2.0.7",
-    "eslint": "8.0.1",
-    "eslint-config-standard-with-typescript": "23.0.0",
-    "eslint-plugin-import": "2.25.2",
-    "eslint-plugin-n": "15.0.0",
-    "eslint-plugin-promise": "6.0.0",
-    "eslint-plugin-react": "7.31.10",
-    "prettier": "2.7.1",
-    "typescript": "4.8.4"
+    "@typescript-eslint/eslint-plugin": "5.59.2",
+    "babel-plugin-styled-components": "2.1.1",
+    "eslint": "8.39.0",
+    "eslint-config-standard-with-typescript": "34.0.1",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.7.0",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.32.2",
+    "prettier": "2.8.8",
+    "typescript": "5.0.4"
   }
 }

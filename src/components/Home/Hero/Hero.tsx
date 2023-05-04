@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import { Link, Paragraph } from '../../_ui'
+import { Link } from '../../_ui'
 
 import myImage from '../../../assets/eu.png'
 
@@ -55,11 +55,15 @@ export const Hero = ({ data }: IHeroProps) => {
 
   useEffect(() => {
     if (textAnimation === phraseAnimation) {
-      setTimeout(() => reverseTypingAnimation(), 1000)
+      setTimeout(() => {
+        reverseTypingAnimation()
+      }, 1000)
     }
 
     if (textAnimation.length === 0) {
-      setTimeout(() => typingAnimation(), 1000)
+      setTimeout(() => {
+        typingAnimation()
+      }, 1000)
     }
   }, [phraseAnimation, reverseTypingAnimation, textAnimation, typingAnimation])
 
@@ -72,7 +76,7 @@ export const Hero = ({ data }: IHeroProps) => {
           {description}
           <HeroAnimation>{textAnimation}</HeroAnimation>
         </HeroDescription>
-        <Paragraph>{content}</Paragraph>
+        <p>{content}</p>
         <Link href={cta.link}>{cta.text}</Link>
       </HeroContent>
     </HeroBox>
