@@ -3,7 +3,7 @@ import Document, {
   Head,
   Main,
   NextScript,
-  DocumentContext
+  type DocumentContext
 } from 'next/document'
 
 import { ServerStyleSheet } from 'styled-components'
@@ -16,8 +16,8 @@ export default class MyDocument extends Document {
     const originalRenderPage = ctx.renderPage
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
+      ctx.renderPage = async () =>
+        await originalRenderPage({
           enhanceApp: (App) => (props) =>
             sheet.collectStyles(<App {...props} />)
         })

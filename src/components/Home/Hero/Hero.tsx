@@ -55,11 +55,15 @@ export const Hero = ({ data }: IHeroProps) => {
 
   useEffect(() => {
     if (textAnimation === phraseAnimation) {
-      setTimeout(() => reverseTypingAnimation(), 1000)
+      setTimeout(() => {
+        reverseTypingAnimation()
+      }, 1000)
     }
 
     if (textAnimation.length === 0) {
-      setTimeout(() => typingAnimation(), 1000)
+      setTimeout(() => {
+        typingAnimation()
+      }, 1000)
     }
   }, [phraseAnimation, reverseTypingAnimation, textAnimation, typingAnimation])
 

@@ -18,7 +18,9 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
         <span>{title}</span>
         <button
           type="button"
-          onClick={() => setShowText((prevShowText) => !prevShowText)}
+          onClick={() => {
+            setShowText((prevShowText) => !prevShowText)
+          }}
         >
           {buttonText}
         </button>
