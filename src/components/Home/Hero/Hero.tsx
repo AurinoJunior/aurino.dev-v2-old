@@ -4,7 +4,7 @@ import { Link } from '../../_ui'
 
 import myImage from '../../../assets/eu.png'
 
-import { HeroBox, HeroContent, HeroTitle } from './Hero.styles'
+import { HeroAnimation, HeroBox, HeroContent, HeroTitle } from './Hero.styles'
 
 interface IHeroProps {
   data: {
@@ -22,13 +22,15 @@ interface IHeroProps {
 }
 
 export const Hero = ({ data }: IHeroProps) => {
-  const { title, description, img, cta } = data
+  const { title, description, img, cta, phraseAnimation } = data
 
+  console.log('teste')
   return (
     <HeroBox>
       <Image src={myImage} alt={img.alt} layout="intrinsic" />
       <HeroContent>
         <HeroTitle>{title}</HeroTitle>
+        <HeroAnimation>{phraseAnimation}</HeroAnimation>
         <p>{description}</p>
         <Link href={cta.link}>{cta.text}</Link>
       </HeroContent>

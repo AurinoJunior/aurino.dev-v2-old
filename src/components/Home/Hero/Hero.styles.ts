@@ -24,7 +24,7 @@ export const HeroContent = styled.div`
   justify-content: space-between;
 
   margin-top: -3rem;
-  gap: 2rem;
+  gap: 1.25rem;
 
   z-index: 1;
 
@@ -51,4 +51,8 @@ export const HeroDescription = styled.p`
   @media (min-width: ${tablet_size}) {
     max-width: 50%;
   }
+`
+
+export const HeroAnimation = styled.h2`
+  color: ${primary};
 `
