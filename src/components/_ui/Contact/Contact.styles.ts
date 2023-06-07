@@ -26,6 +26,7 @@ export const Title = styled.h2`
 
 export const Paragraph = styled.p`
   text-align: center;
+  line-height: 150%;
 
   @media (min-width: ${tablet_size}) {
     width: 50%;

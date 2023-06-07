@@ -26,7 +26,7 @@ export const About = ({ data }: IAboutProps) => {
     <AboutBox id="about">
       <div>
         <h2>{lineBreakText(title)}</h2>
-        <AboutQuote>{quote}</AboutQuote>
+        <AboutQuote>{lineBreakText(quote)}</AboutQuote>
         {paragraphs.map((paragraph, index) => (
           <AboutParagraph key={index}>{paragraph}</AboutParagraph>
         ))}

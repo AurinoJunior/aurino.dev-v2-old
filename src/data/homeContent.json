@@ -4,12 +4,11 @@
   },
   "hero": {
     "title": "Aurino Junior",
-    "description": "Eu sou",
     "phraseAnimation": "web developer",
     "img": {
       "alt": "Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
     },
-    "content": "Atualmente sou desenvolvedor de software frontend e ...",
+    "description": "Atualmente sou desenvolvedor web front-end, me formei em ciência da computação em 2019 e desde então tenho desbravado esse mundo da programação web, metodologias ágeis e cultura devops.",
     "cta": {
       "link": "#about",
       "text": "Leia mais"
@@ -24,7 +23,7 @@
         "color": "yellow",
         "position": "Desenvolvedor Front-end",
         "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes.",
-        "workedTime": "nov de 2020 - até o momento"
+        "workedTime": "nov de 2020 - maio de 2023"
       },
       {
         "number": "02",
@@ -38,9 +37,9 @@
   },
   "about": {
     "title": "Salve galera! \n Aurino Junior aqui.",
-    "quote": "Não importa quanto tempo você tem, mas como você o usa. - Ekko",
+    "quote": "Nunca deixe de aprender sempre há uma forma que você não conhece. \n ~~Irelia",
     "paragraphs": [
-      "Atualmente sou desenvolvedor web front-end no GetNinjas, me formei em ciência da computação em 2019 e desde então tenho desbravado esse mundo da programação web, metodologias ágeis e cultura devops.",
+      "Atualmente sou desenvolvedor web front-end, me formei em ciência da computação em 2019 e desde então tenho desbravado esse mundo da programação web, metodologias ágeis e cultura devops.",
       "Possuo experiência em teste AB, criação de design system, melhoria de métricas em web core vitals e criação de testes automatizados.",
       "Bom, espero conseguir compartilhar um pouco dos meus estudos com vocês e aprender bastante durantes esse processo, bora aprender juntos 🚀"
     ],
