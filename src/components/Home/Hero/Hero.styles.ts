@@ -35,7 +35,7 @@ export const HeroContent = styled.div`
 
 export const HeroTitle = styled.h1`
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.25rem;
 
   /* background: linear-gradient(90deg, white, ${primary}); */
