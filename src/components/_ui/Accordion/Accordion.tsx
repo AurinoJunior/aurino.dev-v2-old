@@ -12,20 +12,35 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
 
   const buttonText = showText ? '-' : '+'
 
+  function shouldShowP(text: string) {
+    if (showText) {
+      return (
+        <S.AnimationDescription activate={showText}>
+          {text}
+        </S.AnimationDescription>
+      )
+    }
+
+    setTimeout(() => {
+      return null
+    }, 500)
+  }
+
   return (
     <>
       <S.Box>
-        <span>{title}</span>
-        <button
-          type="button"
-          onClick={() => {
-            setShowText((prevShowText) => !prevShowText)
-          }}
-        >
-          {buttonText}
-        </button>
+        <label>
+          {title}
+          <input
+            type="button"
+            value={buttonText}
+            onClick={() => {
+              setShowText((prevShowText) => !prevShowText)
+            }}
+          />
+        </label>
       </S.Box>
-      {showText && <p>{text}</p>}
+      {showText && shouldShowP(text)}
     </>
   )
 }
