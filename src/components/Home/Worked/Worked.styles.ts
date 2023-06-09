@@ -30,6 +30,10 @@ export const WorkedContent = styled.div`
     justify-content: space-around;
     gap: 2rem;
   }
+
+  p {
+    line-height: 150%;
+  }
 `
 
 interface WorkedSubTitleProps {

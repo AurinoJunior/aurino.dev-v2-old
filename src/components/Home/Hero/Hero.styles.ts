@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { primary, tablet_size } from '../../../styles/Tokens'
+import { primary, tablet_size, white } from '../../../styles/Tokens'
 
 export const HeroBox = styled.section`
   display: flex;
@@ -18,55 +18,41 @@ export const HeroBox = styled.section`
 `
 
 export const HeroContent = styled.div`
+  flex: 0.75;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   margin-top: -3rem;
-  gap: 1.5rem;
+  gap: 1.25rem;
 
   z-index: 1;
+
+  p {
+    line-height: 150%;
+  }
 `
 
 export const HeroTitle = styled.h1`
   font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 0.25rem;
 
-  background: linear-gradient(90deg, white, ${primary});
+  /* background: linear-gradient(90deg, white, ${primary}); */
+  background-color: ${white};
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 `
 
-export const HeroDescription = styled.h2`
-  font-size: 1.75rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+export const HeroDescription = styled.p`
+  width: 100%;
+
+  @media (min-width: ${tablet_size}) {
+    max-width: 50%;
+  }
 `
 
-export const HeroAnimation = styled.span`
-  display: inline-block;
+export const HeroAnimation = styled.h2`
   color: ${primary};
-
-  white-space: nowrap;
-  overflow: hidden;
-
-  &:after {
-    content: '|';
-    margin-left: 0.25rem;
-    color: ${primary};
-    animation: blinkCursor 500ms infinite normal;
-  }
-
-  @keyframes blinkCursor {
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0;
-    }
-  }
 `

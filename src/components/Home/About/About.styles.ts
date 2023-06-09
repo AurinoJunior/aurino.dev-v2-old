@@ -19,9 +19,12 @@ export const AboutQuote = styled.blockquote`
   font-style: italic;
   color: ${gray_500};
   font-weight: 400;
+  line-height: 150%;
 `
 
 export const AboutParagraph = styled.p`
+  line-height: 175%;
+
   & + p {
     margin-top: 1rem;
   }

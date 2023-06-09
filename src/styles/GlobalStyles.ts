@@ -31,7 +31,6 @@ export const GlobalStyle = createGlobalStyle`
     color: ${white};
   }
 
-
   body,
   input,
   textarea,
