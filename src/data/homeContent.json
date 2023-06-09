@@ -4,7 +4,7 @@
   },
   "hero": {
     "title": "Aurino Junior",
-    "phraseAnimation": "Web developer",
+    "phraseAnimation": ["Desenvolvedor Web", "Engenheiro Frontend", "Dev Curioso"],
     "img": {
       "alt": "Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
     },

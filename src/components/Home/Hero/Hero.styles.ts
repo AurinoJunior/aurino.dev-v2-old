@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { primary, tablet_size, white } from '../../../styles/Tokens'
+import { primary, tablet_size, white, gray_800 } from '../../../styles/Tokens'
 
 export const HeroBox = styled.section`
   display: flex;
@@ -54,5 +54,28 @@ export const HeroDescription = styled.p`
 `
 
 export const HeroAnimation = styled.h2`
-  color: ${primary};
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  animation-name: 'typing';
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-image: linear-gradient(90deg, ${primary}, white, ${gray_800});
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
