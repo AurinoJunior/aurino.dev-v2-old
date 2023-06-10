@@ -11,7 +11,7 @@ interface IHeroProps {
   data: {
     title: string
     description: string
-    phraseAnimation: string
+    phraseAnimation: string[]
     img: {
       alt: string
     }
