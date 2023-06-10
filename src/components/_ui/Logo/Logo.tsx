@@ -6,7 +6,7 @@ export const Logo = () => {
     <S.Logo>
       <NextLink href="/">
         <a>
-          auri<span>.dev</span>
+          auri<span>dev</span>
         </a>
       </NextLink>
     </S.Logo>
