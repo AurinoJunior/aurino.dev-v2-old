@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="700" src="https://user-images.githubusercontent.com/32946164/169387809-3dbaa394-2eea-48c1-bd95-5b680824e4a6.png">
+  <img width="700" src="https://github.com/AurinoJunior/aurino.dev_web/assets/32946164/addd22f4-6f98-4ab2-a4dd-3a6374531b25">
 </p>
 <br>
 <p align="center">
@@ -31,6 +31,7 @@ Atualmente utilizo o ghost cms integrado hospedado no heroku, a parte da aplica�
 Para ver o site em produção acesse [aurino.dev](https://www.aurino.dev)
 
 ## 🎮 Iniciando o projeto
+
 - Clone o repositorio.
 - Instale as dependencias com `yarn`
 - Utilize o comando `yarn dev` para o rodar o projeto localmente
