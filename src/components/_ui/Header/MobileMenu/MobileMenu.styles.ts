@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { gray_800, secondary, tablet_size } from '../../../../styles/Tokens'
 
-export const Menu = styled.nav`
+export const MobileMenu = styled.nav`
   background-color: ${gray_800};
 
   position: fixed;
@@ -33,7 +33,7 @@ export const Menu = styled.nav`
   }
 `
 
-export const MenuContent = styled.ul`
+export const MobileMenuContent = styled.ul`
   width: 100%;
   height: 100%;
 
@@ -69,7 +69,7 @@ export const MenuContent = styled.ul`
   }
 `
 
-export const MenuButton = styled.button`
+export const MobileMenuButton = styled.button`
   z-index: 3;
 
   @media (min-width: ${tablet_size}) {

@@ -5,7 +5,13 @@ import { Link } from '../../_ui'
 
 import myImage from '../../../assets/eu.png'
 
-import { HeroAnimation, HeroBox, HeroContent, HeroTitle } from './Hero.styles'
+import {
+  HeroAnimation,
+  HeroBox,
+  HeroCTAs,
+  HeroContent,
+  HeroTitle
+} from './Hero.styles'
 
 interface IHeroProps {
   data: {
@@ -15,17 +21,18 @@ interface IHeroProps {
     img: {
       alt: string
     }
-    cta: {
+    ctas: Array<{
       link: string
       text: string
-    }
+      classname: string
+    }>
   }
 }
 
 const NUMBERS_OF_PHRASES = 3
 
 export const Hero = ({ data }: IHeroProps) => {
-  const { title, description, img, cta, phraseAnimation } = data
+  const { title, description, img, ctas, phraseAnimation } = data
   const [phraseNumber, setPhraseNumber] = useState(0)
 
   setTimeout(() => {
@@ -43,7 +50,13 @@ export const Hero = ({ data }: IHeroProps) => {
         <HeroTitle>{title}</HeroTitle>
         <HeroAnimation>{phraseAnimation[phraseNumber]}</HeroAnimation>
         <p>{description}</p>
-        <Link href={cta.link}>{cta.text}</Link>
+        <HeroCTAs>
+          {ctas.map(({ link, text, classname }) => (
+            <Link key={link} href={link} classname={classname}>
+              {text}
+            </Link>
+          ))}
+        </HeroCTAs>
       </HeroContent>
     </HeroBox>
   )

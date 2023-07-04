@@ -45,14 +45,6 @@ export const HeroTitle = styled.h1`
   background-clip: text;
 `
 
-export const HeroDescription = styled.p`
-  width: 100%;
-
-  @media (min-width: ${tablet_size}) {
-    max-width: 50%;
-  }
-`
-
 export const HeroAnimation = styled.h2`
   @keyframes typing {
     from {
@@ -78,4 +70,10 @@ export const HeroAnimation = styled.h2`
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+`
+
+export const HeroCTAs = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
 `

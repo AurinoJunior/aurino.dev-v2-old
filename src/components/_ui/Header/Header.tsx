@@ -1,10 +1,8 @@
-import { useRouter } from 'next/router'
-import Link from 'next/link'
-
 import { Logo } from '../Logo/Logo'
 import { Container } from '../Container/Container.styles'
 
-import { MenuMobile } from './MenuMobile/MenuMobile'
+import { MobileMenu } from './MobileMenu/MobileMenu'
+import { DesktopMenu } from './DesktopMenu/DesktopMenu'
 
 import * as S from './Header.styles'
 
@@ -16,27 +14,12 @@ interface IHeaderProps {
 }
 
 export const Header = ({ menuData }: IHeaderProps) => {
-  const router = useRouter()
-
   return (
     <S.Box>
       <Container>
         <Logo />
-        <S.Menu>
-          <ul>
-            {menuData.map((menu, index) => (
-              <li
-                key={index}
-                className={router.asPath === menu.href ? 'active' : ''}
-              >
-                <Link href={menu.href}>
-                  <a>{menu.title}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </S.Menu>
-        <MenuMobile menuData={menuData} />
+        <DesktopMenu menuData={menuData} />
+        <MobileMenu menuData={menuData} />
       </Container>
     </S.Box>
   )

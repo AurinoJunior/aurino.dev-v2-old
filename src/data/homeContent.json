@@ -9,10 +9,18 @@
       "alt": "Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
     },
     "description": "Atualmente sou desenvolvedor web front-end, me formei em ciência da computação em 2019 e desde então tenho desbravado esse mundo da programação web, metodologias ágeis e cultura devops.",
-    "cta": {
-      "link": "#about",
-      "text": "Leia mais"
-    }
+    "ctas": [
+      {
+        "link": "#about",
+        "text": "Leia mais",
+        "classname": ""
+      },
+      {
+        "link": "/blog",
+        "text": "Meu blog",
+        "classname": "white-btn"
+      }
+    ]
   },
   "worked": {
     "title": "Empresas que trabalhei!",
