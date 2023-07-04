@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { gray_800, primary } from '../../../styles/Tokens'
+import { gray_800, primary, secondary, white } from '../../../styles/Tokens'
 
 export const Button = styled.button`
   display: block;
@@ -15,6 +15,14 @@ export const Button = styled.button`
   font-weight: 600;
   text-align: center;
   color: ${gray_800};
+
+  &.secondary-btn {
+    background-color: ${secondary};
+  }
+
+  &.white-btn {
+    background-color: ${white};
+  }
 `
 
 export const Link = styled.a`
@@ -31,4 +39,12 @@ export const Link = styled.a`
   font-weight: 600;
   text-align: center;
   color: ${gray_800};
+
+  &.secondary-btn {
+    background-color: ${secondary};
+  }
+
+  &.white-btn {
+    background-color: ${white};
+  }
 `

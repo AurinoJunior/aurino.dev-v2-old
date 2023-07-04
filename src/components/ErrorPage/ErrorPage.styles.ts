@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { gray_500, tablet_size } from '../../styles/Tokens'
+import { gray_500, secondary, tablet_size, yellow } from '../../styles/Tokens'
 
 export const ErrorPageBox = styled.main`
   display: flex;
@@ -36,6 +36,10 @@ export const ErrorPageContent = styled.div`
 
   h1 {
     font-size: 2.5rem;
+    background-image: linear-gradient(90deg, ${secondary}, ${yellow});
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   p {
@@ -46,4 +50,9 @@ export const ErrorPageContent = styled.div`
     width: 40%;
     margin: 0;
   }
+`
+
+export const ErrorPageCTAs = styled.div`
+  display: flex;
+  gap: 2rem;
 `

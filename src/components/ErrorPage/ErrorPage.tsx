@@ -1,11 +1,15 @@
+import Head from 'next/head'
 import Image, { type StaticImageData } from 'next/image'
 
 import { Container, Footer, Header, Link } from '../_ui'
 
-import { ErrorPageBox, ErrorPageContent } from './ErrorPage.styles'
+import {
+  ErrorPageBox,
+  ErrorPageCTAs,
+  ErrorPageContent
+} from './ErrorPage.styles'
 
 import commonContent from '../../data/commonContent.json'
-import Head from 'next/head'
 
 interface IErrorPageProps {
   data: {
@@ -14,10 +18,11 @@ interface IErrorPageProps {
     meta: {
       title: string
     }
-    cta: {
+    ctas: Array<{
       text: string
       link: string
-    }
+      classname: string
+    }>
     imageData: {
       src: StaticImageData
       alt: string
@@ -26,7 +31,7 @@ interface IErrorPageProps {
 }
 
 export const ErrorPage = ({ data }: IErrorPageProps) => {
-  const { title, description, cta, imageData, meta } = data
+  const { title, description, ctas, imageData, meta } = data
   const { footer, menu } = commonContent
 
   return (
@@ -40,7 +45,13 @@ export const ErrorPage = ({ data }: IErrorPageProps) => {
           <ErrorPageContent>
             <h1>{title}</h1>
             <p>{description}</p>
-            <Link href={cta.link}>{cta.text}</Link>
+            <ErrorPageCTAs>
+              {ctas.map(({ link, text, classname }) => (
+                <Link key={link} classname={classname} href={link}>
+                  {text}
+                </Link>
+              ))}
+            </ErrorPageCTAs>
           </ErrorPageContent>
           <picture>
             <Image src={imageData.src} alt={imageData.alt} layout="intrinsic" />
