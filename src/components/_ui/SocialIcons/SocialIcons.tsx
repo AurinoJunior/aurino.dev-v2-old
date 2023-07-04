@@ -17,7 +17,7 @@ export const SocialIcons = ({ size = 35 }: ISocialIconsProps) => {
       </a>
       <a
         target="_blank"
-        href="https://www.instagram.com/aurigod97/"
+        href="https://www.instagram.com/aurigod97"
         rel="noreferrer"
       >
         <FaInstagram size={size} />
@@ -25,7 +25,7 @@ export const SocialIcons = ({ size = 35 }: ISocialIconsProps) => {
 
       <a
         target="_blank"
-        href="https://www.linkedin.com/in/aurino-junior-7718a4158/"
+        href="https://www.linkedin.com/in/aurinojunior"
         rel="noreferrer"
       >
         <FaLinkedin size={size} />
