@@ -4,18 +4,26 @@
 <br>
 <p align="center">
    <a href="https://www.instagram.com/aurigod97/">
-      <img alt="Aurino Junior" src="https://img.shields.io/badge/-aurigod97-0390fc?style=plastic&logo=Instagram&logoColor=white&color=blue" />
+      <img alt="Aurino Junior" src="https://img.shields.io/badge/-aurigod97-0390fc?style=flat&logo=Instagram&logoColor=white&color=blue" />
    </a>
     <a href="https://www.linkedin.com/in/aurino-junior-7718a4158/">
-      <img alt="Aurino Junior" src="https://img.shields.io/badge/-Aurino%20Junior-0390fc?style=plastic&logo=Linkedin&logoColor=white&color=blue" />
+      <img alt="Aurino Junior" src="https://img.shields.io/badge/-Aurino%20Junior-0390fc?style=flat&logo=Linkedin&logoColor=white&color=blue" />
    </a>
 </p>
 
+📍 **Conteúdo**
+
+- [Contexto](#📘-contexto)
+- [Tecnologias](#💻-tecnologias)
+- [Hospedagem](#🚀-hospedagem)
+- [Iniciando o projeto](#🎮-iniciando-o-projeto)
+- [Licença](#🗒️-licença)
+
 ## 📘 Contexto
 
-Este projeto consiste em meu portfolio e blog pessoal onde irei publicar posts sobre tecnologia e viagens, é um projeto de estudo onde irei evoluir aos poucos testando novas funcionalidade e tecnologias.
+Este projeto consiste em meu portfolio e blog pessoal onde irei publicar posts sobre tecnologia, estudos, cursos e afins, é um projeto de estudo onde irei evoluir aos poucos testando novas funcionalidade e tecnologias.
 
-## 💻 Tecnologias usadas
+## 💻 Tecnologias
 
 - NextJs
 - ReactJs
@@ -36,3 +44,7 @@ Para ver o site em produção acesse [aurino.dev](https://www.aurino.dev)
 - Instale as dependencias com `yarn`
 - Utilize o comando `yarn dev` para o rodar o projeto localmente
 - A URL do projeto é http://localhost:3000
+
+## 🗒️ Licença
+
+MIT
