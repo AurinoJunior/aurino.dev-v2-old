@@ -13,17 +13,17 @@
 
 📍 **Conteúdo**
 
-- [Contexto](#📘-contexto)
-- [Tecnologias](#💻-tecnologias)
-- [Hospedagem](#🚀-hospedagem)
-- [Iniciando o projeto](#🎮-iniciando-o-projeto)
-- [Licença](#🗒️-licença)
+- [Contexto](#blue_book-contexto)
+- [Tecnologias](#computer-tecnologias)
+- [Hospedagem](#rocket-hospedagem)
+- [Iniciando o projeto](#video_game-iniciando-o-projeto)
+- [Licença](#page_with_curl-licença)
 
-## 📘 Contexto
+## :blue_book: Contexto
 
 Este projeto consiste em meu portfolio e blog pessoal onde irei publicar posts sobre tecnologia, estudos, cursos e afins, é um projeto de estudo onde irei evoluir aos poucos testando novas funcionalidade e tecnologias.
 
-## 💻 Tecnologias
+## :computer: Tecnologias
 
 - NextJs
 - ReactJs
@@ -32,19 +32,19 @@ Este projeto consiste em meu portfolio e blog pessoal onde irei publicar posts s
 - eslint
 - prettier
 
-## 🚀 Hospedagem
+## :rocket: Hospedagem
 
 Atualmente utilizo o ghost cms integrado hospedado no heroku, a parte da aplicação está na vercel.
 
 Para ver o site em produção acesse [aurino.dev](https://www.aurino.dev)
 
-## 🎮 Iniciando o projeto
+## :video_game: Iniciando o projeto
 
 - Clone o repositorio.
 - Instale as dependencias com `yarn`
 - Utilize o comando `yarn dev` para o rodar o projeto localmente
 - A URL do projeto é http://localhost:3000
 
-## 🗒️ Licença
+## :page_with_curl: Licença
 
 MIT
