@@ -4,7 +4,11 @@
   },
   "hero": {
     "title": "Aurino Junior",
-    "phraseAnimation": ["Desenvolvedor Web", "Engenheiro Frontend", "Dev Curioso"],
+    "phraseAnimation": [
+      "Desenvolvedor Web",
+      "Engenheiro Frontend",
+      "Dev Curioso"
+    ],
     "img": {
       "alt": "Imagem de Aurino Junior em preto e branco utilizando boné e casaco"
     },
@@ -16,8 +20,8 @@
         "classname": ""
       },
       {
-        "link": "/blog",
-        "text": "Meu blog",
+        "link": "https://drive.google.com/file/d/15md084CAWEvrGrjOPIOrciW2DiFsb9rN/view?usp=sharing",
+        "text": "Baixar CV",
         "classname": "white-btn"
       }
     ]

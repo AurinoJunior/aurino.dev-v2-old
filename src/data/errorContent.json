@@ -10,11 +10,6 @@
         "link": "/",
         "text": "Voltar para o inicio",
         "classname": "secondary-btn"
-      },
-      {
-        "link": "/posts",
-        "text": "Meu blog",
-        "classname": "white-btn"
       }
     ]
   },
@@ -29,11 +24,6 @@
         "link": "/",
         "text": "Voltar para o inicio",
         "classname": "secondary-btn"
-      },
-      {
-        "link": "/posts",
-        "text": "Meu blog",
-        "classname": "white-btn"
       }
     ]
   }

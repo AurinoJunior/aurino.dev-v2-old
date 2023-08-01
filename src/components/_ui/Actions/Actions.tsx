@@ -17,7 +17,7 @@ export const Button = ({ children, classname = '' }: IActionsProps) => {
 
 export const Link = ({ children, href, classname = '' }: ILinkProps) => {
   return (
-    <S.Link className={classname} href={href}>
+    <S.Link className={classname} href={href} target="_blank">
       {children}
     </S.Link>
   )
