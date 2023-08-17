@@ -43,6 +43,7 @@ export const Hero = ({ data }: IHeroProps) => {
     setPhraseNumber(phraseNumber + 1)
   }, 4000)
 
+  const [btnReadMore, btnDownloadCV] = ctas
   return (
     <HeroBox>
       <Image src={myImage} alt={img.alt} layout="intrinsic" />
@@ -51,11 +52,21 @@ export const Hero = ({ data }: IHeroProps) => {
         <HeroAnimation>{phraseAnimation[phraseNumber]}</HeroAnimation>
         <p>{description}</p>
         <HeroCTAs>
-          {ctas.map(({ link, text, classname }) => (
-            <Link key={link} href={link} classname={classname}>
-              {text}
-            </Link>
-          ))}
+          <Link
+            key={btnReadMore.link}
+            href={btnReadMore.link}
+            classname={btnReadMore.classname}
+          >
+            {btnReadMore.text}
+          </Link>
+          <Link
+            key={btnDownloadCV.link}
+            href={btnDownloadCV.link}
+            classname={btnDownloadCV.classname}
+            target="_blank"
+          >
+            {btnDownloadCV.text}
+          </Link>
         </HeroCTAs>
       </HeroContent>
     </HeroBox>

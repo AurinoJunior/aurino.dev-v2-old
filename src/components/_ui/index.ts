@@ -1,5 +1,6 @@
 import { Accordion } from './Accordion/Accordion'
-import { Button, Link } from './Actions/Actions'
+import { Button } from './Button/Button'
+import { Link } from './Link/Link'
 import { Container } from './Container/Container'
 import { Footer } from './Footer/Footer'
 import { Logo } from './Logo/Logo'
