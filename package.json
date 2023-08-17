@@ -13,25 +13,23 @@
     "bump": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
-    "next": "12.3.1",
-    "react-dom": "18.2.0",
+    "next": "13.4.17",
     "react": "18.2.0",
-    "react-icons": "4.8.0",
-    "styled-components": "5.3.10"
+    "react-dom": "18.2.0",
+    "react-icons": "4.10.1",
+    "styled-components": "6.0.7",
+    "stylis": "4.3.0"
   },
   "devDependencies": {
-    "@types/node": "18.16.3",
-    "@types/react": "18.2.5",
+    "@rocketseat/eslint-config": "2.1.0",
+    "@types/node": "20.5.0",
+    "@types/react": "18.2.20",
     "@types/styled-components": "5.1.26",
-    "@typescript-eslint/eslint-plugin": "5.59.2",
-    "babel-plugin-styled-components": "2.1.1",
-    "eslint": "8.39.0",
-    "eslint-config-standard-with-typescript": "34.0.1",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-n": "15.7.0",
-    "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-react": "7.32.2",
-    "prettier": "2.8.8",
-    "typescript": "5.0.4"
+    "@typescript-eslint/eslint-plugin": "6.4.0",
+    "babel-plugin-styled-components": "2.1.4",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.17",
+    "prettier": "3.0.2",
+    "typescript": "5.1.6"
   }
 }

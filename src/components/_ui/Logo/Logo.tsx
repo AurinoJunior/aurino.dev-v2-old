@@ -5,9 +5,7 @@ export const Logo = () => {
   return (
     <S.Logo>
       <NextLink href="/">
-        <a>
-          aurino<span>.dev</span>
-        </a>
+        aurino<span>.dev</span>
       </NextLink>
     </S.Logo>
   )

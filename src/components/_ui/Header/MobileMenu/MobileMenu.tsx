@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
@@ -41,9 +41,7 @@ export const MobileMenu = ({ menuData }: IMobileMenuProps) => {
                 key={index}
                 className={router.asPath === menu.href ? 'active' : ''}
               >
-                <Link href={menu.href}>
-                  <a>{menu.title}</a>
-                </Link>
+                <NextLink href={menu.href}>{menu.title}</NextLink>
               </li>
             ))}
           </S.MobileMenuContent>
