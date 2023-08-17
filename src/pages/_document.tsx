@@ -5,7 +5,6 @@ import Document, {
   NextScript,
   type DocumentContext
 } from 'next/document'
-
 import { ServerStyleSheet } from 'styled-components'
 
 import projectInfo from '../../package.json'
