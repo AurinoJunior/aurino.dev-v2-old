@@ -21,9 +21,7 @@ export const DesktopMenu = ({ menuData }: IDesktopMenuProps) => {
             key={index}
             className={router.asPath === menu.href ? 'active' : ''}
           >
-            <NextLink href={menu.href}>
-              <a>{menu.title}</a>
-            </NextLink>
+            <NextLink href={menu.href}>{menu.title}</NextLink>
           </li>
         ))}
       </ul>

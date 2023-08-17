@@ -41,9 +41,7 @@ export const MobileMenu = ({ menuData }: IMobileMenuProps) => {
                 key={index}
                 className={router.asPath === menu.href ? 'active' : ''}
               >
-                <NextLink href={menu.href}>
-                  <a>{menu.title}</a>
-                </NextLink>
+                <NextLink href={menu.href}>{menu.title}</NextLink>
               </li>
             ))}
           </S.MobileMenuContent>
