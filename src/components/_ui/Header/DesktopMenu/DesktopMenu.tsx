@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 
 import * as S from './DesktopMenu.styles'
@@ -21,9 +21,9 @@ export const DesktopMenu = ({ menuData }: IDesktopMenuProps) => {
             key={index}
             className={router.asPath === menu.href ? 'active' : ''}
           >
-            <Link href={menu.href}>
+            <NextLink href={menu.href}>
               <a>{menu.title}</a>
-            </Link>
+            </NextLink>
           </li>
         ))}
       </ul>
