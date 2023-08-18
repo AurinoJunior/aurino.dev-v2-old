@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { secondary } from '../../../styles/Tokens'
 
 interface IAccordionStylesProps {
-  activate: boolean
+  $activate: boolean
 }
 
 export const Box = styled.div`
@@ -42,5 +42,5 @@ export const AnimationDescription = styled.p<IAccordionStylesProps>`
   }
 
   animation: 'fadeIn' 300ms forwards ease-in alternate;
-  opacity: ${({ activate }) => (activate ? 1 : 0)};
+  opacity: ${({ $activate }) => ($activate ? 1 : 0)};
 `
