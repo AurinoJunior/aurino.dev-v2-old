@@ -47,7 +47,6 @@ export const HeroTitle = styled.h1`
   font-weight: 900;
   letter-spacing: 0.25rem;
 
-  /* background: linear-gradient(90deg, white, ${primary}); */
   background-color: ${white};
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -65,7 +64,7 @@ export const HeroAnimation = styled.h2`
     }
   }
 
-  animation-name: 'typing';
+  animation-name: typing;
   animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;

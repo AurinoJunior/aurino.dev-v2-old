@@ -41,6 +41,6 @@ export const AnimationDescription = styled.p<IAccordionStylesProps>`
     }
   }
 
-  animation: 'fadeIn' 300ms forwards ease-in alternate;
+  animation: fadeIn 300ms forwards ease-in alternate;
   opacity: ${({ $activate }) => ($activate ? 1 : 0)};
 `
