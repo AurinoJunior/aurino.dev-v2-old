@@ -9,11 +9,20 @@ export const HeroBox = styled.section`
 
   margin-top: 8rem;
 
+  .hero-img {
+    object-fit: contain;
+    width: 100%;
+  }
+
   @media (min-width: ${tablet_size}) {
     flex-direction: row-reverse;
     justify-content: space-evenly;
 
     height: 70vh;
+
+    .hero-img {
+      width: auto;
+    }
   }
 `
 

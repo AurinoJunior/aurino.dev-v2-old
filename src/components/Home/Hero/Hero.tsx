@@ -46,7 +46,7 @@ export const Hero = ({ data }: IHeroProps) => {
   const [btnReadMore, btnDownloadCV] = ctas
   return (
     <HeroBox>
-      <Image src={myImage} alt={img.alt} layout="intrinsic" />
+      <Image className="hero-img" src={myImage} alt={img.alt} priority />
       <HeroContent>
         <HeroTitle>{title}</HeroTitle>
         <HeroAnimation>{phraseAnimation[phraseNumber]}</HeroAnimation>
