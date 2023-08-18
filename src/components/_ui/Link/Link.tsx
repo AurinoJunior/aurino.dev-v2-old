@@ -8,16 +8,18 @@ interface ILinkProps {
   children: React.ReactNode | string
   classname?: string
   target?: '_self' | '_blank'
+  variation?: 'primary' | 'clean'
 }
 
 export const Link = ({
   children,
   href,
   classname = '',
-  target = '_self'
+  target = '_self',
+  variation = 'primary'
 }: ILinkProps) => {
   return (
-    <S.Link className={classname}>
+    <S.Link className={classname} $variation={variation}>
       <NextLink href={href} target={target}>
         {children}
       </NextLink>

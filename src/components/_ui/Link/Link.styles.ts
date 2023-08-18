@@ -2,8 +2,13 @@ import styled from 'styled-components'
 
 import { gray_800, primary, secondary, white } from '../../../styles/Tokens'
 
-export const Link = styled.div`
-  background-color: ${primary};
+interface ILinkProps {
+  $variation?: 'primary' | 'clean'
+}
+
+export const Link = styled.div<ILinkProps>`
+  background-color: ${({ $variation }) =>
+    $variation === 'primary' ? primary : ''};
 
   border-radius: 0.5rem;
 

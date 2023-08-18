@@ -13,6 +13,7 @@
     "bump": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
+    "axios": "1.4.0",
     "next": "13.4.17",
     "react": "18.2.0",
     "react-dom": "18.2.0",
