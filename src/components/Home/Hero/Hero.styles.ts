@@ -9,11 +9,20 @@ export const HeroBox = styled.section`
 
   margin-top: 8rem;
 
+  .hero-img {
+    object-fit: contain;
+    width: 100%;
+  }
+
   @media (min-width: ${tablet_size}) {
     flex-direction: row-reverse;
     justify-content: space-evenly;
 
     height: 70vh;
+
+    .hero-img {
+      width: auto;
+    }
   }
 `
 
@@ -38,7 +47,6 @@ export const HeroTitle = styled.h1`
   font-weight: 900;
   letter-spacing: 0.25rem;
 
-  /* background: linear-gradient(90deg, white, ${primary}); */
   background-color: ${white};
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -56,7 +64,7 @@ export const HeroAnimation = styled.h2`
     }
   }
 
-  animation-name: 'typing';
+  animation-name: typing;
   animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;

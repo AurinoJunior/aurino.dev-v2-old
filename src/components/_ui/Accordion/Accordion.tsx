@@ -12,20 +12,6 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
 
   const buttonText = showText ? '-' : '+'
 
-  function shouldShowP(text: string) {
-    if (showText) {
-      return (
-        <S.AnimationDescription activate={showText}>
-          {text}
-        </S.AnimationDescription>
-      )
-    }
-
-    setTimeout(() => {
-      return null
-    }, 500)
-  }
-
   return (
     <>
       <S.Box>
@@ -40,7 +26,11 @@ export const Accordion = ({ title, text }: IAccordionProps) => {
           />
         </label>
       </S.Box>
-      {showText && shouldShowP(text)}
+      {showText && (
+        <S.AnimationDescription $activate={showText}>
+          {text}
+        </S.AnimationDescription>
+      )}
     </>
   )
 }

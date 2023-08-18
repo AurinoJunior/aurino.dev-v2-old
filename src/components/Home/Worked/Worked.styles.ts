@@ -37,7 +37,7 @@ export const WorkedContent = styled.div`
 `
 
 interface WorkedSubTitleProps {
-  highlight: string
+  $highlight: boolean
 }
 
 export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
@@ -45,7 +45,7 @@ export const WorkedSubTitle = styled.h3<WorkedSubTitleProps>`
   font-size: 1.5rem;
 
   span {
-    color: ${({ highlight }) => (highlight === 'primary' ? primary : yellow)};
+    color: ${(props) => (props.$highlight ? yellow : primary)};
     display: block;
   }
 `

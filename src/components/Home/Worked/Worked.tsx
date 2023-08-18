@@ -16,7 +16,7 @@ interface IWorkedProps {
       title: string
       position: string
       description: string
-      color: string
+      highlight: boolean
       workedTime: string
     }>
   }
@@ -35,7 +35,7 @@ export const Worked = ({ data }: IWorkedProps) => {
               <WorkedTitle className="number-title">
                 {companie.number}
               </WorkedTitle>
-              <WorkedSubTitle highlight={companie.color}>
+              <WorkedSubTitle $highlight={companie.highlight}>
                 <span>{companie.title}</span>
                 {companie.position}
               </WorkedSubTitle>

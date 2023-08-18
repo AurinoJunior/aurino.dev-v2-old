@@ -32,7 +32,7 @@
       {
         "number": "01",
         "title": "GetNinjas",
-        "color": "yellow",
+        "highlight": true,
         "position": "Desenvolvedor Front-end",
         "description": "Atuando no time de growth criando e mantendo paginas web para aquisição de novos clientes.",
         "workedTime": "nov de 2020 - maio de 2023"
@@ -40,7 +40,7 @@
       {
         "number": "02",
         "title": "Catho Online",
-        "color": "primary",
+        "highlight": false,
         "position": "Desenvolvedor Web",
         "description": "Responsável pela área logada do candidato no perido de 2 anos e 10 meses.",
         "workedTime": "fev de 2018 - dez de 2019"

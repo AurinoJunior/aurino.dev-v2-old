@@ -24,27 +24,3 @@ export const Button = styled.button`
     background-color: ${white};
   }
 `
-
-export const Link = styled.a`
-  display: block;
-
-  background-color: ${primary};
-
-  border-radius: 0.5rem;
-
-  padding: 0.75rem 1rem;
-  width: fit-content;
-
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  color: ${gray_800};
-
-  &.secondary-btn {
-    background-color: ${secondary};
-  }
-
-  &.white-btn {
-    background-color: ${white};
-  }
-`
