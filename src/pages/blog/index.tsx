@@ -1,15 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { IPost } from '../@types/posts'
 
-import { getAllPosts } from '../services/getAllPosts'
+import { IPost } from '../../@types/posts'
+import { Container, Footer, Header } from '../../components/_ui'
 
-import commonContent from '../data/commonContent.json'
-import blogContent from '../data/blogContent.json'
+import { getAllPosts } from '../../services/getAllPosts'
 
-import { Container, Footer, Header } from '../components/_ui'
+import commonContent from '../../data/commonContent.json'
+import blogContent from '../../data/blogContent.json'
 
-import { PostList } from '../components/Blog/PostList/PostLists'
+import { PostList } from '../../components/Blog/PostList/PostLists'
 
 interface IBlogProps {
   allPosts: IPost[]
@@ -46,7 +46,7 @@ export async function getStaticProps() {
 
   return {
     props: { allPosts },
-    revalidate: 60 * 60 * 24
+    revalidate: 60 * 60 * 24 // 1 day
   }
 }
 
