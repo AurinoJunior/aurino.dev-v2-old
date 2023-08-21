@@ -4,6 +4,7 @@ import {
   gray_500,
   gray_800,
   primary,
+  secondary,
   tablet_size,
   yellow
 } from '../../../styles/Tokens'
@@ -23,6 +24,25 @@ export const PostTitle = styled.h1`
   @media (min-width: ${tablet_size}) {
     font-size: 2.5rem;
   }
+`
+
+export const PostHeadContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      filter: brightness(0.5);
+    }
+  }
+`
+
+export const PostQuoteDate = styled.p`
+  color: ${gray_500};
+  font-style: italic;
 `
 
 export const PostSetInnerHtml = styled.div`
@@ -47,12 +67,11 @@ export const PostSetInnerHtml = styled.div`
     color: ${gray_300};
 
     a {
-      color: ${primary};
+      color: ${secondary};
       text-decoration: underline;
 
       &:hover {
         filter: brightness(0.5);
-        transition: 0.2s;
       }
     }
   }
@@ -75,35 +94,12 @@ export const PostSetInnerHtml = styled.div`
     }
   }
 
-  img[src$='full-image'] {
-    margin: 2rem 0;
+  img {
     width: 100%;
-    height: auto;
+    object-fit: cover;
   }
 
-  img[src$='medium-image'] {
-    display: block;
-    margin: 2rem auto;
-    width: 80%;
-    height: auto;
-
-    @media (min-width: ${tablet_size}) {
-      width: 70%;
-    }
-  }
-
-  img[src$='small-image'] {
-    display: block;
-    margin: 2rem auto;
-    width: 70%;
-    height: auto;
-
-    @media (min-width: ${tablet_size}) {
-      width: 35%;
-    }
-  }
-
-  pre {
+  /* pre {
     overflow-x: auto;
     tab-size: 4;
     line-height: 1.75rem;
@@ -121,16 +117,5 @@ export const PostSetInnerHtml = styled.div`
     code {
       overflow-x: scroll;
     }
-  }
-`
-
-export const PostHeadContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
-
-export const PostQuoteDate = styled.p`
-  color: ${gray_500};
-  font-style: italic;
+  } */
 `
