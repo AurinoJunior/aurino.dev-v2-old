@@ -18,14 +18,19 @@ export const Post = ({ post }: IPostProps) => {
     <PostBox>
       <PostTitle>{post.title}</PostTitle>
       <PostHeadContent>
-        {/* <PostQuoteDate>{formatDistanceDate(post.publishedAt)}</PostQuoteDate> */}
-        {/* <p>{`${post.readingTime} min de leitura.`}</p> */}
+        <PostQuoteDate>{formatDistanceDate(post.created_at)}</PostQuoteDate>
+        <a
+          href={`https://www.tabnews.com.br/aurigod/${post.slug}`}
+          target="_blank"
+        >
+          Ver post no tabnews
+        </a>
       </PostHeadContent>
-      {/* <PostSetInnerHtml
+      <PostSetInnerHtml
         dangerouslySetInnerHTML={{
           __html: post.html || ''
         }}
-      /> */}
+      />
     </PostBox>
   )
 }

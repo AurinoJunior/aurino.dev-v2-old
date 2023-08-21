@@ -5,6 +5,7 @@ export interface IPost {
   slug: string
   title: string | null
   body?: string
+  html?: string | null
   status: string
   source_url: string | null
   created_at: string
