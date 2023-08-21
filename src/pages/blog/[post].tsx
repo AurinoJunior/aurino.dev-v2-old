@@ -1,5 +1,7 @@
 import { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
+import { remark } from 'remark'
+import html from 'remark-html'
 
 import { IPost } from '../../@types/posts'
 import { getAllPosts } from '../../services/getAllPosts'
@@ -28,7 +30,7 @@ const PostPage: NextPage = ({ post }: IPostPageProps) => {
         <Post post={post} />
       </Container>
 
-      <Footer data={footer} fixed />
+      <Footer data={footer} />
     </>
   )
 }
@@ -52,6 +54,9 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
       notFound: true
     }
   }
+
+  const processedContent = await remark().use(html).process(post.body)
+  post.html = processedContent.toString()
 
   return {
     props: { post },
