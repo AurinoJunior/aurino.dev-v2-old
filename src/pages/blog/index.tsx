@@ -3,13 +3,12 @@ import Head from 'next/head'
 
 import { IPost } from '../../@types/posts'
 import { Container, Footer, Header } from '../../components/_ui'
+import { PostList } from '../../components/BlogPage/PostList/PostList'
 
 import { getAllPosts } from '../../services/getAllPosts'
 
 import commonContent from '../../data/commonContent.json'
 import blogContent from '../../data/blogContent.json'
-
-import { PostList } from '../../components/Blog/PostList/PostLists'
 
 interface IBlogProps {
   allPosts: IPost[]

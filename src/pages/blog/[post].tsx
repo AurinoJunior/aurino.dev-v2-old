@@ -2,10 +2,11 @@ import { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
 
 import { IPost } from '../../@types/posts'
-
 import { getAllPosts } from '../../services/getAllPosts'
 import { getSinglePost } from '../../services/getSinglePost'
+
 import { Container, Footer, Header } from '../../components/_ui'
+import { Post } from '../../components/BlogPage'
 
 import commonData from '../../data/commonContent.json'
 
@@ -23,7 +24,9 @@ const PostPage: NextPage = ({ post }: IPostPageProps) => {
       </Head>
       <Header menuData={menu} />
 
-      <Container>{/* <Post post={post} /> */}</Container>
+      <Container>
+        <Post post={post} />
+      </Container>
 
       <Footer data={footer} fixed />
     </>

@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import { Contact, Container, Footer, Header } from '../components/_ui'
-import { Hero, About, Worked } from '../components/Home'
+import { Hero, About, Worked } from '../components/HomePage'
 
 import homeData from '../data/homeContent.json'
 import commonData from '../data/commonContent.json'
