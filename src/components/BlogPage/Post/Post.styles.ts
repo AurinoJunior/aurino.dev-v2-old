@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import {
   gray_300,
   gray_500,
-  gray_800,
   primary,
   secondary,
   tablet_size,
@@ -99,23 +98,9 @@ export const PostSetInnerHtml = styled.div`
     object-fit: cover;
   }
 
-  /* pre {
-    overflow-x: auto;
-    tab-size: 4;
-    line-height: 1.75rem;
-    background-color: ${gray_800};
-    padding: 1rem;
-
-    ::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    & + pre {
-      margin-top: 1rem;
-    }
-
+  pre {
     code {
-      overflow-x: scroll;
+      border-radius: 10px;
     }
-  } */
+  }
 `

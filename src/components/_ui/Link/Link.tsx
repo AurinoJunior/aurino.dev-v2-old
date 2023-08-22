@@ -6,7 +6,7 @@ import * as S from './Link.styles'
 interface ILinkProps {
   href: string
   children: React.ReactNode | string
-  classname?: string
+  className?: string
   target?: '_self' | '_blank'
   variation?: 'primary' | 'clean'
 }
@@ -14,12 +14,12 @@ interface ILinkProps {
 export const Link = ({
   children,
   href,
-  classname = '',
+  className = '',
   target = '_self',
   variation = 'primary'
 }: ILinkProps) => {
   return (
-    <S.Link className={classname} $variation={variation}>
+    <S.Link className={className} $variation={variation}>
       <NextLink href={href} target={target}>
         {children}
       </NextLink>

@@ -46,18 +46,16 @@ export default class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="anonymous"
           />
-
           <link
             href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap"
             rel="stylesheet"
           />
-
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
             rel="stylesheet"
           />
-
           <link rel="shortcut icon" href="favicon.ico" />
+
           <meta name="version" content={projectInfo.version} />
           <meta
             property="og:description"

@@ -47,7 +47,7 @@ export const ErrorPage = ({ data }: IErrorPageProps) => {
             <p>{description}</p>
             <ErrorPageCTAs>
               {ctas.map(({ link, text, classname }) => (
-                <Link key={link} classname={classname} href={link}>
+                <Link key={link} className={classname} href={link}>
                   {text}
                 </Link>
               ))}

@@ -55,14 +55,14 @@ export const Hero = ({ data }: IHeroProps) => {
           <Link
             key={btnReadMore.link}
             href={btnReadMore.link}
-            classname={btnReadMore.classname}
+            className={btnReadMore.classname}
           >
             {btnReadMore.text}
           </Link>
           <Link
             key={btnDownloadCV.link}
             href={btnDownloadCV.link}
-            classname={btnDownloadCV.classname}
+            className={btnDownloadCV.classname}
             target="_blank"
           >
             {btnDownloadCV.text}

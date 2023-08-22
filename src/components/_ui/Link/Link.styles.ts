@@ -16,7 +16,7 @@ export const Link = styled.div<ILinkProps>`
 
   font-weight: 600;
   text-align: center;
-  color: ${gray_800};
+  color: ${({ $variation }) => ($variation === 'clean' ? white : gray_800)};
 
   a {
     display: block;
@@ -33,5 +33,11 @@ export const Link = styled.div<ILinkProps>`
 
   &:hover {
     filter: brightness(0.7);
+  }
+
+  &.no-margins {
+    a {
+      padding: 0;
+    }
   }
 `
