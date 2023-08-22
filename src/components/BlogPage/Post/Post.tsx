@@ -1,13 +1,8 @@
 import { useEffect } from 'react'
-
-// sytanx highlight for code
-import hljs from 'highlight.js/lib/core'
-import typescript from 'highlight.js/lib/languages/typescript'
-import css from 'highlight.js/lib/languages/css'
-import 'highlight.js/styles/tokyo-night-dark.css'
+import { hljsInit } from '../../../lib/hljs'
+import { formatDistanceDate } from '../../../utils/formartDistanceDate'
 
 import { IPost } from '../../../@types/posts'
-import { formatDistanceDate } from '../../../utils/formartDistanceDate'
 
 import {
   PostBox,
@@ -24,12 +19,7 @@ interface IPostProps {
 
 export const Post = ({ post }: IPostProps) => {
   useEffect(() => {
-    hljs.configure({
-      ignoreUnescapedHTML: true
-    })
-    hljs.registerLanguage('typescript', typescript)
-    hljs.registerLanguage('css', css)
-    hljs.highlightAll()
+    hljsInit()
   }, [])
 
   return (

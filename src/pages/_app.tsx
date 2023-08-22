@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app'
 import Script from 'next/script'
 
 import { GlobalStyle } from '../styles/GlobalStyles'
+import 'highlight.js/styles/tokyo-night-dark.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
