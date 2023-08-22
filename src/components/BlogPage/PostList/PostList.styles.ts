@@ -1,10 +1,5 @@
 import styled from 'styled-components'
-import {
-  gray_300,
-  gray_500,
-  gray_800,
-  tablet_size
-} from '../../../styles/Tokens'
+import { gray_500, gray_800, tablet_size } from '../../../styles/Tokens'
 
 export const PostListBox = styled.ul`
   margin: 8rem auto 0;
@@ -24,18 +19,16 @@ export const PostListItem = styled.li`
   border-bottom: solid 1px ${gray_800};
 
   h2 {
-    color: ${gray_300};
+    text-align: left;
   }
 `
 
 export const PostListItemDate = styled.p`
   color: ${gray_500};
-  padding-left: 1rem;
 `
 
 export const PostListItemInfos = styled.div`
   display: flex;
   gap: 2rem;
   color: ${gray_500};
-  padding-left: 1rem;
 `

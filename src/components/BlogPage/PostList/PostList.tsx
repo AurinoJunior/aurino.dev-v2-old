@@ -21,7 +21,11 @@ export const PostList = ({ allPosts }: IPostListProps) => {
           <PostListItemDate>
             {formatDistanceDate(post.created_at)}
           </PostListItemDate>
-          <Link href={`/blog/${post.slug}`} variation="clean">
+          <Link
+            className="no-margins"
+            href={`/blog/${post.slug}`}
+            variation="clean"
+          >
             <h2>{post.title}</h2>
           </Link>
           <PostListItemInfos>
