@@ -24,6 +24,9 @@ interface IPostProps {
 
 export const Post = ({ post }: IPostProps) => {
   useEffect(() => {
+    hljs.configure({
+      ignoreUnescapedHTML: true
+    })
     hljs.registerLanguage('typescript', typescript)
     hljs.registerLanguage('css', css)
     hljs.highlightAll()
