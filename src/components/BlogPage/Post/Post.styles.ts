@@ -47,7 +47,7 @@ export const PostQuoteDate = styled.p`
 export const PostSetInnerHtml = styled.div`
   h2 {
     margin: 2rem 0;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: ${primary};
   }
 
