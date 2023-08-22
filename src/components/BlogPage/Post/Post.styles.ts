@@ -126,6 +126,11 @@ export const CommentBox = styled.div`
 `
 
 export const CommentSetInnerHtml = styled.div`
+  p {
+    word-wrap: break-word;
+    line-height: 1.25rem;
+  }
+
   p + p {
     margin-top: 1rem;
   }
