@@ -1,5 +1,5 @@
 import { IPost } from '../@types/posts'
-
+import { customRemarkHTML } from '../lib/remark'
 import { api } from '../lib/axios'
 
 export async function getSinglePost(slug: string) {
@@ -8,6 +8,8 @@ export async function getSinglePost(slug: string) {
     const post = response.data
 
     if (!post) return null
+
+    post.html = await customRemarkHTML(post.body)
 
     return post
   } catch (error) {

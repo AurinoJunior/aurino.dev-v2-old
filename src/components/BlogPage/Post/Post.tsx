@@ -2,26 +2,31 @@ import { useEffect } from 'react'
 import { hljsInit } from '../../../lib/hljs'
 import { formatDistanceDate } from '../../../utils/formartDistanceDate'
 
-import { IPost } from '../../../@types/posts'
+import { IComment, IPost } from '../../../@types/posts'
 
 import {
   PostBox,
   PostHeadContent,
   PostQuoteDate,
   PostSetInnerHtml,
-  PostTitle
+  PostTitle,
+  CommentHeader,
+  CommentBox,
+  CommentSetInnerHtml
 } from './Post.styles'
 import { Link } from '../../_ui'
 
 interface IPostProps {
   post: IPost
+  comments: IComment[]
 }
 
-export const Post = ({ post }: IPostProps) => {
+export const Post = ({ post, comments }: IPostProps) => {
   useEffect(() => {
     hljsInit()
   }, [])
 
+  const existsComments = comments.length !== 0
   return (
     <PostBox>
       <PostTitle>{post.title}</PostTitle>
@@ -41,6 +46,22 @@ export const Post = ({ post }: IPostProps) => {
           __html: post.html || ''
         }}
       />
+      {existsComments && (
+        <>
+          <CommentHeader>Comentários</CommentHeader>
+
+          {comments.map((comment) => (
+            <CommentBox key={comment.id}>
+              <h3>{comment.owner_username}</h3>
+              <CommentSetInnerHtml
+                dangerouslySetInnerHTML={{
+                  __html: comment.html
+                }}
+              />
+            </CommentBox>
+          ))}
+        </>
+      )}
     </PostBox>
   )
 }

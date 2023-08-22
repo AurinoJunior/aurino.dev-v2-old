@@ -16,3 +16,7 @@ export interface IPost {
   tabcoins: number
   children_deep_count: number
 }
+
+export interface IComment extends IPost {
+  children: IComment[]
+}

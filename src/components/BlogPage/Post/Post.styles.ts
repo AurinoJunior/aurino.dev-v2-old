@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {
   gray_300,
   gray_500,
+  gray_800,
   primary,
   secondary,
   tablet_size,
@@ -44,7 +45,7 @@ export const PostQuoteDate = styled.p`
   font-style: italic;
 `
 
-export const PostSetInnerHtml = styled.div`
+export const PostSetInnerHtml = styled.section`
   h2 {
     margin: 2rem 0;
     font-size: 1.75rem;
@@ -102,5 +103,30 @@ export const PostSetInnerHtml = styled.div`
     code {
       border-radius: 10px;
     }
+  }
+`
+
+export const CommentHeader = styled.h2`
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+`
+
+export const CommentBox = styled.div`
+  padding: 2rem 0;
+
+  & + & {
+    border-top: 1px ${gray_800} solid;
+  }
+
+  h3 {
+    margin-bottom: 1rem;
+    color: ${secondary};
+  }
+`
+
+export const CommentSetInnerHtml = styled.div`
+  p + p {
+    margin-top: 1rem;
   }
 `

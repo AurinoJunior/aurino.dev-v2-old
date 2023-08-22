@@ -1,9 +1,7 @@
 import { GetStaticPropsContext, NextPage } from 'next'
 import Head from 'next/head'
-import { remark } from 'remark'
-import html from 'remark-html'
 
-import { IPost } from '../../@types/posts'
+import { IComment, IPost } from '../../@types/posts'
 import { getAllPosts } from '../../services/getAllPosts'
 import { getSinglePost } from '../../services/getSinglePost'
 
@@ -11,12 +9,14 @@ import { Container, Footer, Header } from '../../components/_ui'
 import { Post } from '../../components/BlogPage'
 
 import commonData from '../../data/commonContent.json'
+import { getAllComments } from '../../services/getAllComments'
 
 interface IPostPageProps {
   post: IPost
+  allComments: IComment[]
 }
 
-const PostPage: NextPage = ({ post }: IPostPageProps) => {
+const PostPage: NextPage = ({ post, allComments }: IPostPageProps) => {
   const { menu, footer } = commonData
 
   return (
@@ -27,7 +27,7 @@ const PostPage: NextPage = ({ post }: IPostPageProps) => {
       <Header menuData={menu} />
 
       <Container>
-        <Post post={post} />
+        <Post post={post} comments={allComments} />
       </Container>
 
       <Footer data={footer} />
@@ -48,6 +48,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: GetStaticPropsContext) {
   const slug = params?.post as string
   const post = await getSinglePost(slug)
+  let allComments = []
 
   if (!post) {
     return {
@@ -55,11 +56,12 @@ export async function getStaticProps({ params }: GetStaticPropsContext) {
     }
   }
 
-  const processedContent = await remark().use(html).process(post.body)
-  post.html = processedContent.toString()
+  if (post.children_deep_count !== 0) {
+    allComments = await getAllComments(slug)
+  }
 
   return {
-    props: { post },
+    props: { post, allComments },
     revalidate: 60 * 60 * 24 // 1 day
   }
 }
