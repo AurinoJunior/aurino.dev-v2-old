@@ -49,6 +49,14 @@ export const Post = ({ post, comments }: IPostProps) => {
       {existsComments && (
         <>
           <CommentHeader>Comentários</CommentHeader>
+          <Link
+            className="no-margins"
+            href={`https://www.tabnews.com.br/aurigod/${post.slug}`}
+            target="_blank"
+            variation="clean"
+          >
+            Para comentar acesse o post original aqui
+          </Link>
 
           {comments.map((comment) => (
             <CommentBox key={comment.id}>

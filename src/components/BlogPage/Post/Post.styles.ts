@@ -12,6 +12,10 @@ import {
 export const PostBox = styled.main`
   margin: 8rem auto 0;
 
+  a {
+    text-decoration: underline;
+  }
+
   @media (min-width: ${tablet_size}) {
     width: 70%;
   }
@@ -30,14 +34,6 @@ export const PostHeadContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  a {
-    text-decoration: underline;
-
-    &:hover {
-      filter: brightness(0.5);
-    }
-  }
 `
 
 export const PostQuoteDate = styled.p`
