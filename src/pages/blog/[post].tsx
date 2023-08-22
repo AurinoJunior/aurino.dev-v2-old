@@ -4,12 +4,12 @@ import Head from 'next/head'
 import { IComment, IPost } from '../../@types/posts'
 import { getAllPosts } from '../../services/getAllPosts'
 import { getSinglePost } from '../../services/getSinglePost'
+import { getAllComments } from '../../services/getAllComments'
 
 import { Container, Footer, Header } from '../../components/_ui'
 import { Post } from '../../components/BlogPage'
 
 import commonData from '../../data/commonContent.json'
-import { getAllComments } from '../../services/getAllComments'
 
 interface IPostPageProps {
   post: IPost
