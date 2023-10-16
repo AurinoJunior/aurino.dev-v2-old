@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { primary, tablet_size, white, gray_800 } from '../../../styles/Tokens'
+import { primary, tablet_size, gray_800 } from '../../../styles/Tokens'
 
 export const HeroBox = styled.section`
   display: flex;
@@ -46,11 +46,6 @@ export const HeroTitle = styled.h1`
   font-size: 3rem;
   font-weight: 900;
   letter-spacing: 0.25rem;
-
-  background-color: ${white};
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
 `
 
 export const HeroAnimation = styled.h2`
