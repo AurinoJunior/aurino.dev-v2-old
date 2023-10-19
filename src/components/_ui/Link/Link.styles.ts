@@ -33,6 +33,10 @@ export const Link = styled.div<ILinkProps>`
     filter: brightness(0.7);
   }
 
+  &.full-btn {
+    width: 100%;
+  }
+
   &.no-margins {
     a {
       padding: 0;

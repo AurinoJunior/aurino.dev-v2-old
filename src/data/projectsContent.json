@@ -7,9 +7,9 @@
   "projects": [
     {
       "name": "Player de video com redux",
-      "description": "Projeto criado no curso de react+redux+zustand da Rocketseat 🔥",
+      "description": "Projeto de um player de video utilizando controle de estado global, criado no curso de React + Redux da Rocketseat 🔥",
       "image": {
-        "src": "/src/assets/projects/player-video-redux.png",
+        "src": "/projects/player-video-redux.png",
         "alt": "Player de video"
       },
       "ctas": [
@@ -22,15 +22,45 @@
     },
     {
       "name": "Tela de login com react",
-      "description": "Essa é uma aplicação em react com uma pagina de login autenticada, após o login é possivel ver as informações do usuario logado.",
+      "description": "Aplicação em React.Js com uma pagina de login autenticada, após o login é possivel ver as informações do usuario logado.",
       "image": {
-        "src": "/src/assets/projects/login-screen.png",
+        "src": "/projects/login-screen.png",
         "alt": "Uma tela com fundo branco e um formulario de login"
       },
       "ctas": [
         {
           "text": "Github",
           "link": "https://github.com/AurinoJunior/login-screen_front",
+          "variation": "white"
+        }
+      ]
+    },
+    {
+      "name": "Upload AI",
+      "description": "Upload AI é uma aplicação que utiliza IA para criar títulos e descrições atrativas e bem indexadas para vídeos.",
+      "image": {
+        "src": "/projects/upload-ai.png",
+        "alt": "Uma tela com fundo escuro e um formulario"
+      },
+      "ctas": [
+        {
+          "text": "Github",
+          "link": "https://github.com/AurinoJunior/nlw-upload-ai_front",
+          "variation": "white"
+        }
+      ]
+    },
+    {
+      "name": "Select customizavel",
+      "description": "Nesse projeto criei um select personalizado com HTML, CSS e JavaScript, dando mais estilo e funcionalidade",
+      "image": {
+        "src": "/projects/select-customizado.png",
+        "alt": "Um select dropdown com fundo escuro e bordas roxas"
+      },
+      "ctas": [
+        {
+          "text": "Github",
+          "link": "https://github.com/AurinoJunior/bora-codar/tree/main/custom-select",
           "variation": "white"
         }
       ]
