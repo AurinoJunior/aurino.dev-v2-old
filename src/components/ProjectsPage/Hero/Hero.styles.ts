@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { gray_300, gray_500 } from '../../../styles/Tokens'
+import { gray_300, gray_500, tablet_size } from '../../../styles/Tokens'
 
 export const HeroBox = styled.section`
   margin-top: 8rem;
@@ -10,10 +10,14 @@ export const HeroBox = styled.section`
 `
 
 export const HeroTitle = styled.h1`
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 900;
   letter-spacing: 0.25rem;
   text-align: center;
+
+  @media (min-width: ${tablet_size}) {
+    font-size: 3rem;
+  }
 `
 
 export const HeroSearchBox = styled.label`
