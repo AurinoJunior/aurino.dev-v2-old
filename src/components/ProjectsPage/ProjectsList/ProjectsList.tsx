@@ -40,6 +40,7 @@ export const ProjectList = ({ projects }: IProjectListProps) => {
                 className="full-btn"
                 variation={variation}
                 href={link}
+                target="_blank"
                 key={link}
               >
                 {text}

@@ -5,8 +5,8 @@ export const ProjectListBox = styled.section`
   margin: 4rem 0;
   display: grid;
   grid-template-columns: auto;
-  justify-content: space-between;
-  row-gap: 3rem;
+  justify-content: center;
+  gap: 3rem;
 
   @media (min-width: ${tablet_size}) {
     grid-template-columns: auto auto auto;
