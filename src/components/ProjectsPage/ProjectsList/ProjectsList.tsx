@@ -29,7 +29,7 @@ export const ProjectList = ({ projects }: IProjectListProps) => {
   return (
     <ProjectListBox>
       {projects.map(({ name, image, description, ctas }) => (
-        <Card key="name">
+        <Card key={name}>
           <CardImage src={image.src} alt={image.alt} height={175} />
 
           <CardBody>
