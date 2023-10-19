@@ -13,7 +13,7 @@ import {
   HeroTitle
 } from './Hero.styles'
 
-interface IHeroProps {
+export interface IHeroProps {
   data: {
     title: string
     description: string
@@ -24,7 +24,7 @@ interface IHeroProps {
     ctas: Array<{
       link: string
       text: string
-      classname: string
+      variation: 'primary' | 'secondary' | 'white' | 'clean'
     }>
   }
 }
@@ -55,14 +55,14 @@ export const Hero = ({ data }: IHeroProps) => {
           <Link
             key={btnReadMore.link}
             href={btnReadMore.link}
-            className={btnReadMore.classname}
+            variation={btnReadMore.variation}
           >
             {btnReadMore.text}
           </Link>
           <Link
             key={btnDownloadCV.link}
             href={btnDownloadCV.link}
-            className={btnDownloadCV.classname}
+            variation={btnDownloadCV.variation}
             target="_blank"
           >
             {btnDownloadCV.text}

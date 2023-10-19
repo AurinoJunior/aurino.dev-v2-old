@@ -9,19 +9,17 @@ import { gray_500 } from '../../../styles/Tokens'
 
 interface IHeroProps {
   title: string
+  placeholder: string
 }
 
-export const Hero = ({ title }: IHeroProps) => {
+export const Hero = ({ title, placeholder }: IHeroProps) => {
   return (
     <HeroBox>
       <HeroTitle>{title}</HeroTitle>
       <HeroSearchBox>
-        <HeroSearchInput placeholder="Pesquisar..." />
+        <HeroSearchInput placeholder={placeholder} />
         <FaSearch size={25} color={gray_500} />
       </HeroSearchBox>
-      <div>
-        <button>test</button>
-      </div>
     </HeroBox>
   )
 }

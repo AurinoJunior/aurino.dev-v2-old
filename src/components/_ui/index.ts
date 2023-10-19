@@ -1,5 +1,4 @@
 import { Accordion } from './Accordion/Accordion'
-import { Button } from './Button/Button'
 import { Link } from './Link/Link'
 import { Container } from './Container/Container'
 import { Footer } from './Footer/Footer'
@@ -10,7 +9,6 @@ import { Header } from './Header/Header'
 
 export {
   Accordion,
-  Button,
   Link,
   Container,
   Footer,
