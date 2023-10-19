@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { Contact, Container, Footer, Header } from '../components/_ui'
 import { Hero, About, Worked } from '../components/HomePage'
 
-import { THeroType } from '../data/@types/homeContent'
+import { THero } from '../data/@types/homeContent'
 import homeData from '../data/homeContent.json'
 import commonData from '../data/commonContent.json'
 
@@ -20,7 +20,7 @@ const Home: NextPage = () => {
       <Header menuData={menu} />
 
       <Container>
-        <Hero data={hero as THeroType} />
+        <Hero data={hero as THero} />
       </Container>
 
       <Worked data={worked} />
