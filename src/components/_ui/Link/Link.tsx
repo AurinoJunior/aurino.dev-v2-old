@@ -8,7 +8,7 @@ interface ILinkProps {
   children: React.ReactNode | string
   className?: string
   target?: '_self' | '_blank'
-  variation?: 'primary' | 'clean'
+  variation?: 'primary' | 'secondary' | 'white' | 'clean'
 }
 
 export const Link = ({

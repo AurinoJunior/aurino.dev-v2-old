@@ -9,7 +9,7 @@ import commonData from '../data/commonContent.json'
 
 const Projects: NextPage = () => {
   const { footer, menu } = commonData
-  const { meta, title } = projectsData
+  const { meta, title, placeholder } = projectsData
 
   return (
     <>
@@ -19,7 +19,7 @@ const Projects: NextPage = () => {
       <Header menuData={menu} />
 
       <Container>
-        <Hero title={title} />
+        <Hero title={title} placeholder={placeholder} />
       </Container>
 
       <Footer data={footer} fixed />

@@ -21,7 +21,7 @@ interface IErrorPageProps {
     ctas: Array<{
       text: string
       link: string
-      classname: string
+      variation: 'primary' | 'secondary' | 'white' | 'clean'
     }>
     imageData: {
       src: StaticImageData
@@ -46,8 +46,8 @@ export const ErrorPage = ({ data }: IErrorPageProps) => {
             <h1>{title}</h1>
             <p>{description}</p>
             <ErrorPageCTAs>
-              {ctas.map(({ link, text, classname }) => (
-                <Link key={link} className={classname} href={link}>
+              {ctas.map(({ link, text, variation }) => (
+                <Link key={link} variation={variation} href={link}>
                   {text}
                 </Link>
               ))}

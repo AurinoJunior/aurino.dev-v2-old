@@ -3,12 +3,18 @@ import styled from 'styled-components'
 import { gray_800, primary, secondary, white } from '../../../styles/Tokens'
 
 interface ILinkProps {
-  $variation?: 'primary' | 'clean'
+  $variation?: 'primary' | 'secondary' | 'white' | 'clean'
+}
+
+const COLORS = {
+  primary,
+  secondary,
+  white,
+  clean: ''
 }
 
 export const Link = styled.div<ILinkProps>`
-  background-color: ${({ $variation }) =>
-    $variation === 'primary' ? primary : ''};
+  background-color: ${({ $variation }) => COLORS[$variation]};
 
   border-radius: 0.5rem;
 
@@ -21,14 +27,6 @@ export const Link = styled.div<ILinkProps>`
   a {
     display: block;
     padding: 0.75rem 1rem;
-  }
-
-  &.secondary-btn {
-    background-color: ${secondary};
-  }
-
-  &.white-btn {
-    background-color: ${white};
   }
 
   &:hover {

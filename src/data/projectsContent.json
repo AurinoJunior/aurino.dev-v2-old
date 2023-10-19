@@ -2,5 +2,38 @@
   "meta": {
     "title": "Projetos | Aurino Junior"
   },
-  "title": "Projetos"
+  "title": "Projetos",
+  "placeholder": "Pesquisar...",
+  "projects": [
+    {
+      "name": "Player de video com redux",
+      "description": "Projeto criado no curso de react+redux+zustand da Rocketseat 🔥",
+      "image": {
+        "src": "/src/assets/projects/player-video-redux.png",
+        "alt": "Player de video"
+      },
+      "ctas": [
+        {
+          "text": "Github",
+          "link": "https://github.com/AurinoJunior/react-redux_course",
+          "variation": "white"
+        }
+      ]
+    },
+    {
+      "name": "Tela de login com react",
+      "description": "Essa é uma aplicação em react com uma pagina de login autenticada, após o login é possivel ver as informações do usuario logado.",
+      "image": {
+        "src": "/src/assets/projects/login-screen.png",
+        "alt": "Uma tela com fundo branco e um formulario de login"
+      },
+      "ctas": [
+        {
+          "text": "Github",
+          "link": "https://github.com/AurinoJunior/login-screen_front",
+          "variation": "white"
+        }
+      ]
+    }
+  ]
 }
